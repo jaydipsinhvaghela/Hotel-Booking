@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://loyalty.safirhotels.com/login -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV">
+
+    <meta name="title" content="CRM | Safir Hotels">
+
+    <title> Login | Safir Hotels</title>
+
+    <meta name="description" content="CRM of Hospitality Solution">
+    <link rel="icon" type="image/x-icon" href="https://crm.bookingwhizz.com/assets/images/favicon-safir-logo.ico">
+
+            <style>
+            :root{
+   --primary: black;
+   --secondary: #58585a;
+   --secondaryColor: white;
+   --third-color: #996f33;
+}
+
+
+        </style>
+    
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="./Login_files/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <!-- Main Style CSS-->
+    <link rel="stylesheet" href="./Login_files/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./Login_files/root.css" type="text/css">
+    <link rel="stylesheet" href="./Login_files/style.css" type="text/css">
+    <link rel="stylesheet" href="./Login_files/media.css" type="text/css">
+    <link rel="stylesheet" href="./Login_files/stylesheet.css">
+
+        <link rel="stylesheet" href="./Login_files/safir.css" type="text/css">
+    
+    <style>
+                        .left-img:before{
+            background-image: url('https://loyalty.safirhotels.com/assets/images/logo-white.png')
+        }
+        .invalid-feedback{
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: left;
+            top: -11px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNJM7NJH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+    <style>
+        .left-img:before {
+            background-image: url('https://crm.bookingwhizz.com/assets/images/safir-logo-white.png') !important;
+            height: 100px;
+            background-size: contain !important;
+        }
+
+        .form {
+            max-width: 100% !important;
+        }
+
+        .form .register-form {
+            max-width: 650px !important;
+        }
+
+        .form .login-form {
+            max-width: 350px !important;
+        }
+
+        .form .forget-form {
+            max-width: 350px !important;
+            display: none;
+        }
+
+        .terms-privacy {
+            z-index: 999999;
+            position: fixed;
+            bottom: 0;
+            right: 0px;
+            text-align: left;
+            background: #aad3ed;
+            width: auto;
+            border-top-left-radius: 10px;
+            padding: 3px 10px;
+            color: #58585a;
+            font-size: 14px;
+        }
+
+        .terms-privacy a {
+            color: #58585a;
+            text-decoration: none;
+            text-shadow: 0 0 1px grey;
+        }
+
+        .ans-b {
+            width: 270px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 3px 10px;
+            background: #aad3ed;
+            color: white;
+        }
+
+        .ans-ref {
+            color: white;
+            width: 80px;
+            background: #aad3ed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .form select {
+            outline: 0;
+            background: var(--input-bgcolor);
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        .language a{
+            color: #58585a;
+            font-size: 14px;
+        }
+        .language{
+            z-index: 999999;
+            position: fixed;
+            top: 0;
+            right: 0px;
+            text-align: left;
+            background: #aad3ed;
+            width: auto;
+            border-bottom-left-radius: 10px;
+            padding: 3px 10px;
+        }
+        .form-overflow{
+            max-height: calc(100vh - 250px);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+        <section class="login position-relative">
+                    <div class="language">
+                <ul class="d-flex mb-0 justify-content-between list-unstyled mx-2 lang position-relative notranslate">
+                    <li>
+                        <img src="./Login_files/world-map.svg" alt="icon">
+                    </li>
+                    <li class="px-1 text-black-50 changeLang" data-code="ar" style="cursor: pointer;"> <b>ARA</b> </li>
+                    <li class="px-1 text-black-50 changeLang" data-code="en" style="cursor: pointer;"> <b>ENG</b> </li>
+                </ul>
+            </div>
+                <div class="container-fluid h-100">
+
+            <div class="row align-content-center d-flex vh-100">
+                <div class="col-lg-6 col-md-12 d-lg-block">
+                    <div class="left-img loginBGImg" style="background-image: url(&#39; https://loyalty.safirhotels.com/assets/images/body.jpg &#39;)">
+                    </div>
+                </div>
+                <div class="login-page col-lg-6 col-md-12 align-items-center d-flex justify-content-center">
+
+                    <div class="form position-relative">
+                        <div class="logo mb-3 position-relative">
+                                                            <a href="https://www.safirhotels.com/" target="_blank"><img class="img-fluid custom-logo position-relative" src="./Login_files/safir-logo.png"></a>
+                                                    </div>
+
+                        <div class="register-form">
+                                                        <form class="form-overflow" action="https://loyalty.safirhotels.com/register" id="loyalty_register" method="POST">
+                                <input type="hidden" name="_token" value="OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV">
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder=" First Name* " onkeydown="restrictNumbers(event)" pattern="^[A-Za-z\s]+$" value="" name="FirstName">
+                                                                            </div>
+
+                                    <div class="col-sm-6">
+                                        <input type="text" placeholder=" Last Name* " onkeydown="restrictNumbers(event)" pattern="^[A-Za-z\s]+$" value="" name="LastName">
+                                                                            </div>
+
+                                    <div class="col-sm-6">
+                                        <input type="email" placeholder=" Email* " value="" name="Email">
+                                                                            </div>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="countryCode" id="countryCode" placeholder="Country Code">
+                                            <option value="" disabled="" selected="" style="color:#7f7f7f !important"> Select Nationality*                                             </option>
+                                                                                            <option value="AF">Afghanistan</option>
+                                                                                            <option value="AL">Albania</option>
+                                                                                            <option value="DZ">Algeria</option>
+                                                                                            <option value="AS">American Samoa</option>
+                                                                                            <option value="AD">Andorra</option>
+                                                                                            <option value="AO">Angola</option>
+                                                                                            <option value="AI">Anguilla</option>
+                                                                                            <option value="AQ">Antarctica</option>
+                                                                                            <option value="AG">Antigua and Barbuda</option>
+                                                                                            <option value="AR">Argentina</option>
+                                                                                            <option value="AM">Armenia</option>
+                                                                                            <option value="AW">Aruba</option>
+                                                                                            <option value="AU">Australia</option>
+                                                                                            <option value="AT">Austria</option>
+                                                                                            <option value="AZ">Azerbaijan</option>
+                                                                                            <option value="BS">Bahamas</option>
+                                                                                            <option value="BH">Bahrain</option>
+                                                                                            <option value="BD">Bangladesh</option>
+                                                                                            <option value="BB">Barbados</option>
+                                                                                            <option value="BY">Belarus</option>
+                                                                                            <option value="BE">Belgium</option>
+                                                                                            <option value="BZ">Belize</option>
+                                                                                            <option value="BJ">Benin</option>
+                                                                                            <option value="BM">Bermuda</option>
+                                                                                            <option value="BT">Bhutan</option>
+                                                                                            <option value="BO">Bolivia</option>
+                                                                                            <option value="BA">Bosnia and Herzegovina</option>
+                                                                                            <option value="BW">Botswana</option>
+                                                                                            <option value="BV">Bouvet Island</option>
+                                                                                            <option value="BR">Brazil</option>
+                                                                                            <option value="IO">British Indian Ocean Territory</option>
+                                                                                            <option value="VG">British Virgin Islands</option>
+                                                                                            <option value="BN">Brunei</option>
+                                                                                            <option value="BG">Bulgaria</option>
+                                                                                            <option value="BF">Burkina Faso</option>
+                                                                                            <option value="BI">Burundi</option>
+                                                                                            <option value="KH">Cambodia</option>
+                                                                                            <option value="CM">Cameroon</option>
+                                                                                            <option value="CA">Canada</option>
+                                                                                            <option value="CV">Cape Verde</option>
+                                                                                            <option value="BQ">Caribbean Netherlands</option>
+                                                                                            <option value="KY">Cayman Islands</option>
+                                                                                            <option value="CF">Central African Republic</option>
+                                                                                            <option value="TD">Chad</option>
+                                                                                            <option value="CL">Chile</option>
+                                                                                            <option value="CN">China</option>
+                                                                                            <option value="CX">Christmas Island</option>
+                                                                                            <option value="CC">Cocos (Keeling) Islands</option>
+                                                                                            <option value="CO">Colombia</option>
+                                                                                            <option value="KM">Comoros</option>
+                                                                                            <option value="CK">Cook Islands</option>
+                                                                                            <option value="CR">Costa Rica</option>
+                                                                                            <option value="HR">Croatia</option>
+                                                                                            <option value="CU">Cuba</option>
+                                                                                            <option value="CW">Curaçao</option>
+                                                                                            <option value="CY">Cyprus</option>
+                                                                                            <option value="CZ">Czechia</option>
+                                                                                            <option value="DK">Denmark</option>
+                                                                                            <option value="DJ">Djibouti</option>
+                                                                                            <option value="DM">Dominica</option>
+                                                                                            <option value="DO">Dominican Republic</option>
+                                                                                            <option value="CD">DR Congo</option>
+                                                                                            <option value="EC">Ecuador</option>
+                                                                                            <option value="EG">Egypt</option>
+                                                                                            <option value="SV">El Salvador</option>
+                                                                                            <option value="GQ">Equatorial Guinea</option>
+                                                                                            <option value="ER">Eritrea</option>
+                                                                                            <option value="EE">Estonia</option>
+                                                                                            <option value="SZ">Eswatini</option>
+                                                                                            <option value="ET">Ethiopia</option>
+                                                                                            <option value="FK">Falkland Islands</option>
+                                                                                            <option value="FO">Faroe Islands</option>
+                                                                                            <option value="FJ">Fiji</option>
+                                                                                            <option value="FI">Finland</option>
+                                                                                            <option value="FR">France</option>
+                                                                                            <option value="GF">French Guiana</option>
+                                                                                            <option value="PF">French Polynesia</option>
+                                                                                            <option value="TF">French Southern and Antarctic Lands</option>
+                                                                                            <option value="GA">Gabon</option>
+                                                                                            <option value="GM">Gambia</option>
+                                                                                            <option value="GE">Georgia</option>
+                                                                                            <option value="DE">Germany</option>
+                                                                                            <option value="GH">Ghana</option>
+                                                                                            <option value="GI">Gibraltar</option>
+                                                                                            <option value="GR">Greece</option>
+                                                                                            <option value="GL">Greenland</option>
+                                                                                            <option value="GD">Grenada</option>
+                                                                                            <option value="GP">Guadeloupe</option>
+                                                                                            <option value="GU">Guam</option>
+                                                                                            <option value="GT">Guatemala</option>
+                                                                                            <option value="GG">Guernsey</option>
+                                                                                            <option value="GN">Guinea</option>
+                                                                                            <option value="GW">Guinea-Bissau</option>
+                                                                                            <option value="GY">Guyana</option>
+                                                                                            <option value="HT">Haiti</option>
+                                                                                            <option value="HM">Heard Island and McDonald Islands</option>
+                                                                                            <option value="HN">Honduras</option>
+                                                                                            <option value="HK">Hong Kong</option>
+                                                                                            <option value="HU">Hungary</option>
+                                                                                            <option value="IS">Iceland</option>
+                                                                                            <option value="IN">India</option>
+                                                                                            <option value="ID">Indonesia</option>
+                                                                                            <option value="IR">Iran</option>
+                                                                                            <option value="IQ">Iraq</option>
+                                                                                            <option value="IE">Ireland</option>
+                                                                                            <option value="IM">Isle of Man</option>
+                                                                                            <option value="IL">Israel</option>
+                                                                                            <option value="IT">Italy</option>
+                                                                                            <option value="CI">Ivory Coast</option>
+                                                                                            <option value="JM">Jamaica</option>
+                                                                                            <option value="JP">Japan</option>
+                                                                                            <option value="JE">Jersey</option>
+                                                                                            <option value="JO">Jordan</option>
+                                                                                            <option value="KZ">Kazakhstan</option>
+                                                                                            <option value="KE">Kenya</option>
+                                                                                            <option value="KI">Kiribati</option>
+                                                                                            <option value="XK">Kosovo</option>
+                                                                                            <option value="KW">Kuwait</option>
+                                                                                            <option value="KG">Kyrgyzstan</option>
+                                                                                            <option value="LA">Laos</option>
+                                                                                            <option value="LV">Latvia</option>
+                                                                                            <option value="LB">Lebanon</option>
+                                                                                            <option value="LS">Lesotho</option>
+                                                                                            <option value="LR">Liberia</option>
+                                                                                            <option value="LY">Libya</option>
+                                                                                            <option value="LI">Liechtenstein</option>
+                                                                                            <option value="LT">Lithuania</option>
+                                                                                            <option value="LU">Luxembourg</option>
+                                                                                            <option value="MO">Macau</option>
+                                                                                            <option value="MG">Madagascar</option>
+                                                                                            <option value="MW">Malawi</option>
+                                                                                            <option value="MY">Malaysia</option>
+                                                                                            <option value="MV">Maldives</option>
+                                                                                            <option value="ML">Mali</option>
+                                                                                            <option value="MT">Malta</option>
+                                                                                            <option value="MH">Marshall Islands</option>
+                                                                                            <option value="MQ">Martinique</option>
+                                                                                            <option value="MR">Mauritania</option>
+                                                                                            <option value="MU">Mauritius</option>
+                                                                                            <option value="YT">Mayotte</option>
+                                                                                            <option value="MX">Mexico</option>
+                                                                                            <option value="FM">Micronesia</option>
+                                                                                            <option value="MD">Moldova</option>
+                                                                                            <option value="MC">Monaco</option>
+                                                                                            <option value="MN">Mongolia</option>
+                                                                                            <option value="ME">Montenegro</option>
+                                                                                            <option value="MS">Montserrat</option>
+                                                                                            <option value="MA">Morocco</option>
+                                                                                            <option value="MZ">Mozambique</option>
+                                                                                            <option value="MM">Myanmar</option>
+                                                                                            <option value="NA">Namibia</option>
+                                                                                            <option value="NR">Nauru</option>
+                                                                                            <option value="NP">Nepal</option>
+                                                                                            <option value="NL">Netherlands</option>
+                                                                                            <option value="NC">New Caledonia</option>
+                                                                                            <option value="NZ">New Zealand</option>
+                                                                                            <option value="NI">Nicaragua</option>
+                                                                                            <option value="NE">Niger</option>
+                                                                                            <option value="NG">Nigeria</option>
+                                                                                            <option value="NU">Niue</option>
+                                                                                            <option value="NF">Norfolk Island</option>
+                                                                                            <option value="KP">North Korea</option>
+                                                                                            <option value="MK">North Macedonia</option>
+                                                                                            <option value="MP">Northern Mariana Islands</option>
+                                                                                            <option value="NO">Norway</option>
+                                                                                            <option value="OM">Oman</option>
+                                                                                            <option value="PK">Pakistan</option>
+                                                                                            <option value="PW">Palau</option>
+                                                                                            <option value="PS">Palestine</option>
+                                                                                            <option value="PA">Panama</option>
+                                                                                            <option value="PG">Papua New Guinea</option>
+                                                                                            <option value="PY">Paraguay</option>
+                                                                                            <option value="PE">Peru</option>
+                                                                                            <option value="PH">Philippines</option>
+                                                                                            <option value="PN">Pitcairn Islands</option>
+                                                                                            <option value="PL">Poland</option>
+                                                                                            <option value="PT">Portugal</option>
+                                                                                            <option value="PR">Puerto Rico</option>
+                                                                                            <option value="QA">Qatar</option>
+                                                                                            <option value="CG">Republic of the Congo</option>
+                                                                                            <option value="RE">Réunion</option>
+                                                                                            <option value="RO">Romania</option>
+                                                                                            <option value="RU">Russia</option>
+                                                                                            <option value="RW">Rwanda</option>
+                                                                                            <option value="BL">Saint Barthélemy</option>
+                                                                                            <option value="SH">Saint Helena</option>
+                                                                                            <option value="KN">Saint Kitts and Nevis</option>
+                                                                                            <option value="LC">Saint Lucia</option>
+                                                                                            <option value="MF">Saint Martin</option>
+                                                                                            <option value="PM">Saint Pierre and Miquelon</option>
+                                                                                            <option value="VC">Saint Vincent and the Grenadines</option>
+                                                                                            <option value="WS">Samoa</option>
+                                                                                            <option value="SM">San Marino</option>
+                                                                                            <option value="ST">São Tomé and Príncipe</option>
+                                                                                            <option value="SA">Saudi Arabia</option>
+                                                                                            <option value="SN">Senegal</option>
+                                                                                            <option value="RS">Serbia</option>
+                                                                                            <option value="SC">Seychelles</option>
+                                                                                            <option value="SL">Sierra Leone</option>
+                                                                                            <option value="SG">Singapore</option>
+                                                                                            <option value="SX">Sint Maarten</option>
+                                                                                            <option value="SK">Slovakia</option>
+                                                                                            <option value="SI">Slovenia</option>
+                                                                                            <option value="SB">Solomon Islands</option>
+                                                                                            <option value="SO">Somalia</option>
+                                                                                            <option value="ZA">South Africa</option>
+                                                                                            <option value="GS">South Georgia</option>
+                                                                                            <option value="KR">South Korea</option>
+                                                                                            <option value="SS">South Sudan</option>
+                                                                                            <option value="ES">Spain</option>
+                                                                                            <option value="LK">Sri Lanka</option>
+                                                                                            <option value="SD">Sudan</option>
+                                                                                            <option value="SR">Suriname</option>
+                                                                                            <option value="SJ">Svalbard and Jan Mayen</option>
+                                                                                            <option value="SE">Sweden</option>
+                                                                                            <option value="CH">Switzerland</option>
+                                                                                            <option value="SY">Syria</option>
+                                                                                            <option value="TW">Taiwan</option>
+                                                                                            <option value="TJ">Tajikistan</option>
+                                                                                            <option value="TZ">Tanzania</option>
+                                                                                            <option value="TH">Thailand</option>
+                                                                                            <option value="TL">Timor-Leste</option>
+                                                                                            <option value="TG">Togo</option>
+                                                                                            <option value="TK">Tokelau</option>
+                                                                                            <option value="TO">Tonga</option>
+                                                                                            <option value="TT">Trinidad and Tobago</option>
+                                                                                            <option value="TN">Tunisia</option>
+                                                                                            <option value="TR">Turkey</option>
+                                                                                            <option value="TM">Turkmenistan</option>
+                                                                                            <option value="TC">Turks and Caicos Islands</option>
+                                                                                            <option value="TV">Tuvalu</option>
+                                                                                            <option value="UG">Uganda</option>
+                                                                                            <option value="UA">Ukraine</option>
+                                                                                            <option value="AE">United Arab Emirates</option>
+                                                                                            <option value="GB">United Kingdom</option>
+                                                                                            <option value="US">United States</option>
+                                                                                            <option value="UM">United States Minor Outlying Islands</option>
+                                                                                            <option value="VI">United States Virgin Islands</option>
+                                                                                            <option value="UY">Uruguay</option>
+                                                                                            <option value="UZ">Uzbekistan</option>
+                                                                                            <option value="VU">Vanuatu</option>
+                                                                                            <option value="VA">Vatican City</option>
+                                                                                            <option value="VE">Venezuela</option>
+                                                                                            <option value="VN">Vietnam</option>
+                                                                                            <option value="WF">Wallis and Futuna</option>
+                                                                                            <option value="EH">Western Sahara</option>
+                                                                                            <option value="YE">Yemen</option>
+                                                                                            <option value="ZM">Zambia</option>
+                                                                                            <option value="ZW">Zimbabwe</option>
+                                                                                            <option value="AX">Åland Islands</option>
+                                                                                    </select>
+                                                                            </div>
+                                    <div class="col-sm-12">
+                                        <input type="text" placeholder=" Address " value="" name="Address">
+                                                                            </div>
+                                    <div class="col-lg-6 col-sm-6 col-xxl-4">
+                                        <select name="mobileCode" id="mobileCode" placeholder="Phone Code" onchange="updateSelectedCountry(this)">
+                                            <option value="" disabled="" selected="" style="color:#7f7f7f !important"> Select country code*                                             </option>
+                                                                                            <option value="+93" data-name="Afghanistan" data-code="AFG" data-phone="+93">Afghanistan (+93)</option>
+                                                                                            <option value="+358-18" data-name="Åland Islands" data-code="AX" data-phone="+358-18">Åland Islands (+358-18)</option>
+                                                                                            <option value="+355" data-name="Albania" data-code="ALB" data-phone="+355">Albania (+355)</option>
+                                                                                            <option value="+213" data-name="Algeria" data-code="DZA" data-phone="+213">Algeria (+213)</option>
+                                                                                            <option value="+1-684" data-name="American Samoa" data-code="ASM" data-phone="+1-684">American Samoa (+1-684)</option>
+                                                                                            <option value="+376" data-name="Andorra" data-code="AND" data-phone="+376">Andorra (+376)</option>
+                                                                                            <option value="+244" data-name="Angola" data-code="AGO" data-phone="+244">Angola (+244)</option>
+                                                                                            <option value="+1-264" data-name="Anguilla" data-code="AIA" data-phone="+1-264">Anguilla (+1-264)</option>
+                                                                                            <option value="+1-268" data-name="Antigua and Barbuda" data-code="ATG" data-phone="+1-268">Antigua and Barbuda (+1-268)</option>
+                                                                                            <option value="+54" data-name="Argentina" data-code="ARG" data-phone="+54">Argentina (+54)</option>
+                                                                                            <option value="+374" data-name="Armenia" data-code="ARM" data-phone="+374">Armenia (+374)</option>
+                                                                                            <option value="+297" data-name="Aruba" data-code="ABW" data-phone="+297">Aruba (+297)</option>
+                                                                                            <option value="+61" data-name="Australia" data-code="AUS" data-phone="+61">Australia (+61)</option>
+                                                                                            <option value="+43" data-name="Austria" data-code="AUT" data-phone="+43">Austria (+43)</option>
+                                                                                            <option value="+994" data-name="Azerbaijan" data-code="AZE" data-phone="+994">Azerbaijan (+994)</option>
+                                                                                            <option value="+1-242" data-name="Bahamas" data-code="BHS" data-phone="+1-242">Bahamas (+1-242)</option>
+                                                                                            <option value="+973" data-name="Bahrain" data-code="BHR" data-phone="+973">Bahrain (+973)</option>
+                                                                                            <option value="+880" data-name="Bangladesh" data-code="BGD" data-phone="+880">Bangladesh (+880)</option>
+                                                                                            <option value="+1-246" data-name="Barbados" data-code="BRB" data-phone="+1-246">Barbados (+1-246)</option>
+                                                                                            <option value="+375" data-name="Belarus" data-code="BEL" data-phone="+375">Belarus (+375)</option>
+                                                                                            <option value="+32" data-name="Belgium" data-code="BEL" data-phone="+32">Belgium (+32)</option>
+                                                                                            <option value="+501" data-name="Belize" data-code="BLZ" data-phone="+501">Belize (+501)</option>
+                                                                                            <option value="+229" data-name="Benin" data-code="BEN" data-phone="+229">Benin (+229)</option>
+                                                                                            <option value="+1-441" data-name="Bermuda" data-code="BM" data-phone="+1-441">Bermuda (+1-441)</option>
+                                                                                            <option value="+975" data-name="Bhutan" data-code="BTN" data-phone="+975">Bhutan (+975)</option>
+                                                                                            <option value="+591" data-name="Bolivia" data-code="BOL" data-phone="+591">Bolivia (+591)</option>
+                                                                                            <option value="+387" data-name="Bosnia and Herzegovina" data-code="BIH" data-phone="+387">Bosnia and Herzegovina (+387)</option>
+                                                                                            <option value="+267" data-name="Botswana" data-code="BWA" data-phone="+267">Botswana (+267)</option>
+                                                                                            <option value="+55" data-name="Brazil" data-code="BRA" data-phone="+55">Brazil (+55)</option>
+                                                                                            <option value="+246" data-name="British Indian Ocean Territory" data-code="IO" data-phone="+246">British Indian Ocean Territory (+246)</option>
+                                                                                            <option value="+1-284" data-name="British Virgin Islands" data-code="VGB" data-phone="+1-284">British Virgin Islands (+1-284)</option>
+                                                                                            <option value="+673" data-name="Brunei" data-code="BRN" data-phone="+673">Brunei (+673)</option>
+                                                                                            <option value="+359" data-name="Bulgaria" data-code="BGR" data-phone="+359">Bulgaria (+359)</option>
+                                                                                            <option value="+226" data-name="Burkina Faso" data-code="BFA" data-phone="+226">Burkina Faso (+226)</option>
+                                                                                            <option value="+257" data-name="Burundi" data-code="BDI" data-phone="+257">Burundi (+257)</option>
+                                                                                            <option value="+855" data-name="Cambodia" data-code="KHM" data-phone="+855">Cambodia (+855)</option>
+                                                                                            <option value="+237" data-name="Cameroon" data-code="CMR" data-phone="+237">Cameroon (+237)</option>
+                                                                                            <option value="+1" data-name="Canada" data-code="CAN" data-phone="+1">Canada (+1)</option>
+                                                                                            <option value="+238" data-name="Cape Verde" data-code="CPV" data-phone="+238">Cape Verde (+238)</option>
+                                                                                            <option value="+599" data-name="Caribbean Netherlands" data-code="BES" data-phone="+599">Caribbean Netherlands (+599)</option>
+                                                                                            <option value="+1-345" data-name="Cayman Island" data-code="CYM" data-phone="+1-345">Cayman Island (+1-345)</option>
+                                                                                            <option value="+236" data-name="Central African Republic" data-code="CAF" data-phone="+236">Central African Republic (+236)</option>
+                                                                                            <option value="+235" data-name="Chad" data-code="TCD" data-phone="+235">Chad (+235)</option>
+                                                                                            <option value="+56" data-name="Chile" data-code="CHL" data-phone="+56">Chile (+56)</option>
+                                                                                            <option value="+86" data-name="China" data-code="CHN" data-phone="+86">China (+86)</option>
+                                                                                            <option value="+61" data-name="Christmas Island" data-code="CX" data-phone="+61">Christmas Island (+61)</option>
+                                                                                            <option value="+61" data-name="Cocos (Keeling) Islands" data-code="CC" data-phone="+61">Cocos (Keeling) Islands (+61)</option>
+                                                                                            <option value="+57" data-name="Colombia" data-code="COL" data-phone="+57">Colombia (+57)</option>
+                                                                                            <option value="+269" data-name="Comoros" data-code="COM" data-phone="+269">Comoros (+269)</option>
+                                                                                            <option value="+682" data-name="Cook Islands" data-code="COK" data-phone="+682">Cook Islands (+682)</option>
+                                                                                            <option value="+506" data-name="Costa Rica" data-code="CRI" data-phone="+506">Costa Rica (+506)</option>
+                                                                                            <option value="+225" data-name="Cote d&#39;lvoire" data-code="CIV" data-phone="+225">Cote d'lvoire (+225)</option>
+                                                                                            <option value="+385" data-name="Croatia" data-code="HRV" data-phone="+385">Croatia (+385)</option>
+                                                                                            <option value="+53" data-name="Cuba" data-code="CUB" data-phone="+53">Cuba (+53)</option>
+                                                                                            <option value="+599" data-name="Curacao" data-code="CUW" data-phone="+599">Curacao (+599)</option>
+                                                                                            <option value="+357" data-name="Cyprus" data-code="CYP" data-phone="+357">Cyprus (+357)</option>
+                                                                                            <option value="+420" data-name="Czech Republic" data-code="CZE" data-phone="+420">Czech Republic (+420)</option>
+                                                                                            <option value="+243" data-name="Democratic Republic Of The Congo" data-code="COD" data-phone="+243">Democratic Republic Of The Congo (+243)</option>
+                                                                                            <option value="+45" data-name="Denmark" data-code="DNK" data-phone="+45">Denmark (+45)</option>
+                                                                                            <option value="+253" data-name="Djibouti" data-code="DJI" data-phone="+253">Djibouti (+253)</option>
+                                                                                            <option value="+1-767" data-name="Dominica" data-code="DMA" data-phone="+1-767">Dominica (+1-767)</option>
+                                                                                            <option value="+1-809" data-name="Dominican Republic" data-code="DOM" data-phone="+1-809">Dominican Republic (+1-809)</option>
+                                                                                            <option value="+593" data-name="Ecuador" data-code="ECU" data-phone="+593">Ecuador (+593)</option>
+                                                                                            <option value="+20" data-name="Egypt" data-code="EGY" data-phone="+20">Egypt (+20)</option>
+                                                                                            <option value="+503" data-name="El Salvador" data-code="SLV" data-phone="+503">El Salvador (+503)</option>
+                                                                                            <option value="+240" data-name="Equatorial Guinea" data-code="GNQ" data-phone="+240">Equatorial Guinea (+240)</option>
+                                                                                            <option value="+291" data-name="Eritrea" data-code="ERI" data-phone="+291">Eritrea (+291)</option>
+                                                                                            <option value="+372" data-name="Estonia" data-code="EST" data-phone="+372">Estonia (+372)</option>
+                                                                                            <option value="+251" data-name="Ethiopia" data-code="ETH" data-phone="+251">Ethiopia (+251)</option>
+                                                                                            <option value="+500" data-name="Falkland Islands" data-code="FK" data-phone="+500">Falkland Islands (+500)</option>
+                                                                                            <option value="+298" data-name="Faroe Islands" data-code="FO" data-phone="+298">Faroe Islands (+298)</option>
+                                                                                            <option value="+691" data-name="Federated States Of Micronesiav" data-code="FSM" data-phone="+691">Federated States Of Micronesiav (+691)</option>
+                                                                                            <option value="+679" data-name="Fiji" data-code="FJI" data-phone="+679">Fiji (+679)</option>
+                                                                                            <option value="+358" data-name="Finland" data-code="FIN" data-phone="+358">Finland (+358)</option>
+                                                                                            <option value="+33" data-name="France" data-code="FRA" data-phone="+33">France (+33)</option>
+                                                                                            <option value="+594" data-name="French Guiana" data-code="GUF" data-phone="+594">French Guiana (+594)</option>
+                                                                                            <option value="+689" data-name="French Polynesia" data-code="PYF" data-phone="+689">French Polynesia (+689)</option>
+                                                                                            <option value="+241" data-name="Gabon" data-code="GAB" data-phone="+241">Gabon (+241)</option>
+                                                                                            <option value="+220" data-name="Gambia" data-code="GMB" data-phone="+220">Gambia (+220)</option>
+                                                                                            <option value="+995" data-name="Georgia" data-code="GEO" data-phone="+995">Georgia (+995)</option>
+                                                                                            <option value="+49" data-name="Germany" data-code="DEU" data-phone="+49">Germany (+49)</option>
+                                                                                            <option value="+233" data-name="Ghana" data-code="GHA" data-phone="+233">Ghana (+233)</option>
+                                                                                            <option value="+350" data-name="Gibraltar" data-code="GI" data-phone="+350">Gibraltar (+350)</option>
+                                                                                            <option value="+30" data-name="Greece" data-code="GRC" data-phone="+30">Greece (+30)</option>
+                                                                                            <option value="+299" data-name="Greenland" data-code="GRL" data-phone="+299">Greenland (+299)</option>
+                                                                                            <option value="+1-473" data-name="Grenada" data-code="GRD" data-phone="+1-473">Grenada (+1-473)</option>
+                                                                                            <option value="+590" data-name="Guadeloupe" data-code="GP" data-phone="+590">Guadeloupe (+590)</option>
+                                                                                            <option value="+1-671" data-name="Guam" data-code="GUM" data-phone="+1-671">Guam (+1-671)</option>
+                                                                                            <option value="+502" data-name="Guatemala" data-code="GT" data-phone="+502">Guatemala (+502)</option>
+                                                                                            <option value="+44" data-name="Guernsey" data-code="GG" data-phone="+44">Guernsey (+44)</option>
+                                                                                            <option value="+224" data-name="Guinea" data-code="GIN" data-phone="+224">Guinea (+224)</option>
+                                                                                            <option value="+245" data-name="Guinea-Bissau" data-code="GNB" data-phone="+245">Guinea-Bissau (+245)</option>
+                                                                                            <option value="+592" data-name="Guyana" data-code="GUY" data-phone="+592">Guyana (+592)</option>
+                                                                                            <option value="+509" data-name="Haiti" data-code="HTI" data-phone="+509">Haiti (+509)</option>
+                                                                                            <option value="+504" data-name="Honduras" data-code="HND" data-phone="+504">Honduras (+504)</option>
+                                                                                            <option value="+852" data-name="Hong Kong" data-code="HKG" data-phone="+852">Hong Kong (+852)</option>
+                                                                                            <option value="+36" data-name="Hungary" data-code="HUN" data-phone="+36">Hungary (+36)</option>
+                                                                                            <option value="+354" data-name="Iceland" data-code="ISL" data-phone="+354">Iceland (+354)</option>
+                                                                                            <option value="+91" data-name="India" data-code="IND" data-phone="+91">India (+91)</option>
+                                                                                            <option value="+62" data-name="Indonesia" data-code="IDN" data-phone="+62">Indonesia (+62)</option>
+                                                                                            <option value="+98" data-name="Iran" data-code="IRN" data-phone="+98">Iran (+98)</option>
+                                                                                            <option value="+964" data-name="Iraq" data-code="IRQ" data-phone="+964">Iraq (+964)</option>
+                                                                                            <option value="+353" data-name="Ireland" data-code="IRL" data-phone="+353">Ireland (+353)</option>
+                                                                                            <option value="+44" data-name="Isle of Man" data-code="IM" data-phone="+44">Isle of Man (+44)</option>
+                                                                                            <option value="+972" data-name="Israel" data-code="ISR" data-phone="+972">Israel (+972)</option>
+                                                                                            <option value="+39" data-name="Italy" data-code="ITA" data-phone="+39">Italy (+39)</option>
+                                                                                            <option value="+1-876" data-name="Jamaica" data-code="JAM" data-phone="+1-876">Jamaica (+1-876)</option>
+                                                                                            <option value="+81" data-name="Japan" data-code="JPN" data-phone="+81">Japan (+81)</option>
+                                                                                            <option value="+44" data-name="Jersey" data-code="JE" data-phone="+44">Jersey (+44)</option>
+                                                                                            <option value="+962" data-name="Jordan" data-code="JOR" data-phone="+962">Jordan (+962)</option>
+                                                                                            <option value="+7" data-name="Kazakhstan" data-code="KAZ" data-phone="+7">Kazakhstan (+7)</option>
+                                                                                            <option value="+254" data-name="Kenya" data-code="KEN" data-phone="+254">Kenya (+254)</option>
+                                                                                            <option value="+686" data-name="Kiribati" data-code="KIR" data-phone="+686">Kiribati (+686)</option>
+                                                                                            <option value="+383" data-name="Kosovo" data-code="RKS" data-phone="+383">Kosovo (+383)</option>
+                                                                                            <option value="+965" data-name="Kuwait" data-code="KGZ" data-phone="+965">Kuwait (+965)</option>
+                                                                                            <option value="+996" data-name="Kyrgyzstan" data-code="KGZ" data-phone="+996">Kyrgyzstan (+996)</option>
+                                                                                            <option value="+856" data-name="Laos" data-code="LAO" data-phone="+856">Laos (+856)</option>
+                                                                                            <option value="+371" data-name="Latvia" data-code="LVA" data-phone="+371">Latvia (+371)</option>
+                                                                                            <option value="+961" data-name="Lebanon" data-code="LBN" data-phone="+961">Lebanon (+961)</option>
+                                                                                            <option value="+266" data-name="Lesotho" data-code="LSO" data-phone="+266">Lesotho (+266)</option>
+                                                                                            <option value="+231" data-name="Liberia" data-code="LBR" data-phone="+231">Liberia (+231)</option>
+                                                                                            <option value="+218" data-name="Libya" data-code="LBY" data-phone="+218">Libya (+218)</option>
+                                                                                            <option value="+423" data-name="Liechtenstein" data-code="LIE" data-phone="+423">Liechtenstein (+423)</option>
+                                                                                            <option value="+370" data-name="Lithuania" data-code="LTU" data-phone="+370">Lithuania (+370)</option>
+                                                                                            <option value="+352" data-name="Luxembourg" data-code="LUX" data-phone="+352">Luxembourg (+352)</option>
+                                                                                            <option value="+853" data-name="Macao" data-code="MAC" data-phone="+853">Macao (+853)</option>
+                                                                                            <option value="+389" data-name="Macedonia" data-code="MKD" data-phone="+389">Macedonia (+389)</option>
+                                                                                            <option value="+261" data-name="Madagascar" data-code="MDG" data-phone="+261">Madagascar (+261)</option>
+                                                                                            <option value="+265" data-name="Malawi" data-code="MWI" data-phone="+265">Malawi (+265)</option>
+                                                                                            <option value="+60" data-name="Malaysia" data-code="MYS" data-phone="+60">Malaysia (+60)</option>
+                                                                                            <option value="+960" data-name="Maldives" data-code="MDV" data-phone="+960">Maldives (+960)</option>
+                                                                                            <option value="+223" data-name="Mali" data-code="MLI" data-phone="+223">Mali (+223)</option>
+                                                                                            <option value="+356" data-name="Malta" data-code="MLT" data-phone="+356">Malta (+356)</option>
+                                                                                            <option value="+692" data-name="Marshall Islands" data-code="MH" data-phone="+692">Marshall Islands (+692)</option>
+                                                                                            <option value="+596" data-name="Martinique" data-code="MTQ" data-phone="+596">Martinique (+596)</option>
+                                                                                            <option value="+222" data-name="Mauritania" data-code="MRT" data-phone="+222">Mauritania (+222)</option>
+                                                                                            <option value="+230" data-name="Mauritius" data-code="MUS" data-phone="+230">Mauritius (+230)</option>
+                                                                                            <option value="+262" data-name="Mayotte" data-code="YT" data-phone="+262">Mayotte (+262)</option>
+                                                                                            <option value="+52" data-name="Mexico" data-code="MEX" data-phone="+52">Mexico (+52)</option>
+                                                                                            <option value="+373" data-name="Moldova" data-code="MDA" data-phone="+373">Moldova (+373)</option>
+                                                                                            <option value="+377" data-name="Monaco" data-code="MC" data-phone="+377">Monaco (+377)</option>
+                                                                                            <option value="+976" data-name="Mongolia" data-code="MNG" data-phone="+976">Mongolia (+976)</option>
+                                                                                            <option value="+382" data-name="Montenegro" data-code="MNE" data-phone="+382">Montenegro (+382)</option>
+                                                                                            <option value="+1-664" data-name="Montserrat" data-code="MSR" data-phone="+1-664">Montserrat (+1-664)</option>
+                                                                                            <option value="+212" data-name="Morocco" data-code="MAR" data-phone="+212">Morocco (+212)</option>
+                                                                                            <option value="+258" data-name="Mozambique" data-code="MOZ" data-phone="+258">Mozambique (+258)</option>
+                                                                                            <option value="+95" data-name="Myanmar (Burma)" data-code="MMR" data-phone="+95">Myanmar (Burma) (+95)</option>
+                                                                                            <option value="+264" data-name="Namibia" data-code="NAM" data-phone="+264">Namibia (+264)</option>
+                                                                                            <option value="+674" data-name="Nauru" data-code="NRU" data-phone="+674">Nauru (+674)</option>
+                                                                                            <option value="+977" data-name="Nepal" data-code="NPL" data-phone="+977">Nepal (+977)</option>
+                                                                                            <option value="+31" data-name="Netherlands" data-code="NLD" data-phone="+31">Netherlands (+31)</option>
+                                                                                            <option value="+687" data-name="New Caledonia" data-code="NCL" data-phone="+687">New Caledonia (+687)</option>
+                                                                                            <option value="+64" data-name="New Zealand" data-code="NZL" data-phone="+64">New Zealand (+64)</option>
+                                                                                            <option value="+505" data-name="Nicaragua" data-code="NIC" data-phone="+505">Nicaragua (+505)</option>
+                                                                                            <option value="+227" data-name="Niger" data-code="NER" data-phone="+227">Niger (+227)</option>
+                                                                                            <option value="+234" data-name="Nigeria" data-code="NGA" data-phone="+234">Nigeria (+234)</option>
+                                                                                            <option value="+683" data-name="Niue" data-code="NIU" data-phone="+683">Niue (+683)</option>
+                                                                                            <option value="+672" data-name="Norfolk Island" data-code="NF" data-phone="+672">Norfolk Island (+672)</option>
+                                                                                            <option value="+850" data-name="North Korea" data-code="PRK" data-phone="+850">North Korea (+850)</option>
+                                                                                            <option value="+1" data-name="Northern Mariana Islands" data-code="MP" data-phone="+1">Northern Mariana Islands (+1)</option>
+                                                                                            <option value="+47" data-name="Norway" data-code="NOR" data-phone="+47">Norway (+47)</option>
+                                                                                            <option value="+968" data-name="Oman" data-code="OMN" data-phone="+968">Oman (+968)</option>
+                                                                                            <option value="+92" data-name="Pakistan" data-code="PAK" data-phone="+92">Pakistan (+92)</option>
+                                                                                            <option value="+680" data-name="Palau" data-code="PLW" data-phone="+680">Palau (+680)</option>
+                                                                                            <option value="+970" data-name="Palestine" data-code="PSE" data-phone="+970">Palestine (+970)</option>
+                                                                                            <option value="+507" data-name="Panama" data-code="PAN" data-phone="+507">Panama (+507)</option>
+                                                                                            <option value="+675" data-name="Papua New Guinea" data-code="PNG" data-phone="+675">Papua New Guinea (+675)</option>
+                                                                                            <option value="+595" data-name="Paraguay" data-code="PRY" data-phone="+595">Paraguay (+595)</option>
+                                                                                            <option value="+51" data-name="Peru" data-code="PER" data-phone="+51">Peru (+51)</option>
+                                                                                            <option value="+63" data-name="Philippines" data-code="PHL" data-phone="+63">Philippines (+63)</option>
+                                                                                            <option value="+64" data-name="Pitcairn Islands" data-code="PN" data-phone="+64">Pitcairn Islands (+64)</option>
+                                                                                            <option value="+48" data-name="Poland" data-code="POL" data-phone="+48">Poland (+48)</option>
+                                                                                            <option value="+351" data-name="Portugal" data-code="PRT" data-phone="+351">Portugal (+351)</option>
+                                                                                            <option value="+1-787" data-name="Puerto Rico" data-code="PRI" data-phone="+1-787">Puerto Rico (+1-787)</option>
+                                                                                            <option value="+974" data-name="Qatar" data-code="QAT" data-phone="+974">Qatar (+974)</option>
+                                                                                            <option value="+242" data-name="Republic Of The Congo" data-code="COG" data-phone="+242">Republic Of The Congo (+242)</option>
+                                                                                            <option value="+262" data-name="Réunion" data-code="RE" data-phone="+262">Réunion (+262)</option>
+                                                                                            <option value="+40" data-name="Romania" data-code="ROU" data-phone="+40">Romania (+40)</option>
+                                                                                            <option value="+7" data-name="Russia" data-code="RUS" data-phone="+7">Russia (+7)</option>
+                                                                                            <option value="+250" data-name="Rwanda" data-code="RWA" data-phone="+250">Rwanda (+250)</option>
+                                                                                            <option value="+590" data-name="Saint Barthelemy" data-code="BLM" data-phone="+590">Saint Barthelemy (+590)</option>
+                                                                                            <option value="+290" data-name="Saint Helena" data-code="SH" data-phone="+290">Saint Helena (+290)</option>
+                                                                                            <option value="+1-869" data-name="Saint Kitts and Nevis" data-code="KNA" data-phone="+1-869">Saint Kitts and Nevis (+1-869)</option>
+                                                                                            <option value="+1-758" data-name="Saint Lucia" data-code="LCA" data-phone="+1-758">Saint Lucia (+1-758)</option>
+                                                                                            <option value="+590" data-name="Saint Martin" data-code="MAF" data-phone="+590">Saint Martin (+590)</option>
+                                                                                            <option value="+508" data-name="Saint Pierre and Miquelon" data-code="SPM" data-phone="+508">Saint Pierre and Miquelon (+508)</option>
+                                                                                            <option value="+1-784" data-name="Saint Vincent and the Grenadines" data-code="VCT" data-phone="+1-784">Saint Vincent and the Grenadines (+1-784)</option>
+                                                                                            <option value="+685" data-name="Samoa" data-code="WSM" data-phone="+685">Samoa (+685)</option>
+                                                                                            <option value="+378" data-name="San Marino" data-code="SMR" data-phone="+378">San Marino (+378)</option>
+                                                                                            <option value="+239" data-name="Sao Tome and Principe" data-code="STP" data-phone="+239">Sao Tome and Principe (+239)</option>
+                                                                                            <option value="+966" data-name="Saudi Arabia" data-code="SAU" data-phone="+966">Saudi Arabia (+966)</option>
+                                                                                            <option value="+221" data-name="Senegal" data-code="SEN" data-phone="+221">Senegal (+221)</option>
+                                                                                            <option value="+381" data-name="Serbia" data-code="SRB" data-phone="+381">Serbia (+381)</option>
+                                                                                            <option value="+248" data-name="Seychelles" data-code="SYC" data-phone="+248">Seychelles (+248)</option>
+                                                                                            <option value="+232" data-name="Sierra Leone" data-code="SLE" data-phone="+232">Sierra Leone (+232)</option>
+                                                                                            <option value="+65" data-name="Singapore" data-code="SGP" data-phone="+65">Singapore (+65)</option>
+                                                                                            <option value="+1-721" data-name="Sint Maarten" data-code="SXM" data-phone="+1-721">Sint Maarten (+1-721)</option>
+                                                                                            <option value="+421" data-name="Slovakia" data-code="SVK" data-phone="+421">Slovakia (+421)</option>
+                                                                                            <option value="+386" data-name="Slovenia" data-code="SVN" data-phone="+386">Slovenia (+386)</option>
+                                                                                            <option value="+677" data-name="Solomon Islands" data-code="SLB" data-phone="+677">Solomon Islands (+677)</option>
+                                                                                            <option value="+252" data-name="Somalia" data-code="SOM" data-phone="+252">Somalia (+252)</option>
+                                                                                            <option value="+27" data-name="South Africa" data-code="ZAF" data-phone="+27">South Africa (+27)</option>
+                                                                                            <option value="+500" data-name="South Georgia" data-code="GS" data-phone="+500">South Georgia (+500)</option>
+                                                                                            <option value="+82" data-name="South Korea" data-code="KOR" data-phone="+82">South Korea (+82)</option>
+                                                                                            <option value="+211" data-name="South Sudan" data-code="SSD" data-phone="+211">South Sudan (+211)</option>
+                                                                                            <option value="+34" data-name="Spain" data-code="ESP" data-phone="+34">Spain (+34)</option>
+                                                                                            <option value="+94" data-name="Sri Lanka" data-code="LKA" data-phone="+94">Sri Lanka (+94)</option>
+                                                                                            <option value="+249" data-name="Sudan" data-code="SDN" data-phone="+249">Sudan (+249)</option>
+                                                                                            <option value="+597" data-name="Suriname" data-code="SUR" data-phone="+597">Suriname (+597)</option>
+                                                                                            <option value="+47" data-name="Svalbard and Jan Mayen" data-code="SJ" data-phone="+47">Svalbard and Jan Mayen (+47)</option>
+                                                                                            <option value="+268" data-name="Swaziland" data-code="SWZ" data-phone="+268">Swaziland (+268)</option>
+                                                                                            <option value="+46" data-name="Sweden" data-code="SWE" data-phone="+46">Sweden (+46)</option>
+                                                                                            <option value="+41" data-name="Switzerland" data-code="CHE" data-phone="+41">Switzerland (+41)</option>
+                                                                                            <option value="+963" data-name="Syria" data-code="SYR" data-phone="+963">Syria (+963)</option>
+                                                                                            <option value="+886" data-name="Taiwan" data-code="TWN" data-phone="+886">Taiwan (+886)</option>
+                                                                                            <option value="+992" data-name="Tajikistan" data-code="TJK" data-phone="+992">Tajikistan (+992)</option>
+                                                                                            <option value="+255" data-name="Tanzania" data-code="TZA" data-phone="+255">Tanzania (+255)</option>
+                                                                                            <option value="+66" data-name="Thailand" data-code="THA" data-phone="+66">Thailand (+66)</option>
+                                                                                            <option value="+670" data-name="Timor-Leste" data-code="TLS" data-phone="+670">Timor-Leste (+670)</option>
+                                                                                            <option value="+228" data-name="Togo" data-code="TGO" data-phone="+228">Togo (+228)</option>
+                                                                                            <option value="+690" data-name="Tokelau" data-code="TKL" data-phone="+690">Tokelau (+690)</option>
+                                                                                            <option value="+676" data-name="Tonga" data-code="TON" data-phone="+676">Tonga (+676)</option>
+                                                                                            <option value="+1-868" data-name="Trinidad and Tobago" data-code="TTO" data-phone="+1-868">Trinidad and Tobago (+1-868)</option>
+                                                                                            <option value="+216" data-name="Tunisia" data-code="TUN" data-phone="+216">Tunisia (+216)</option>
+                                                                                            <option value="+90" data-name="Turkey" data-code="TUR" data-phone="+90">Turkey (+90)</option>
+                                                                                            <option value="+993" data-name="Turkmenistan" data-code="TKM" data-phone="+993">Turkmenistan (+993)</option>
+                                                                                            <option value="+1-649" data-name="Turks and Caicos Islands" data-code="TCA" data-phone="+1-649">Turks and Caicos Islands (+1-649)</option>
+                                                                                            <option value="+688" data-name="Tuvalu" data-code="TUV" data-phone="+688">Tuvalu (+688)</option>
+                                                                                            <option value="+256" data-name="Uganda" data-code="UGA" data-phone="+256">Uganda (+256)</option>
+                                                                                            <option value="+380" data-name="Ukraine" data-code="UKR" data-phone="+380">Ukraine (+380)</option>
+                                                                                            <option value="+971" data-name="United Arab Emirates" data-code="ARE" data-phone="+971">United Arab Emirates (+971)</option>
+                                                                                            <option value="+44" data-name="United Kingdom" data-code="GBR" data-phone="+44">United Kingdom (+44)</option>
+                                                                                            <option value="+1" data-name="United States" data-code="USA" data-phone="+1">United States (+1)</option>
+                                                                                            <option value="+1-340" data-name="United States Virgin  Islands" data-code="VIR" data-phone="+1-340">United States Virgin  Islands (+1-340)</option>
+                                                                                            <option value="+598" data-name="Uruguay" data-code="URY" data-phone="+598">Uruguay (+598)</option>
+                                                                                            <option value="+998" data-name="Uzbekistan" data-code="UZB" data-phone="+998">Uzbekistan (+998)</option>
+                                                                                            <option value="+678" data-name="Vanuatu" data-code="VUT" data-phone="+678">Vanuatu (+678)</option>
+                                                                                            <option value="+379" data-name="Vatican City" data-code="VA" data-phone="+379">Vatican City (+379)</option>
+                                                                                            <option value="+58" data-name="Venezuela" data-code="VEN" data-phone="+58">Venezuela (+58)</option>
+                                                                                            <option value="+84" data-name="Vietnam" data-code="VNM" data-phone="+84">Vietnam (+84)</option>
+                                                                                            <option value="+681" data-name="Wallis and Futuna" data-code="WLF" data-phone="+681">Wallis and Futuna (+681)</option>
+                                                                                            <option value="+212" data-name="Western Sahara" data-code="EH" data-phone="+212">Western Sahara (+212)</option>
+                                                                                            <option value="+967" data-name="Yemen" data-code="YEM" data-phone="+967">Yemen (+967)</option>
+                                                                                            <option value="+260" data-name="Zambia" data-code="ZMB" data-phone="+260">Zambia (+260)</option>
+                                                                                            <option value="+263" data-name="Zimbabwe" data-code="ZWE" data-phone="+263">Zimbabwe (+263)</option>
+                                                                                    </select>
+                                                                            </div>
+                                    <div class="col-lg-6 col-sm-6 col-xxl-4">
+                                        <input type="number" placeholder=" Phone Number* " min="6" value="" name="PhoneNumber">
+                                                                            </div>
+
+
+                                    <div class="col-lg-12 col-xxl-4">
+                                        <input type="text" id="register-dob" placeholder=" Date Of Birth* " value="" name="DOB" onfocus="(this.type=&#39;date&#39;)" onblur="(this.type=&#39;text&#39;)" max="2025-03-06">
+                                                                            </div>
+
+                                    <div class="col-sm-12">
+                                        <input type="password" placeholder=" Password* " value="" name="password">
+                                                                            </div>
+
+                                    <div class="col-sm-12">
+                                        <input type="password" placeholder=" Confirm Password* " value="" name="password_confirmation">
+                                    </div>
+
+                                    <div class="col-sm-12">
+
+                                        
+                                        <input type="hidden" name="num1" value="2">
+                                        <input type="hidden" name="num2" value="10">
+                                        <input type="hidden" name="total" value="12">
+
+                                        <div class="d-flex items-center justify-content-between mb-3">
+                                            <div class="ans-b">
+                                                 Answer Of:  <b style="margin-left:7px;">2 +
+                                                    10</b>
+                                            </div>
+                                            <input type="text" placeholder="=" name="my_captcha" required="" class="mb-0">
+                                            <div class="ans-ref">
+                                                <i class="fa fa-refresh"></i>
+                                            </div>
+                                        </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-12">
+                                            <label class="d-flex fs-6 items-center justify-start mb-2 w-full">
+                                                <input type="checkbox" name="accept_terms" required="" value="1" class="m-0 w-auto">
+                                                <span style="padding-left:3px;font-size: 13px;"> 
+                                                      By checking this box, you
+                                                    are agreeing to our <a href="https://www.safirhotels.com/en/terms-and-conditions" target="_blank" style="color: #aad3ed;" class="fw-bold text-decoration-none"> terms of service</a>.  </span>
+                                            </label>
+                                        </div>
+                                                                    </div>
+
+                                <button type="submit"> Create </button>
+                                <p class="message"> Already registered?  <a href="javascript:void(0);" class="tologin" style="color:var(--secondary)"> Sign In </a></p>
+                            </form>
+                        </div>
+
+                        <div class="login-form">
+                                                                                    <form action="https://loyalty.safirhotels.com/login" method="POST">
+                                <input type="hidden" name="_token" value="OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV">
+                                                                <input type="email" placeholder=" Email " name="email" value="" required="">
+                                
+                                <input type="password" placeholder=" Password " name="password" required="">
+                                
+                                <button type="submit"> Login </button>
+                                <p class="message"><a href="javascript:void(0);" class="toforget" style="color:var(--secondary)"> Forget Your Password? </a></p>
+                                <p class="message"> Not registered?  <a href="javascript:void(0);" class="toregister" style="color:var(--secondary)"> Create an Account </a></p>
+                            </form>
+                        </div>
+
+                        <div class="forget-form">
+                            <form action="https://loyalty.safirhotels.com/password-reset" method="POST">
+                                <input type="hidden" name="_token" value="OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV">
+                                
+                                
+
+                                <input type="email" placeholder=" Email " name="email" value="" required="">
+                                
+                                <button type="submit"> Send Reset Link </button>
+                                   <p class="message"> Already registered?  <a href="javascript:void(0);" class="tologin" style="color:var(--secondary)"> Sign In </a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                                     
+                        <div class="terms-privacy">
+                            <a target="_blank" href="https://www.safirhotels.com/en/terms-and-conditions" class="login-link-inline label">Terms of Service</a> |
+                            <a target="_blank" href="https://www.safirhotels.com/en/safir-loyalty-faq" class="login-link-inline label">FAQs</a> |
+                            <a target="_blank" href="https://www.safirhotels.com/en/contact" class="login-link-inline label">Contact Us</a>
+                        </div>
+                                                </div>
+        </div>
+    </section>
+
+        <!-- Google tag (gtag.js) -->
+    
+             <!-- Google Tag Manager -->
+        <script src="./Login_files/1013032593641655" async=""></script><script src="./Login_files/2021582254942771" async=""></script><script src="./Login_files/2883226155079950" async=""></script><script async="" src="./Login_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./Login_files/js"></script><script async="" src="./Login_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NNJM7NJH');</script>
+        <!-- End Google Tag Manager -->
+    
+    <script type="text/javascript" src="./Login_files/jquery-3.5.1.slim.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/popper.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/moment.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/jquery-ui.min.js.download"></script>
+
+    <script type="text/javascript">
+        $(".message a.toregister").click(function() {
+            $(".login-form").hide("slow, linear");
+            $(".forget-form").hide("slow, linear");
+            $(".register-form").show("slow, linear");
+        });
+        $(".message a.tologin").click(function() {
+            $(".register-form").hide("slow, linear");
+            $(".forget-form").hide("slow, linear");
+            $(".login-form").show("slow, linear");
+        });
+        $(".message a.toforget").click(function() {
+            $(".login-form").hide("slow, linear");
+            $(".register-form").hide("slow, linear");
+            $(".forget-form").show("slow, linear");
+        });
+            $(document).on('click', '.changeLang', function () {
+            var code = $(this).attr('data-code');
+            var timer = setTimeout(() => {
+                window.location.reload();
+            }, 8000);
+            $.ajax({
+                url: 'https://loyalty.safirhotels.com/lang-login',
+                type: 'POST',
+                data:{code:code, _token:'OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV'},
+                success: function(res){
+                    clearTimeout(timer);
+                    window.location.reload();
+                }
+            });
+        });
+    </script>
+
+    <script>
+    // Function to prevent numbers from being typed in the input field
+    function restrictNumbers(event) {
+      const char = String.fromCharCode(event.which || event.keyCode);
+      if (/[0-9]/.test(char) || (event.keyCode >= 96 && event.keyCode <= 105)) {
+            event.preventDefault();  // Prevent the character from being typed
+        }
+    }
+  </script>
+    <script>
+        const today = new Date();
+        const tenYearsAgo = new Date();
+            
+        tenYearsAgo.setFullYear(today.getFullYear() - 10); // Subtract 10 years
+
+        document.getElementById("register-dob").max = today.toISOString().split("T")[0];
+        // document.getElementById("profile-dob").min = tenYearsAgo.toISOString().split("T")[0];
+        let lastSelectedOption = null;
+        function updateSelectedCountry(selectBox)
+        {
+            let selectedOption = selectBox.options[selectBox.selectedIndex];
+        if (lastSelectedOption && lastSelectedOption !== selectedOption) {
+            lastSelectedOption.text = lastSelectedOption.getAttribute('data-name') + " " + lastSelectedOption.getAttribute('data-phone');
+        }
+            selectedOption.text = selectedOption.dataset.code + " " + selectedOption.dataset.phone;
+            lastSelectedOption = selectedOption;
+        }
+        
+        $('.register-form, .login-form').on('submit', function() {
+            var btn = $(this).find('[type="submit"]').text();
+            $(this).find('[type="submit"]').html('<i class="fa fa-spin fa-refresh"></i> ' + btn);
+            $(this).find('[type="submit"]').attr('disabled', 'disabled');
+        })
+
+        if (window.location.hash == '#register') {
+            $(".login-form").hide("slow, linear");
+            $(".forget-form").hide("slow, linear");
+            $(".register-form").show("slow, linear");
+        }
+
+        
+        
+        $(document).on('click', '.ans-ref', function() {
+            var num1 = Math.floor(Math.random() * 11);
+            var num2 = Math.floor(Math.random() * 11);
+            var total = num1 + num2;
+            $('.ans-b').find('b').text(num1 + ' + ' + num2);
+            $('[name="num1"]').val(num1);
+            $('[name="num2"]').val(num2);
+            $('[name="total"]').val(total);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var timer = 60; // Start the timer from 60 seconds
+            var button = $('#resend-email-btn');
+            var timerSpan = $('#timer');
+            var timerInterval;
+            var Email = button.attr('data-email');
+            
+            // Start the countdown timer automatically when the page loads
+            startTimer();
+
+            // Send the AJAX request to resend the verification email when the button is clicked
+            button.on('click', function() {
+                // Disable the button and hide it
+                button.hide();
+                timerSpan.hide();
+
+                startTimer(); // Start the countdown timer if needed again
+                $.ajax({
+                    url: "https://loyalty.safirhotels.com/resend-verify-email",
+                    type: 'POST',
+                    data: {
+                        "_token": "OiPVyspfvPnkYkL0GcMgFTa2WD8QqrtJYCA3aKlV",
+                        "Email": Email
+                    },
+                    success: function(response) {
+                       console.log('success');
+                    },
+                    error: function(xhr) {
+                        var errorMessage = xhr.responseJSON ? xhr.responseJSON.message :
+                            'Error sending email.';
+                        responseMessage.text(errorMessage).css('color', 'red');
+                    }
+                });
+
+            });
+            function startTimer() {
+                timerSpan.text('(' + timer + 's)');
+                timerInterval = setInterval(function() {
+                    timer--; // Decrease the timer by 1 every second
+                    timerSpan.text('(' + timer + 's)'); // Update the text with the new timer value
+
+                    if (timer <= 0) {
+                        clearInterval(timerInterval); // Stop the timer
+                        timerSpan.text(''); // Clear the timer display
+                        button.hide(); // Hide the button
+                    }
+                }, 1000); // Interval of 1000ms (1 second)
+            }
+        });
+    </script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Login_files/saved_resource.html"></iframe>
+     
+
+
+
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2883226155079950");fbq("set","agent","gtmss","2883226155079950");fbq("track",google_tag_manager["rm"]["176141820"](8),{},{eventID:google_tag_manager["rm"]["176141820"](10)});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2883226155079950&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2021582254942771");fbq("set","agent","gtmss","2021582254942771");fbq("track",google_tag_manager["rm"]["176141820"](11),{},{eventID:google_tag_manager["rm"]["176141820"](13)});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2021582254942771&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1013032593641655");fbq("set","agent","gtmss","1013032593641655");fbq("track",google_tag_manager["rm"]["176141820"](14),{},{eventID:google_tag_manager["rm"]["176141820"](16)});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1013032593641655&amp;ev=PageView&amp;noscript=1"></noscript>
+<iframe allow="join-ad-interest-group" data-tagging-id="AW-660107329" data-load-time="1741237942402" height="0" width="0" src="./Login_files/660107329.html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" async="" src="./Login_files/f.txt"></script>
+<script type="text/javascript" id="" charset="">fbq("track",google_tag_manager["rm"]["176141820"](24),{currency:google_tag_manager["rm"]["176141820"](25),contents:google_tag_manager["rm"]["176141820"](26),order_id:google_tag_manager["rm"]["176141820"](27),value:google_tag_manager["rm"]["176141820"](28)},{eventID:google_tag_manager["rm"]["176141820"](30)});</script>
+<script type="text/javascript" id="" charset="">fbq("track",google_tag_manager["rm"]["176141820"](32),{currency:google_tag_manager["rm"]["176141820"](33),contents:google_tag_manager["rm"]["176141820"](34),order_id:google_tag_manager["rm"]["176141820"](35),value:google_tag_manager["rm"]["176141820"](36)},{eventID:google_tag_manager["rm"]["176141820"](38)});</script></body></html>

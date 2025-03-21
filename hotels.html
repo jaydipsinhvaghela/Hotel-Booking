@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>OUR HOTELS</title>
+    
+    <style>
+        .mypclass {
+            position: relative; 
+       
+                margin-left: 100px;
+                background-color: #f0f3f9;
+                height: 100%;
+                content: '';
+                width: 100%;
+        }
+        .zoom{
+            position: relative;
+            top: 80px;
+        }
+        .zindexclass{
+            position: relative;
+            z-index: 5;
+        }
+        .location {
+            display: inline-block;
+            padding-left: 25px; 
+            background: url('images/img1.svg') no-repeat left center;
+            background-size: 20px 20px;
+        }
+        
+    
+        .mypclass::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            height: 120%;
+            left: 0; 
+            width: 100%; 
+           
+            border-radius: 0 10px 10px 0; /* Match the rounded corners */
+        }
+    
+  
+        .mypclass {
+            padding: 20px;
+            background-color: #f8f9fa; /* Light background for better readability */
+        }
+        /* General styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+}
+/* For screens with a width of 1268px or less */
+@media (max-width: 1268px) {
+    .mypclass {
+        margin-left: 60px; /* Reduce left margin for better alignment */
+        padding: 20px;
+    }
+
+    .mypclass::before {
+        height: 110%; /* Adjust background height */
+    }
+
+    .col-md-6 img {
+        width: 100%;
+        height: auto; /* Ensure image scales correctly */
+    }
+   
+    h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 12px 20px; /* Adjust button size */
+    }
+
+    .container {
+        max-width: 90%; /* Reduce max width for better alignment */
+    }
+}
+
+
+/* For tablets and smaller devices (max-width: 992px) */
+@media (max-width: 992px) {
+    .mypclass {
+        margin-left: 0px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .mypclass::before {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .col-lg-6 img {
+        width: 100%;
+    }
+  
+    h1, .p1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+
+    .btn {
+        width: 90%;
+    }
+}
+
+/* For smaller tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .mypclass {
+        padding: 10px;
+        text-align: left;
+        position: relative;
+        top: -50px;
+        
+        width: 110%;
+        height: auto;
+    }
+
+    .row.g-4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+  
+    .col-lg-6 img {
+        width: 120%;
+        height: auto;
+        margin-left: -15%;
+       
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+        width: 80%;
+    }
+  
+}
+
+/* For mobile phones (max-width: 576px) */
+@media (max-width: 576px) {
+    .mypclass {
+        padding: 10px;
+        text-align: left;
+        position: relative;
+        top: -50px;
+        
+        width: 450px;
+    }
+  
+
+    .myoo {
+        margin-left: 50px;
+        font-size: 80px;
+    }
+    .h2{
+        font-size: 1.8rem;
+    }
+
+    .p1 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .mybtn1{
+        width: auto;
+        height: 45px;
+    }
+
+    .col-lg-6 img {
+        width: 450px;
+        height: auto;
+        right: 10px    ;
+    }
+
+    .text-secondary {
+        font-size: 0.9rem;
+    }
+}
+.myp-class5{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    /* text-overflow:inherit; */
+}
+.myp-class5::before{
+    content: '';
+    height:     32%;
+    margin-top: 0px;
+    width: 0%;
+    background-color: #aed4e9;
+  
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;   
+
+  
+}
+.myp-class5:hover{
+    transition: width 0.4s ease-in-out;
+    
+    z-index:10;
+  
+    
+   
+
+}
+.myp-class5:hover::before{
+    width: 34%;
+    transition: 0.4s ease-in-out;
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+  
+    <nav class="navbar navbar-expand-xl  bg-white shadow">
+
+        <div class="container mycon">
+
+            <a class="navbar-brand position-relative" href="index.html">
+                <div class="logo-container position-absolute justify-content-center align-items-center text-center">
+                    <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
+                </div>
+            </a>
+            <br><br><br><br><br>
+            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-3"></i>
+            </button>
+          
+        <style>
+            .imgicon{
+                margin-top: 20px;
+            }
+            .navbar-collapse{
+                flex-grow: 0;
+            }
+        </style>
+
+            <div class="collapse navbar-collapse m-2 p-3  g-4 justify-content-center p-4" id="navbarNav">
+                <ul class="navbar-nav fullscreen-menu text-center text-lg-start"id="fullscreenMenu">
+                    <li class="nav-item">
+                        <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor " href="offer.html">OFFERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor" href="press.html">PRESS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
+                <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
+                <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
+            </div>
+
+            <style>
+                /* Button container styling */
+                .btn-container {
+                    display: flex;
+                    gap: 10px;
+                    /* Adjust gap for smaller screens */
+                    flex-wrap: wrap;
+                    /* Allow buttons to wrap on smaller screens */
+                    justify-content: center;
+                    /* Center buttons horizontally */
+                }
+
+                /* Button styling */
+                .btn-custom {
+                    padding: 10px 20px;
+                    /* Standard padding */
+                    font-size: 1.3rem;
+                    /* Default font size */
+                  
+                    /* Optional: Adds rounded corners */
+
+                    border: none;
+                    transition: background 0.3s ease;
+                    /* Smooth hover effect */
+                }
+              
+
+                .btn-custom:hover {
+                    background-color: #6d6e70;
+                    /* Darker shade on hover */
+                }
+                @media(max-width:1024px){
+                    .btn-container{
+                        position: relative;
+                        top: -80px;
+                        margin-left: 220px;
+                       
+                    }
+                    .navbar-toggler{
+                        margin-left: 400px;
+                        position: relative;
+                        top: 10px;
+                        color: #1f85ca;
+                    }
+                    .mycon{
+                        height: 100px;
+                    }
+                    .logo-container {
+                        width: 140px;
+                       background-color: #aed4e9;
+                       position: relative;
+                       top: 10;
+                        z-index: 1;
+                        height: 140px;
+                        
+                        }
+                        
+                        .imgicon{
+                            width: 100px;
+                            height: 80px;
+                        }
+                        .navbar-collapse{
+                            height: 300%;
+                            width: 100% ;
+                            background-color: white;
+                            position: relative;
+                            top: -23px;
+                           
+                        }
+                }
+             
+                
+                @media(max-width:770px){
+                    .btn-container{
+                      position: relative;
+                      top: -80px;
+                     margin-left: 220px;
+                    }
+                    .navbar-toggler{
+                        margin-left: 400px;
+                        position: relative;
+                        top: 10px;
+                        color: #1f85ca;
+                    }
+                    .mycon{
+                        height: 100px;
+                    }
+                    .logo-container {
+                        width: 140px;
+                       background-color: #aed4e9;
+                       position: relative;
+                       top: 10;
+                        z-index: 1;
+                        height: 140px;
+                
+                        
+                        /* Smaller logo on smaller screens */
+                        }
+                        .imgicon{
+                            width: 100px;
+                            height: 80px;
+                        }
+                        .navbar-collapse{
+                            height: 300%;
+                            width: 100% ;
+                            background-color: white;
+                            position: relative;
+                            top: -23px;
+                           
+                        }
+
+                }
+
+                /* Responsive styling for smaller screens */
+                @media (max-width: 576px) {
+                    .btn-container {
+                        height: 120px;
+                        
+                        position: relative;
+                        top: -120px;
+                        /* Stack buttons vertically */
+                         margin-left: 140px;
+                        /* Center buttons */
+                    }
+
+                  
+                    .logo-container {
+                        width: 80px;
+                         height:130px;
+                   
+                        position: relative; /* Reset position to prevent overlap */
+                        left: -25px; /* Reset left to prevent overlap */
+                        transform: none; 
+                        background-color: #aed4e9;
+            
+                 
+                    }
+                    .navbar-collapse{
+                        height: 300%;
+                        width: 100% ;
+                        background-color: white;
+                       
+                    }
+                    
+                }
+              
+                /* Even smaller screens (e.g., mobile phones) */
+                @media (max-width: 480px) {
+                    
+                    .btn-container {
+                        height: 120px;
+                      
+                       
+                        position: relative;
+                        top: -110px;
+                        /* Stack buttons vertically */
+                         margin-left:120px;
+                        /* Center buttons */
+                    }
+                    .carousel-img img{
+                        height: 40vh;
+                    }
+                   
+                    .navbar-toggler{
+                        margin-left: 120px;
+                        color: #1f85ca;
+                    }
+              
+                    .imgicon{
+                        width: 100px;
+                        height: 80px;
+                        margin-top: 10px;
+                    }
+                    .navbar-collapse{
+                        height: 300%;
+                        width: 100% ;
+                        background-color: white;
+                       
+                    }
+                    .btn-container a button{
+                        width: 100%;
+                        height: 35px;
+                        font-size: 12px;
+                        top: 0px;
+                    }
+                    body{
+                         width: 120%;
+                    }
+                }
+            
+            </style>
+
+
+
+        </div>
+        <div class="social"><a href="https://www.instagram.com/safirhotels/"
+                class="fa-brands fa-instagram text-decoration-none"></a> <a
+                href="https://www.facebook.com/safirhotelsresorts"
+                class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+                href="https://www.linkedin.com/company/safir-hotels-resorts/"
+                class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
+                class="fa-brands fa-tiktok text-decoration-none"></a> <a
+                href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+                class="fa-brands fa-youtube text-decoration-none"></a></div>
+                <div class="social1">
+                    ARA ENG
+                </div>
+                
+    </nav>
+
+
+   
+    <div class="container mybook">
+        <div class="row ">
+            <div class="myoo">
+                <h1 class="h2 fw-bold text-center">Explore Luxury Hotels in Kuwait and
+                    <br>
+                    <span class="text-center">Beyond: Safir Hotels</span>
+                </h1>
+                <p class="p1 text-center fs-5">Discover our exquisite luxury hotels in Kuwait and beyond. Select your next
+                    <br>
+                    <span class="text-center"> destination with us.</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="fw-bold">
+                <img src="/images/h1.svg" width="30px" alt="" >
+                <span class="text-dark ms-2" style="font-size: 2.1rem;">KUWAIT</span>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row g-4 align-items-center mb-5 abs">
+                <div class="col-lg-6 col-md-12">
+                    <img src="/images/hotel1.webp" alt="Marina Hotel Kuwait" class="rounded zindexclass">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="p-4 rounded mypclass" style="background: #f0f3f9;height:520px;">
+                        <p class="text-secondary zoom small ms-md-5 location"> SALMIYA, KUWAIT</p>
+                        <h1 class="h2 fw-bold zoom ms-md-5">Marina Hotel Kuwait</h1>
+                        <p class="text-muted zoom fs-5 ms-md-5">
+                            Located in the heart of Salmiya and within walking distance of Marina Mall,
+                            Marina Waves & Marina Crescent, Marina Hotel Kuwait is a boutique, five-star,
+                            Upper-Upscale beachside property offering lush, jewel-toned interiors and
+                            panoramic sea views.
+                        </p>
+                            <a href="book.html" class="btn btn-lg zoom ms-md-5"style="background: #aad3ed;z-index:1;" >BOOK NOW</a>
+                        <a href="#"  class="text-decoration-none zoom fw-bold fs-5">  <p class="mt-3 fw-semibold text-dark  myp-class5  text-decoration-none  ms-md-5">Find out more →</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container mt-5">
+            <div class="row g-4 align-items-center abs">
+                <div class="col-lg-6 col-md-12">
+                    <img src="/images/hotel2.webp" alt="Marina Hotel Kuwait" class="rounded zindexclass">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="p-4 rounded mypclass" style="background: #f0f3f9;height:520px;">
+                        <p class="text-secondary zoom small ms-md-5 location">Fintas, Kuwait</p>
+
+                        <h1 class="h3 zoom fw-bold ms-md-5">Safir Fintas Kuwait</h1>
+                        <p class="text-muted zoom fs-5 ms-md-5">
+                            Overlooking the waters of the Arabian Gulf, Safir Fintas Kuwait is a five-star Upscale business & leisure hotel situated in Fintas. It grants proximity to Kuwait’s Oil & Gas district and southernmost commercial hub.
+                        </p>
+                        <a href="#" class="btn btn-lg zoom ms-md-5" style="background: #aad3ed;">BOOK NOW</a>
+                        <a href="#"  class="text-decoration-none zoom fw-bold fs-5"><p class="mt-3 fw-semibold text-dark text-decoration-none text-primary ms-md-5  myp-class5">Find out more →</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row g-4 align-items-center abs">
+                <div class="col-lg-6 col-md-12">
+                    <img src="/images/hotel3.webp" alt="Marina Hotel Kuwait" class="rounded zindexclass">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="p-4 rounded  mypclass" style="background: #f0f3f9;height:520px;height:520px;">
+                        <p class="text-secondary small zoom location ms-md-5">International Airport, Kuwait</p>
+                        <h1 class="h3 zoom fw-bold ms-md-5">Safir Airport Kuwait</h1>
+                        <p class="text-muted zoom fs-5 ms-md-5">
+                            Located inside the Kuwait International Airport restricted zone, Safir Airport Kuwait is directly accessible from the runway. Designed with the comfort and convenience of transit passengers in mind, it offers a seamless travel experience.
+                        </p>
+                        <a href="book.html" class="btn btn-lg zoom  ms-md-5" style="background: #aad3ed;">BOOK NOW</a>
+                        <a href="#" class="text-decoration-none zoom fw-bold fs-5"><p class="mt-3 fw-semibold text-dark  myp-class5 text-decoration-none ms-md-5">Find out more →</p></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+       
+        <div class="container mt-5">
+            <div class="row g-4 align-items-center abs">
+                <div class="col-lg-6 col-md-12">
+                    <img src="/images/hotel5.webp" alt="Marina Hotel Kuwait" class="rounded zindexclass">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="p-4  mypclass" style="background: #f0f3f9;height:520px;">
+                        <p class="text-secondary zoom small location ms-md-5">International Airport, Kuwait</p>
+                        <h1 class="h3 fw-bold zoom ms-md-5">Safir Airport Kuwait</h1>
+                        <p class="text-muted zoom fs-5 ms-md-5">
+                            Located inside the Kuwait International Airport restricted zone, Safir Airport Kuwait is directly accessible from the runway. Designed with the comfort and convenience of transit passengers in mind, it offers a seamless travel experience.
+                        </p>
+                       <a class="btn btn-lg zoom  ms-md-5" style="background: #aad3ed;">BOOK NOW</a>
+                        <a href="#" class="text-decoration-none zoom fw-bold fs-5"><p class="mt-3 fw-semibold text-dark  myp-class5 text-decoration-none ms-md-5">Find out more →</p></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        
+       
+    </div>
+    <style>
+        .myhotel{
+            margin-top: 100px;
+        }
+        @media(max-width:576px){
+            footer{
+                width: 500px;
+            }
+        }
+    </style>
+
+    <div class="container-fluid p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="fs-4 fw-bold">Safir Hotels & Residences Map:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Full-Screen Google Map -->
+                <iframe style="background: #b1b4b6;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.9441722147436!2d47.9774039!3d29.3758598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c4d3a63b23b%3A0xa6b8e5165f0c44e1!2sSafir%20Hotels%20%26%20Residences!5e0!3m2!1sen!2sus!4v1645030741780!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="600vh" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="myhotel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-12 text-center text-md-start mb-4 mb-md-0">
+                    <img src="/images/icon2.webp" alt="Logo" class="footer-logo  img-fluid">
+                    <p class="mt-5 mtmt">&copy; 2025 Safir Hotels & Resorts</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12 footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="footer-list" style="color: #b1b4b6; font-weight:bold;font-size:14px">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">DEVELOPMENT</a></li>
+                        <li><a href="#">PIPELINE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">DURRAH T&C</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12   footer-section">
+                    <h4>OUR LOCATIONS</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="footer-list">
+                                <li><strong style="color:#b1b4b6;">KUWAIT</strong></li>
+                                <div class="kuwait">
+                                    <li><a href="#">Marina Hotel Kuwait</a></li>
+                                    <li><a href="#">Safir Fintas Kuwait</a></li>
+                                    <li><a href="#">Safir Airport Kuwait</a></li>
+                                    <li><strong style="color:#b1b4b6;">EGYPT</strong></li>
+                                    <div class="kuwait">
+                                        <li><a href="#">Safir Cairo Egypt</a></li>
+                                        <li><a href="#">Safir Sharm Waterfalls Resort</a></li>
+                                        <li><a href="#">Safir Dahab Egypt</a></li>
+                                        <li><a href="#">Safir Marsa Matrouh Resort</a></li>
+                                        <li><a href="#">Safir Sahog Egypt (Coming Soon)</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .kuwait {
+                        font-size: 13px;
+                        color: #b1b4b6;
+                    }
+                </style>
+                <div class="col-lg-3 col-md-6 col-12 p-5 footer-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="footer-list">
+                                <li><strong style="color:#b1b4b6;">OMAN</strong></li>
+                                <li><a href="#">Salalah Gardens Hotel</a></li>
+                                <li><strong style="color:#b1b4b6;">QATAR</strong></li>
+                                <li><a href="#">Safir Doha Qatar</a></li>
+                                <li><strong style="color:#b1b4b6;">SYRIA</strong></li>
+                                <li><a href="#">Safir Homs Syria</a></li>
+                                <li><strong style="color:#b1b4b6;">IRAQ</strong></li>
+                                <li><a href="#">Safir Hotel Erbil (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 p-5 footer-section">
+                    <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="email" class="form-control border-0" placeholder="Your Email..."
+                            aria-label="Email">
+                        <button class="btn mybtn1 text-white" style="background-color: #aad3ed; border-radius: 0;">
+                            &gt;
+                        </button>
+                    </div>
+                    <style>
+                        @media(max-width:1024px) {
+                            .mybtn1 {
+                                width: 20%;
+                            }
+                        }
+                    </style>
+
+                    <div class="footer-icons text-center">
+                        <a href="#"><i class="fab fa-instagram fa-1x text-success"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-1x text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+</html>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // ✅ Scrolling Down → Show Navbar
+            navbar.classList.remove("navbar-visible");
+        } else {
+            // ✅ Scrolling Up → Hide Navbar
+            navbar.classList.add("navbar-visible");
+        }
+
+        lastScrollTop = currentScroll; // Update last scroll position
+    });
+
+</script>

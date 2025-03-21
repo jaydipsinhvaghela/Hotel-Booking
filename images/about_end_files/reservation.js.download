@@ -1,0 +1,111 @@
+/*var _strPath = "https://v4.reservation-system.net/";*/
+var _strPath = "https://reservations.safirhotels.com/";
+var _intDefaultLOS = 1;
+var _intDefaultCi = 1;
+var _intDefaultRoom = 1;
+var _intDefaultAdult = 0;
+var _intDefaultChild = 0;
+
+function fVerticalSearch() {
+
+    var _strHotelCd = document.getElementById("select_hotel").value;
+    var objCi = document.getElementById("date_arrive");
+    var objCo = document.getElementById("date_depart");
+    var strRoom = 1;
+    var strAdult = document.getElementById("txtAdult2").value;
+    var strChild = document.getElementById("txtChild2").value;
+    var strPromoCd = document.getElementById("promo").value;
+    var strCi = moment(objCi.value).format('DD/MM/YYYY');
+    var strCo = moment(objCo.value).format('DD/MM/YYYY');
+    var arLocale = document.getElementById("ar_locale");
+    if (_strHotelCd == 'HT22005531' || _strHotelCd == 'HT22005532' || _strHotelCd == 'HT22005569' || _strHotelCd == 'HT23005598' || _strHotelCd == 'HT23005599' || _strHotelCd == 'HT23005600'  || _strHotelCd == 'HT24005674') {
+        var strCi = moment(objCi.value).format('MM/DD/YYYY');
+        var strCo = moment(objCo.value).format('MM/DD/YYYY');
+        if(strCi == 'Invalid date')
+        {
+            var strCi = moment(new Date()).format('MM/DD/YYYY');
+        }
+        if(strCo == 'Invalid date')
+        {
+            var strCo = moment(new Date(Date.now() + ( 3600 * 1000 * 24))).format('MM/DD/YYYY');
+        }
+        if(arLocale != null)
+        {
+            window.location.href = _strPath + "booking/portal.aspx?langcd=ar" + "&hotelcd=" + _strHotelCd +
+                        "&ci="+ strCi + "&co=" + strCo + "&room=" + strRoom + "&adult=" + strAdult +
+                          "&child=" + strChild + "&promocd=" + strPromoCd,"_blank";
+        }
+        else{
+            window.location.href = _strPath + "booking/portal.aspx?langcd=en" + "&hotelcd=" + _strHotelCd +
+                    "&ci="+ strCi + "&co=" + strCo + "&room=" + strRoom + "&adult=" + strAdult +
+                      "&child=" + strChild + "&promocd=" + strPromoCd,"_blank";
+        }
+    }
+    else{
+        if(_strHotelCd == '' ){
+            alert('Dear  Patron! We are currently not bookable online..  We will be available online soon');
+        }
+        else{
+            if(arLocale != null)
+            {    
+                window.location.href = "https://be.synxis.com/?adult=" +strAdult+ "&arrive=" +strCi+ "&child=" +strChild+ "&currency=?&depart=" +strCo+ "&hotel="+_strHotelCd+"&level=hotel&locale=ar&promo=" + strPromoCd;
+            } 
+            else
+            {  
+                window.location.href = "https://be.synxis.com/?adult=" +strAdult+ "&arrive=" +strCi+ "&child=" +strChild+ "&currency=?&depart=" +strCo+ "&hotel="+_strHotelCd+"&level=hotel&locale=en&promo=" + strPromoCd;
+            }
+        }
+    }
+}
+
+function hotelBooking() {
+    var _strHotelCd = document.getElementById("select_hotel").value;
+    var objCi = document.getElementById("date_arrive");
+    var objCo = document.getElementById("date_depart");
+    var strRoom = 1;
+    var strAdult = document.getElementById("txtAdult2").value;
+    var strChild = document.getElementById("txtChild2").value;
+    var strPromoCd = document.getElementById("promo").value;
+    var strCi = moment(objCi.value).format('DD/MM/YYYY');
+    var strCo = moment(objCo.value).format('DD/MM/YYYY');
+    var arLocale = document.getElementById("ar_locale");
+    var portalUrl = ''; 
+    if (_strHotelCd == 'HT22005531' || _strHotelCd == 'HT22005532' || _strHotelCd == 'HT22005569' || _strHotelCd == 'HT23005598' || _strHotelCd == 'HT23005599' || _strHotelCd == 'HT23005600' || _strHotelCd == 'HT24005674' ) {
+        var strCi = moment(objCi.value).format('MM/DD/YYYY');
+        var strCo = moment(objCo.value).format('MM/DD/YYYY');
+        if(strCi == 'Invalid date')
+        {
+            var strCi = moment(new Date()).format('MM/DD/YYYY');
+        }
+        if(strCo == 'Invalid date')
+        {
+            var strCo = moment(new Date(Date.now() + ( 3600 * 1000 * 24))).format('MM/DD/YYYY');
+        }
+        if(arLocale != null)
+        {
+            window.location.href = _strPath + "booking/portal.aspx?langcd=ar" + "&hotelcd=" + _strHotelCd +
+                        "&ci="+ strCi + "&co=" + strCo + "&room=" + strRoom + "&adult=" + strAdult +
+                          "&child=" + strChild + "&promocd=" + strPromoCd,"_blank";
+        }
+        else{
+            window.location.href = _strPath + "booking/portal.aspx?langcd=en" + "&hotelcd=" + _strHotelCd +
+                    "&ci="+ strCi + "&co=" + strCo + "&room=" + strRoom + "&adult=" + strAdult +
+                      "&child=" + strChild + "&promocd=" + strPromoCd,"_blank";
+        }
+    }
+    else{
+        if(_strHotelCd == '' ){
+            alert('Please select hotel');
+        }
+        else{
+            if(arLocale != null)
+            {    
+                window.location.href = "https://be.synxis.com/?adult=" +strAdult+ "&arrive=" +strCi+ "&child=" +strChild+ "&currency=?&depart=" +strCo+ "&hotel="+_strHotelCd+"&level=hotel&locale=ar&promo=" + strPromoCd;
+            } 
+            else
+            {  
+                window.location.href = "https://be.synxis.com/?adult=" +strAdult+ "&arrive=" +strCi+ "&child=" +strChild+ "&currency=?&depart=" +strCo+ "&hotel="+_strHotelCd+"&level=hotel&locale=en&promo=" + strPromoCd;
+            }
+        }
+    }
+}

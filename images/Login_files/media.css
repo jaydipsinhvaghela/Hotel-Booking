@@ -1,0 +1,252 @@
+	@media only screen and (max-width: 800px) {
+    .banner {
+        height: auto;
+    }
+
+    /* Force table to not be like tables anymore */
+
+	#no-more-tables table, 
+
+	#no-more-tables thead, 
+
+	#no-more-tables tbody, 
+
+	#no-more-tables th, 
+
+	#no-more-tables td, 
+
+	#no-more-tables tr { 
+
+		display: block; 
+
+	}
+
+ 
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+
+	#no-more-tables thead tr { 
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+ 
+
+	#no-more-tables tr { border: 1px solid #ccc; }
+
+ 
+
+	#no-more-tables td { 
+
+		/* Behave  like a "row" */
+
+		border: none;
+
+		border-bottom: 1px solid #eee; 
+
+		position: relative;
+
+		padding-left: 56%; 
+
+		white-space: normal;
+
+		text-align:left;
+
+	}
+
+ 
+
+	#no-more-tables td:before { 
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%; 
+
+		padding-right: 10px; 
+
+		white-space: nowrap;
+
+		text-align:left;
+
+		font-weight: bold;
+
+	}
+
+ 
+
+	/*
+
+	Label the data
+
+	*/
+
+	#no-more-tables td:before { content: attr(data-title); }
+
+}
+
+@media (max-width:767px){
+
+	#home .h-100 {
+
+    height: auto !important;
+
+}
+
+    .ribbon {
+        top: -40px;
+        left: unset;
+        padding: 5px 10px;
+        right: 0;
+    }
+.ribbon:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -43px;
+    border-width: 13px 30px 30px 30px;
+    border-color: var(--theme-primary-color) transparent transparent transparent;
+    border-style: solid;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    top: unset;
+}
+#myTab .nav-link {
+    padding: 10px 5px;
+    margin-right: 10px;
+}
+    .overflow-y{overflow-y: hidden !important;}
+.vh-100{
+	height: auto !important;
+}
+
+
+.banner{
+
+    background-position: center;
+
+}
+
+.banner .w-75{
+
+	width: 100%!important;
+
+}
+
+.banner .ft-40{
+
+	font-size: 1.35rem!important;
+
+}
+
+.banner .ft-20{
+
+	font-size: 16px!important;
+
+}
+
+.top-bar .w-50{
+
+	width: 49%!important;
+
+}
+
+.vbox ,  .vbox .points_n_price {
+
+display:block;
+
+}
+
+
+
+.vbox .vdetail{
+
+    width: 100%;
+
+}
+
+.code_n_btn small{
+
+	display: inline-block;
+
+}
+
+.vbox button{
+
+    margin-top: 8px;
+
+}
+
+
+
+.vbox .code_n_btn{
+
+    width: 100%;
+
+    display: flex;
+
+    text-align: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.code_n_btn p{
+
+	display: flex;
+
+}
+
+}
+
+@media (min-width:768px){
+
+.vbox , .vbox h5 , .vbox h5 small , .vbox .points_n_price , .vbox .code_n_btn , .vbox p{
+
+display: flex;
+
+}
+
+
+
+.vbox button{
+
+    margin-top: 20px;
+
+}
+
+
+
+.vbox .code_n_btn{
+
+    width: 130px;
+
+    text-align: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+}
+

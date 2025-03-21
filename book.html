@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>HOTEL BOOKING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+    <style>
+        .search-btn {
+            background-color: #aad3ed; /* Light blue background */
+            color: #333; /* Dark grey text */
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .search-btn:hover {
+            background-color: #9ac2dc; /* Slightly darker blue on hover */
+        }
+      
+    
+    </style>
+</head>
+
+<style>
+   /* .myh1{
+        font-size: 60px;
+        margin-left: 150px;
+    }
+    .myp{
+        margin-left: 150px;
+    }
+    .check1 {
+        width: 600px;
+        height: 70px;
+    }
+    .form-control{
+        width: 600px;
+        height: 70px;
+
+    }
+    .check2{
+        width: 300px;
+        height: 70px;
+
+    }
+    .check3{
+        width: 290px;
+        height: 70px;
+
+        margin-left: 80px;
+
+    }
+    .checkin1 {
+        width: 290px !important;
+        margin-left: 80px;
+
+    }
+    .checkin2 {
+        width: 300px !important; 
+        margin-left: 230px;
+
+    }
+    .mybtn2{
+        width: 600px;
+    }
+  */
+  
+   .form1 .form-select , .form1 .input-group,  .form-control{
+        width: 100%;
+        height: 60px;
+   }
+   .book-form{
+    width:590px;
+    max-width: 100%;
+    margin: -2rem auto 0rem;
+   }
+   .myh1{
+    font-size: 55px;
+   }
+   .checkin-input {
+    background: url('/images/check-in.svg') no-repeat left 10px center;
+    background-size: 20px 20px;
+    padding-left: 40px; 
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ 
+</style>
+  
+<nav class="navbar navbar-expand-xl  bg-white shadow">
+
+    <div class="container mycon">
+
+        <a class="navbar-brand position-relative" href="index.html">
+            <div class="logo-container position-absolute justify-content-center align-items-center text-center">
+                <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
+            </div>
+        </a>
+        <br><br><br><br><br>
+        <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3"></i>
+        </button>
+      
+    <style>
+        .imgicon{
+            margin-top: 20px;
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+        }
+    </style>
+
+        <div class="collapse navbar-collapse m-2 p-3  g-4 justify-content-center p-4" id="navbarNav">
+            <ul class="navbar-nav fullscreen-menu text-center text-lg-start"id="fullscreenMenu">
+                <li class="nav-item">
+                    <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor " href="offer.html">OFFERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor" href="press.html">PRESS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
+            <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
+            <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
+        </div>
+
+        <style>
+            /* Button container styling */
+            .btn-container {
+                display: flex;
+                gap: 10px;
+                /* Adjust gap for smaller screens */
+                flex-wrap: wrap;
+                /* Allow buttons to wrap on smaller screens */
+                justify-content: center;
+                /* Center buttons horizontally */
+            }
+
+            /* Button styling */
+            .btn-custom {
+                padding: 10px 20px;
+                /* Standard padding */
+                font-size: 1.3rem;
+                /* Default font size */
+              
+                /* Optional: Adds rounded corners */
+
+                border: none;
+                transition: background 0.3s ease;
+                /* Smooth hover effect */
+            }
+          
+
+            .btn-custom:hover {
+                background-color: #6d6e70;
+                /* Darker shade on hover */
+            }
+            @media(max-width:1024px){
+                .btn-container{
+                    position: relative;
+                    top: -80px;
+                    margin-left: 220px;
+                   
+                }
+                .navbar-toggler{
+                    margin-left: 400px;
+                    position: relative;
+                    top: 10px;
+                    color: #1f85ca;
+                }
+                .mycon{
+                    height: 100px;
+                }
+                .logo-container {
+                    width: 140px;
+                   background-color: #aed4e9;
+                   position: relative;
+                   top: 10;
+                    z-index: 1;
+                    height: 140px;
+                    
+                    }
+                    
+                    .imgicon{
+                        width: 100px;
+                        height: 80px;
+                    }
+                    .navbar-collapse{
+                        height: 300%;
+                        width: 100% ;
+                        background-color: white;
+                        position: relative;
+                        top: -23px;
+                       
+                    }
+            }
+         
+            
+            @media(max-width:770px){
+                .btn-container{
+                  position: relative;
+                  top: -80px;
+                 margin-left: 220px;
+                }
+                .navbar-toggler{
+                    margin-left: 400px;
+                    position: relative;
+                    top: 10px;
+                    color: #1f85ca;
+                }
+                .mycon{
+                    height: 100px;
+                }
+                .logo-container {
+                    width: 140px;
+                   background-color: #aed4e9;
+                   position: relative;
+                   top: 10;
+                    z-index: 1;
+                    height: 140px;
+            
+                    
+                    /* Smaller logo on smaller screens */
+                    }
+                    .imgicon{
+                        width: 100px;
+                        height: 80px;
+                    }
+                    .navbar-collapse{
+                        height: 300%;
+                        width: 100% ;
+                        background-color: white;
+                        position: relative;
+                        top: -23px;
+                       
+                    }
+
+            }
+
+            /* Responsive styling for smaller screens */
+            @media (max-width: 576px) {
+                .btn-container {
+                    height: 120px;
+                    
+                    position: relative;
+                    top: -120px;
+                    /* Stack buttons vertically */
+                     margin-left: 140px;
+                    /* Center buttons */
+                }
+
+              
+                .logo-container {
+                    width: 100px;
+                     height:130px;
+               
+                    position: relative; /* Reset position to prevent overlap */
+                    left: -25px; /* Reset left to prevent overlap */
+                    transform: none; 
+                    background-color: #aed4e9;
+        
+             
+                }
+                .navbar-collapse{
+                    height: 300%;
+                    width: 100% ;
+                    background-color: white;
+                   
+                }
+                
+            }
+          
+            /* Even smaller screens (e.g., mobile phones) */
+            @media (max-width: 480px) {
+                
+                .btn-container {
+                    height: 120px;
+                  
+                   
+                    position: relative;
+                    top: -110px;
+                    /* Stack buttons vertically */
+                     margin-left:120px;
+                    /* Center buttons */
+                }
+                .carousel-img img{
+                    height: 40vh;
+                }
+               
+                .navbar-toggler{
+                    margin-left: 120px;
+                    color: #1f85ca;
+                }
+          
+                .imgicon{
+                    width: 100px;
+                    height: 80px;
+                    margin-top: 10px;
+                }
+                .navbar-collapse{
+                    height: 300%;
+                    width: 100% ;
+                    background-color: white;
+                   
+                }
+                .btn-container a button{
+                    width: 100%;
+                    height: 35px;
+                    font-size: 12px;
+                    top: 0px;
+                }
+                body{
+                     width: 120%;
+                }
+            }
+        
+        </style>
+
+
+
+    </div>
+    <div class="social"><a href="https://www.instagram.com/safirhotels/"
+            class="fa-brands fa-instagram text-decoration-none"></a> <a
+            href="https://www.facebook.com/safirhotelsresorts"
+            class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+            href="https://www.linkedin.com/company/safir-hotels-resorts/"
+            class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
+            class="fa-brands fa-tiktok text-decoration-none"></a> <a
+            href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+            class="fa-brands fa-youtube text-decoration-none"></a></div>
+            <div class="social1">
+                ARA ENG
+            </div>
+            
+</nav>
+<div class="container-fuild">
+    
+    <div class="row">
+        <div class="mx-auto">
+            <div class="mybook rounded">
+                <h1 class="text-center myh1 text-dark">Book</h1>
+                <p class="text-center myp fs-4">Choose your options and check availability</p>
+                    <div class="mt-5">
+                <form action="#" class="book-form">
+
+                        <div class="row form1">
+                            
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <select class="form-select text-start fw-bold">
+                                            <option selected>Select your destination...</option>
+                                            <option value="1">kuwait</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-6  justify-content-center">
+                                        <div class="checkin1">
+                                            <div class="input-group ">
+                                                <input type="text" id="calendar-tomorrow" class="form-control checkin-input fw-bold text-dark text1" placeholder="Check In" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-6 justify-content-center">
+                                        <div class="checkin2">
+                                            
+                                                <div class="input-group">
+                                                    <input type="text" id="calendar-tomorrow" class="form-control checkin-input fw-bold text-dark text1" placeholder="Check Out"readonly>
+                                                </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <style>
+                                        .form-control:disabled, .form-control[readonly] {
+                                            background-color: #fff;
+                                            opacity: 1;
+                                        }
+                                    </style>
+                                    <div class="col-6 text-start">
+                                        <select class="form-select check2 text-start fw-bold">
+                                            <option selected>Adults</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="form-select check3 text-start fw-bold bookclass">
+                                            <option selected>Children</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control text-start promo bookclass fw-bold" placeholder="Promo Code">
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn search-btn w-100 fs-4 text-light" style="height: 60px;">SEARCH</button>
+                                    </div>
+                                </div>
+                     
+                        </div>
+                </form>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+      
+    
+    <style>
+        @media(max-width:454px){
+            .mybookfooter{
+                margin-top: 150px;
+            }
+        }
+        @media(max-width:768px){
+            .row img{
+                width: 100%;
+
+            }
+
+          
+        }
+        .mybookfooter1{
+            margin-top: 200px;
+        }
+    </style>
+    <footer class="mybookfooter1 ">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-2 text-center text-md-start mb-4 mb-md-0">
+                    <img src="/images/icon2.webp" alt="Logo" class="footer-logo  img-fluid">
+                    <p class="mt-5 mtmt">&copy; 2025 Safir Hotels & Resorts</p>
+                </div>
+                <div class="col-md-2 footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="footer-list" style="color: #b1b4b6; font-weight:bold;font-size:14px">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">DEVELOPMENT</a></li>
+                        <li><a href="#">PIPELINE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">DURRAH T&C</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-section">
+                    <h4>OUR LOCATIONS</h4>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="footer-list">
+                                <li><strong style="color:#b1b4b6;">KUWAIT</strong></li>
+                                <div class="kuwait">
+                                    <li><a href="#" >Marina Hotel Kuwait</a></li>
+                                <li><a href="#">Safir Fintas Kuwait</a></li>
+                                <li><a href="#">Safir Airport Kuwait</a></li>
+                                <li><strong  style="color:#b1b4b6;">EGYPT</strong></li>
+                                <div class="kuwait">
+                                    <li><a href="#">Safir Cairo Egypt</a></li>
+                                    <li><a href="#">Safir Sharm Waterfalls Resort</a></li>
+                                    <li><a href="#">Safir Dahab Egypt</a></li>
+                                    <li><a href="#">Safir Marsa Matrouh Resort</a></li>
+                                    <li><a href="#">Safir Sahog Egypt (Coming Soon)</a></li>
+                                </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .kuwait{
+                        font-size: 13px;
+                        color: #b1b4b6;
+                    }
+                </style>
+                <div class="col-md-3 p-5 footer-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="footer-list">
+                                <li><strong  style="color:#b1b4b6;">OMAN</strong></li>
+                                <li><a href="#">Salalah Gardens Hotel</a></li>
+                                <li><strong  style="color:#b1b4b6;">QATAR</strong></li>
+                                <li><a href="#">Safir Doha Qatar</a></li>
+                                <li><strong  style="color:#b1b4b6;">SYRIA</strong></li>
+                                <li><a href="#">Safir Homs Syria</a></li>
+                                <li><strong  style="color:#b1b4b6;">IRAQ</strong></li>
+                                <li><a href="#">Safir Hotel Erbil (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-5 footer-section">
+                    <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                    <div class="input-group">
+                        <input type="email" class="form-control border-0" placeholder="Your Email..." aria-label="Email">
+                        <button class="btn mybtn1 fs-5 text-white" style="background-color: #aad3ed; border-radius: 0;">
+                            &gt;
+                        </button>
+                    </div>
+                    <style>
+                        @media(max-width:576px){
+                            .mybtn1{
+                                width: 20%;
+                            }
+                        }
+                    </style>
+                    
+                    <div class="footer-icons text-center">
+                        <a href="#"><i class="fab fa-instagram fa-1x text-success"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-1x text-primary"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-1x text-danger"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+</html>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
+    
+    window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+        if (currentScroll > lastScrollTop) {
+            // ✅ Scrolling Down → Show Navbar
+            navbar.classList.remove("navbar-visible");
+        } else {
+            // ✅ Scrolling Up → Hide Navbar
+            navbar.classList.add("navbar-visible");
+        }
+    
+        lastScrollTop = currentScroll; // Update last scroll position
+    });
+    
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.5.1/flatpickr.min.js"></script>
+
+<script>
+    flatpickr('#calendar-tomorrow', {
+        "minDate": new Date().fp_incr(1)
+    });
+    
+
+</script>

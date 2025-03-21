@@ -1,0 +1,536 @@
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap'); */
+    :root{
+        --theme-secondary-color:#aad3ed;
+
+    }
+    .bg-dark-1{
+        background-color: #6d6e70 !important;
+    }
+    .bg-dark-2{
+        background-color: #616163 !important;
+    }
+    .acc__box {
+    cursor: pointer;
+}
+.custom-logo{
+    height: 110px !important;
+}
+    #myTab .nav-link, 
+    #staysTab .nav-link {
+        color: #6d6e70 !important;
+        padding: 10px 0px 0;
+        margin-right: 36px;
+    }
+    header{
+        background: #f2f3f5;
+    }
+    .icons{
+        color: #6d6e70;
+    }
+    .safir-footer {
+        text-decoration: none;
+        color: #d1d1d1;
+    }
+    .safir-footer:hover{
+        color: #fff;
+    }
+    .icons-1 {
+        font-weight: bold;
+        background: #aad3ed;
+        padding: 8px;
+        color: #fff;
+    }
+    .btn-yellow:hover {
+        background-color: #6d6e70 !important;
+        /* color: var(--theme-secondary-color); */
+        transition-duration: .6s;
+        border: 1px solid #6d6e70 !important;
+        text-decoration: none;
+        color: #fff;
+    }
+    .icons-1:hover {
+        color: #fff;
+        background-color: #6d6e70 !important;
+    }
+    .safir-btn:hover{
+        background-color: #6d6e70 !important;
+    }
+    .icons i {
+        color: #aad3ed;
+    }
+    .icons:hover {
+        color: #aad3ed;
+    }
+    .figcaption-btn:hover{
+     background-color: #6d6e70 !important;
+     color: #fff;
+ }
+ button.validateAndSubmit:hover{
+     background-color: #6d6e70 !important;
+     color: #fff;
+ }
+ .safir-btn {
+    background: #aad3ed !important;
+    color: #fff !important;
+}
+.banner{
+    background-image:url('./../images/safir/banner-safir.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(70vh - 68px);
+    background-size: cover;
+}
+.banner:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    z-index: -1;
+}
+.safir-logo:before {
+    /* border-radius: 0 0 25px 25px; */
+    width: 200px;
+    height: 170px;
+    background: #aad3ed;
+    top: -64px;
+    left: 3px;
+    content: '';
+    position: absolute;
+    box-shadow: 2px 2px 10px -3px rgba(0, 0, 0, .2);
+}
+/* .safir-logo a {
+    display: block;
+    text-align: center;
+} */
+.safir-logo img {
+    height: 116px;
+    position: absolute;
+    top: -44px;
+    width: 140px !important;
+    left: 34px;
+    object-fit: contain;
+}
+.acBox .acbtn:hover {
+    background-color: #aad3ed !important;
+}
+@media (max-width: 768px) {
+    .safir-logo-phone:before {
+        border-radius: 0 0 15px 15px;
+        width: 89px;
+        height: 102px;
+        background: #aad3ed;
+        top: -8px;
+        left: 4px;
+        content: '';
+        position: absolute;
+    }
+    .safir-logo-phone img {
+        height: 110px;
+        position: absolute;
+        top: 17px;
+        width: 140px !important;
+        left: -20px;
+        object-fit: contain;
+        border-radius: 0 0 37px 25px !important;
+    }
+    .voucherImg {
+        height: 150px;
+        object-fit: cover;
+        width: 150px;
+    }
+}
+.acBox .acbtn {
+    background-color: #aad3ed !important;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 9px;
+}
+.figcaption-btn {
+    background-color: #aad3ed !important;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+.border-yellow-1 {
+    border-width: 1px solid;
+    border-color: var(--theme-secondary-color) !important;
+}
+.bg-yellow-light {
+    background-color: #fff !important;
+}
+.highcharts-background {
+    fill: #fff !important;
+}
+.c_card .cbtn {
+    background: #aad3ed;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.logo:before {
+    width: 160px;
+    height: 150px;
+    background: #aad3ed;
+    top: -40px;
+    left: calc(50% - 80px);
+    content: '';
+    position: absolute;
+    box-shadow: 2px 2px 10px -3px rgba(0,0,0,.2);
+/*border-radius: 0 0 25px 25px;*/
+}
+.logo img {
+    position: absolute;
+    top: -26px;
+    object-fit: cover;
+    text-align: center;
+    left: -1px;
+/*mix-blend-mode: color-dodge;*/
+}
+.form .login-form {
+    max-width: 350px !important;
+    margin-top: 60px;
+}
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #aad3ed;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #aad3ed;
+}
+.form button:hover{
+    background-color: #fff;
+    border: 1px solid #aad3ed;
+}
+.left-img:after {
+    width: 200px;
+    height: 182px;
+    background: #aad3ed;
+    top: -38px;
+    left: 24px;
+    content: '';
+    position: absolute;
+    border-radius: 0 0 25px 25px;
+}
+.left-img:before {
+    background-image: url(https://crm.bookingwhizz.com/assets/images/safir-logo-white.png) !important;
+    height: 100px;
+    background-size: contain !important;
+    left: 70px;
+    position: relative;
+}
+.left-img:before {
+    background-image: url(https://crm.bookingwhizz.com/assets/images/safir-logo-white.png) !important;
+    height: 100px;
+    background-size: contain !important;
+    left: 70px;
+    position: absolute;
+    top: 15px;
+}
+
+.loginBGImg {
+    background-image: url(https://loyalty.bookingwhizz.com/assets/images/safir/login-banner.jpg) !important;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loginBGImg::after{
+	content:none;
+}
+.loginBGImg::before{
+	content:none;
+}
+.safir-box {
+    background: #fff;
+    box-shadow: aliceblue;
+    box-shadow: 5px 5px 50px 1px #f0f0f0bd;
+}
+.safir {
+/*mix-blend-mode: color-dodge;*/
+}
+/* footer:before {
+    content: '';
+    position: absolute;
+    background-image: url(https://safirhotels.com/themes/storefront/public/graphics/safir-bg.svg);
+    width: 23%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-position: right 0;
+} */
+#menu-footer-links li a {
+    font-size: 13px;
+    padding: 8px;
+    cursor: pointer !important;
+}
+.safir-banner{
+    z-index: 999;
+}
+.bottom {
+    font-size: 12px;
+}
+.custom-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    footer:before {
+        display: none;
+    }
+    .custom-flex{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+footer .footer-logo-main {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .wrapper .bottom {
+    margin-top: 30px;
+}
+footer .wrapper .bottom p {
+    color: #b4b6b8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.footer-logo {
+    margin-top: 35px;
+}
+
+footer .wrapper .right {
+/*     position: absolute; */
+    /* top: 40%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%); */
+}
+
+footer .wrapper .right label {
+    display: block;
+    color: #cdcfd1;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 0.875rem;
+    text-align: left;
+    text-transform: uppercase
+}
+
+footer .wrapper .right input {
+    border: none;
+    padding: 0.6rem 1rem;
+    float: left;
+    width: 100%;
+}
+
+footer .wrapper .right button {
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color .4s;
+    cursor: pointer
+}
+
+footer .wrapper .right button:hover {
+    background-color: #1e1e1e
+}
+footer .wrapper .right button {
+    -webkit-transition: background-color .4s;
+    background-color: #aad3ed;
+}
+footer .wrapper .lang {
+    padding: .3rem 0 .3rem 5.2rem;
+    background-position: left center
+}
+
+footer .wrapper .copy img {
+    margin-bottom: 1rem
+}
+
+footer .wrapper .copy p {
+    font-size: 1.2rem;
+    margin-bottom: 0
+}
+
+::placeholder {
+    color: #6d6e70!important;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #6d6e70!important
+}
+
+footer .wrapper {
+    padding-top: 40px;
+}
+
+footer .wrapper .footer-logo-main .right {
+    display: none;
+}
+
+footer .footer-head {
+    font-size: 18px;
+    font-weight: 400;
+    color: #b1b4b6;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b1b4b6;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.quick-links-main .quick-links-ul .quick-links-item a {
+    font-weight: 600;
+    color: #b1b4b6;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.quick-links-main .quick-links-ul .quick-links-item {
+    margin-bottom: 12px;
+}
+
+.locations-main .locations-links-ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    max-height: 300px;
+    margin-bottom: 0;
+}
+
+.locations-main .locations-links-ul .hotel-city-name {
+    font-weight: 600;
+    color: #b1b4b6;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.locations-main .locations-links-ul .hotel-city {
+    margin-bottom: 20px;
+    margin-top: 0
+}
+
+.locations-main .locations-links-ul .hotel-name a {
+    font-size: 13px;
+    color: #b1b4b6;
+    font-weight: 300;
+}
+
+div#phx-signature {
+    display: none;
+}
+
+.footer-social {
+    /* position: absolute;
+    top: 57%; */
+}
+
+footer .wrapper .footer-logo-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-social .social {
+    text-align: left;
+}
+
+.footer-social .social a.fa-brands {
+    background-color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: #6d6e70;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sub-footer {
+    height: 32rem;
+}
+
+.sub-footer .wrapper {
+    width: 1300px;
+    height: 32rem;
+}
+
+.sub-footer .right {
+    right: 2rem;
+    top: 50%;
+}
+
+.sub-footer .wrapper .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+.sub-footer .wrapper .bottom {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    bottom: 1rem;
+}
+
+.sub-footer .wrapper .center .social {
+    margin-top: 3rem;
+}
+footer {
+    position: relative;
+    color: #aad3ed;
+    background-image: url(https://safirhotels.com/themes/storefront/public/graphics/safir-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-color: #6d6e70;
+}
+@media screen and (max-width: 1400px) {
+    .locations-main .locations-links-ul {
+        max-height: 400px;
+    }
+}
+@media (max-width: 1200px) {
+    .footer-social .social a.fa-brands {
+        margin-right: 5px;
+    }
+    .locations-main .locations-links-ul .hotel-city {
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .loginBGImg {
+        background-position: center;
+}
+}
