@@ -15,155 +15,13 @@
 
     <title>HOTEL BOOKING</title>
     <style>
-        .image {
-            position: relative;
-            display: block;
-            overflow: hidden;
-        }
-
-        .image img {
-            transition: transform 0.4s ease-in-out;
-            /* Smooth zoom effect */
-        }
-
-        /* Zoom the image on hover */
-        .image:hover img {
-            transform: scale(1.1);
-            /* Slight zoom-in effect */
-        }
-
-        .image::before {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: hsla(0, 0%, 100%, 0.3);
-            /* White overlay with 30% opacity */
-            opacity: 0;
-            /* Initially hidden */
-            transition: opacity 0.3s ease-in-out;
-            /* Smooth transition */
-            z-index: 1;
-        }
-
-        /* Show overlay on hover */
-        .image:hover::before {
-            opacity: 1;
-        }
-        .image:after {
-             left: 50%;
-         top: 0; 
-         -webkit-transform: translateX(-50%); 
-            transform: translateX(-50%);
-        }
-
-        .myclassimg1 {
-            transition: transform 0.4s ease-in-out;
-            /* Smooth zoom effect */
-        }
-
-        /* Zoom the image on hover */
-        .myclassimg1 {
-            transform: scale(1.1);
-            /* Slight zoom-in effect */
-        }
-
-        .myclassimg1::before {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: hsla(0, 0%, 100%, 0.3);
-            /* White overlay with 30% opacity */
-            opacity: 0;
-            /* Initially hidden */
-            transition: opacity 0.3s ease-in-out;
-            /* Smooth transition */
-            z-index: 1;
-        }
-
-        /* Show overlay on hover */
-        .myclassimg:hover::before {
-            opacity: 1;
-        }
-
-
-        .slick-dots {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-            /* Add margin for spacing */
-            display: flex;
-            /* Use flexbox for centering */
-        }
-
-        .slick-dots li {
-            margin: 0 5px;
-            /* Add spacing between dots */
-        }
-
-        .slick-dots button {
-            font-size: 0;
-            /* Hide the default button text */
-            width: 12px;
-            /* Set dot size */
-            height: 12px;
-            /* Set dot size */
-            border: 1px solid #ccc;
-            /* Add border */
-            border-radius: 50%;
-            /* Make it a circle */
-            background-color: #fff;
-            /* Set background color */
-            padding: 0;
-            /* Remove padding */
-            cursor: pointer;
-            /* Add pointer cursor */
-        }
-
-        .slick-dots .slick-active button {
-            background-color: #007bff;
-            /* Highlight active dot */
-            border-color: #007bff;
-        }
-
-        .property {
-            font-weight: 500;
-            font-size: 1rem;
-            border: none;
-            margin: 0;
-            padding: 0 2rem;
-            text-align: right;
-            background-color: #aed4e9;
-
-            width: fit-content;
-            float: right;
-
-
-        }
-
-        .property1 {
-            text-transform: none;
-            color: #fff;
-            font-size: 0.8rem;
-            background-color: #6d6e70;
-            border: none;
-            left: 0%;
-            float: left;
-        }
+      
     </style>
 </head>
 
 <body>
 
-<style>
-    @media(max-width:767px){
-        .mycon{
-            height: 100px;
-        }
-       
-    }
-</style>
+
 
     <br><br>
 
@@ -212,170 +70,7 @@
                 <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
             </div>
 
-            <style>
-                /* Button container styling */
-              
-                @media(max-width:1024px){
-                    .btn-container{
-                        position: relative;
-                        top: -80px;
-                        margin-left: 220px;
-                       
-                    }
-                    .navbar-toggler{
-                        margin-left: 400px;
-                        position: relative;
-                        top: 10px;
-                        color: #1f85ca;
-                    }
-                    .mycon{
-                        height: 100px;
-                    }
-                    .logo-container {
-                        width: 140px;
-                       background-color: #aed4e9;
-                       position: relative;
-                       top: 10;
-                        z-index: 1;
-                        height: 140px;
-                        
-                        }
-                        
-                        .imgicon{
-                            width: 100px;
-                            height: 80px;
-                        }
-                        .navbar-collapse{
-                            height: 300%;
-                            width: 100% ;
-                            background-color: white;
-                            position: relative;
-                            top: -23px;
-                           
-                        }
-                }
-             
-                
-                @media(max-width:770px){
-                    .btn-container{
-                      position: relative;
-                      top: -80px;
-                     margin-left: 220px;
-                    }
-                    .navbar-toggler{
-                        margin-left: 400px;
-                        position: relative;
-                        top: 10px;
-                        color: #1f85ca;
-                    }
-                    .mycon{
-                        height: 100px;
-                    }
-                    .logo-container {
-                        width: 140px;
-                       background-color: #aed4e9;
-                       position: relative;
-                       top: 10;
-                        z-index: 1;
-                        height: 140px;
-                
-                        
-                        /* Smaller logo on smaller screens */
-                        }
-                        .imgicon{
-                            width: 100px;
-                            height: 80px;
-                        }
-                        .navbar-collapse{
-                            height: 300%;
-                            width: 100% ;
-                            background-color: white;
-                            position: relative;
-                            top: -23px;
-                           
-                        }
-
-                }
-
-                /* Responsive styling for smaller screens */
-                @media (max-width: 576px) {
-                    .btn-container {
-                        height: 120px;
-                        
-                        position: relative;
-                        top: -120px;
-                        /* Stack buttons vertically */
-                         margin-left: 140px;
-                        /* Center buttons */
-                    }
-
-                  
-                    .logo-container {
-                        width: 80px;
-                         height:130px;
-                   
-                        position: relative; /* Reset position to prevent overlap */
-                        left: -25px; /* Reset left to prevent overlap */
-                        transform: none; 
-                        background-color: #aed4e9;
-            
-                 
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                       
-                    }
-                    
-                }
-              
-                /* Even smaller screens (e.g., mobile phones) */
-                @media (max-width: 480px) {
-                    
-                    .btn-container {
-                        height: 120px;
-                      
-                       
-                        position: relative;
-                        top: -110px;
-                        /* Stack buttons vertically */
-                         margin-left:120px;
-                        /* Center buttons */
-                    }
-                    .carousel-img img{
-                        height: 40vh;
-                    }
-                   
-                    .navbar-toggler{
-                        margin-left: 120px;
-                        color: #1f85ca;
-                    }
-              
-                    .imgicon{
-                        width: 100px;
-                        height: 80px;
-                        margin-top: 10px;
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                       
-                    }
-                    .btn-container a button{
-                        width: 100%;
-                        height: 35px;
-                        font-size: 12px;
-                        top: 0px;
-                    }
-                    body{
-                         width: 120%;
-                    }
-                }
-            
-            </style>
-
+          
 
 
         </div>
@@ -661,10 +356,7 @@
 
 
     </script>
-    <style>
-       
-      
-    </style>
+   
     <script>
         $(document).ready(function () {
             
@@ -705,111 +397,67 @@
                     <!-- News Item 1 -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <div class=" border-0 myp-class12">
-                                <a href=""><img src="/images/about1.webp" class="myimg12 card-img-top rounded-top"
-                                        width="390" height="330" alt="News about Durrah Rewards"></a>
+                            <a href="#" class=" border-0 box">
+                                <div class="image1">
+                                        <div><img src="/images/about1.webp" class="card-img-top rounded-top"
+                                                width="390" height="330" alt="News about Durrah Rewards"></div>
+                                </div>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="#" class="text-decoration-none myhover fw-bold text-dark">Safir Hotels
-                                            & Resorts to Expand in Syria</a>
+                                        <div  class="text-decoration-none  fw-bold text-dark">Safir Hotels
+                                            & Resorts to Expand in Syria</div>
                                     </h4>
-                                    <p class="card-text fs-6">Safir Hotels & Resorts Signs Exclusive Memorandum of
+                                    <p class="card-text mytext  fs-6">Safir Hotels & Resorts Signs Exclusive Memorandum of
                                         Understanding with The Syrian Hospitality Company to Expand Operations in the
                                         Syrian Arab Republic.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <style>
-                        .myp-class12 {
-                            position: relative;
-                            overflow: hidden;
-                            transition: all 0.4s ease-in-out;
-                            /* text-overflow:inherit; */
-                        }
-
-                        .myp-class12::before {
-                            content: '';
-                            height: 3%;
-
-                            width: 0%;
-                            background-color: #aed4e9;
-
-                            position: absolute;
-                            left: 0;
-                            top: 380px;
-                            z-index: -1;
-                            transition: width 0.4s ease-in-out;
-                        }
-
-                        .myp-class12:hover {
-                            transition: width 0.4s ease-in-out;
-                            z-index: 10;
-                        }
-
-                        .myp-class12 img {
-                            position: relative;
-                            z-index: 1;
-                            /* Ensures image stays above the overlay */
-                            transition: transform 0.4s ease-in-out;
-
-                        }
-
-                        .myp-class12:hover img {
-                            transform: scale(1.05);
-                            /* Slight zoom effect on hover */
-                        }
-
-                        .myp-class {
-                            position: relative;
-                            overflow: hidden;
-                            /* Allow text to expand */
-                            transition: all 0.4s ease-in-out;
-                        }
-                        .myp-class12:hover::before {
-                            width: 100%;
-
-                        }
-                    </style>
-                    <!-- News Item 2 -->
+                    
+                    
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <div class="myp-class12 border-0">
-                                <a href=""><img src="/images/about2.jpeg" class="myimg12 card-img-top rounded-top"
-                                        width="390" height="330" alt="Durrah Rewards launch"></a>
+                            <a href="#" class=" border-0 box">
+                                <div class="image1">
+                                    <div href=""><img src="/images/about2.jpeg" class="card-img-top rounded-top"
+                                            width="390" height="330" alt="Durrah Rewards launch"></div>
+                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="#" class="text-decoration-none fw-bold text-dark">Durrah Rewards – A
-                                            New Era in Guest Loyalty and Hospitality Excellence</a>
+                                        <div  class="text-decoration-none fw-bold text-dark">Durrah Rewards – A
+                                            New Era in Guest Loyalty and Hospitality Excellence</div>
                                     </h4>
-                                    <p class="card-text fs-6">Safir Hotels & Resorts Unveils "Durrah Rewards" – A New
+                                    <p class="card-text mytext  fs-6">Safir Hotels & Resorts Unveils "Durrah Rewards" – A New
                                         Era in Guest Loyalty and Hospitality Excellence.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- News Item 3 -->
+                    
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <div class="myp-class12 border-0">
-                                <a href=""><img src="/images/about3.jpeg" class="myimg12 card-img-top rounded-top"
-                                        width="390" height="330" alt="Safir Hotels in Iraq"></a>
+                            <a href="#"  class="border-0 box">
+                                <div class="image1">
+                                <div href=""><img src="/images/about3.jpeg" class="card-img-top rounded-top"
+                                        width="390" height="330" alt="Safir Hotels in Iraq"></div>
+                                </div>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="#" class="text-decoration-none fw-bold text-dark">Safir Hotels &
-                                            Resorts Makes Its Debut in Iraq with a New 5-Star Hotel in Erbil</a>
+                                        <div class="text-decoration-none fw-bold text-dark">Safir Hotels &
+                                            Resorts Makes Its Debut in Iraq with a New 5-Star Hotel in Erbil</div>
                                     </h4>
-                                    <p class="card-text fs-6">Safir Hotels & Resorts expands into Iraq with a 5-star
+                                    <p class="card-text mytext fs-6">Safir Hotels & Resorts expands into Iraq with a 5-star
                                         hotel in Erbil, showcasing the brand’s commitment to growth and True Arabic
                                         Hospitality.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Read More Button -->
+               
                 <div class="d-flex justify-content-center mt-4">
                     <button class="fs-4 btn-mybtn border-0 px-4 py-2">
                         READ MORE <i class="fa-solid fa-arrow-right ms-2"></i>
@@ -820,15 +468,7 @@
 
     </section>
     <style>
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            /* Responsive grid */
-            gap: 20px;
-            /* Adjust gap as needed */
-            margin: 0 auto;
-            /* Center the grid */
-        }
+        
 
 
 
@@ -841,45 +481,9 @@
             }
         }
     </style>
-    <style>
-        .hotel-img {
-            height: 250px;
-            /* Adjust this value as needed */
-            object-fit: cover;
-            /* Ensures images are cropped properly without stretching */
-            width: 100%;
-            /* Maintain responsiveness */
-        }
-
-        /* Positioning for buttons */
-        .hotel-img {
-            position: relative;
-            display: block;
-            overflow: hidden;
-        }
-
-        .hotel-img::before {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: hsla(0, 0%, 100%, 0.3);
-            /* White overlay with 30% opacity */
-            opacity: 0;
-            /* Initially hidden */
-            transition: opacity 0.3s ease-in-out;
-            /* Smooth transition */
-            z-index: 1;
-        }
-
-        /* Add hover effect */
-        .hotel-img:hover::before {
-            opacity: 1;
-            /* Overlay appears on hover */
-        }
-    </style>
-    <section class="container-fluid py-5 bg-light">
-        <div class="container my-5">
+    
+    <section class="container-fluid bg-light p-5">
+        <div class="container-fluid my-5">
             <div class="text-center mb-4">
                 <h1 class="fw-bold">WORLD OF SAFIR</h1>
                 <p class="fs-4 text-muted">Our Hotels & Residences</p>
@@ -887,7 +491,7 @@
             <div class="row g-1">
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="safir-cairo.html" class="image">
                             <img src="/images/feature1.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Safir Cairo">
@@ -914,8 +518,8 @@
                 </style>
 
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="position-relative">
-                        <a href="salalah-gardens.html" class="image">
+                    <div class="position-relative image1">
+                        <a href="salalah-gardens.html" class="">
                             <img src="/images/feature2.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Salalah Gardens Hotel">
                         </a>
@@ -928,7 +532,7 @@
                 </div>
                 <!-- Hotel 3 -->
                 <div class="col-12 col-sm-6 col-md-12 col-lg-5">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="marina-hotel.html" class="image">
                             <img src="/images/feature3.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Marina Hotel">
@@ -941,7 +545,7 @@
                 </div>
                 <!-- Hotel 4 -->
                 <div class="col-12 col-sm-6 col-md-12 col-lg-2">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="safir-homs.html" class="image">
                             <img src="/images/feature4.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Safir Homs">
@@ -957,7 +561,7 @@
             <div class="row g-1">
                 <!-- Hotel 1 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="safir-cairo.html" class="image">
                             <img src="/images/feature5.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Safir Cairo">
@@ -970,7 +574,7 @@
                 </div>
                 <!-- Hotel 2 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-5">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="salalah-gardens.html" class="image">
                             <img src="/images/feature6.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Salalah Gardens Hotel">
@@ -984,7 +588,7 @@
                 </div>
                 <!-- Hotel 3 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="marina-hotel.html" class="image">
                             <img src="/images/feature7.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Marina Hotel">
@@ -997,7 +601,7 @@
                 </div>
                 <!-- Hotel 4 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="safir-homs.html" class="image">
                             <img src="/images/feature8.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Safir Homs">
@@ -1013,7 +617,7 @@
             <div class="row g-1">
                 <!-- Hotel 1 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="position-relative image">
+                    <div class="position-relative image1">
                         <img src="/images/feature9.webp" class="img-fluid rounded shadow hotel-img" alt="Safir Cairo">
                         <div class="position-absolute button-group">
                             <button class="btn btn-dark property1 fw-bold px-4">Egypt</button>
@@ -1024,7 +628,7 @@
                 </div>
                 <!-- Hotel 2 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-5">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="salalah-gardens.html" class="image">
                             <img src="/images/feature10.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Salalah Gardens Hotel">
@@ -1038,7 +642,7 @@
                 </div>
                 <!-- Hotel 3 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="marina-hotel.html" class="image">
                             <img src="/images/feature11.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Marina Hotel">
@@ -1051,7 +655,7 @@
                 </div>
                 <!-- Hotel 4 -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-2">
-                    <div class="position-relative">
+                    <div class="position-relative image1">
                         <a href="safir-homs.html" class="image">
                             <img src="/images/feature12.webp" class="img-fluid rounded shadow hotel-img"
                                 alt="Safir Homs">
@@ -1072,108 +676,62 @@
                 <h1 class="fw-bold">News & Updates</h1>
                 <p class="fs-4 text-muted">Keep up-to-date on the latest news from Safir Hotels & Resorts.</p>
             </div>
-            <div class="container">
+            <div class="container-">
                 <div class="row g-4 m-lg-5">
                     <!-- News Item 1 -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="news-item myp-class13">
-                            <div class="border-0 n">
-                                <a href="" class="image1"><img src="/images/offer1.webp" class="myimg12 w-100" width="390" class=""
-                                        height="330" class="card-img-top myimg rounded-top" alt="News about Durrah Rewards"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#" class="text-decoration-none  fw-bold text-dark">Book Direct</a>
-                                    </h4>
-                                    <p class="card-text fs-6">Book your stay directly through safirhotels.com and get the VIP
-                                        treatment..</p>
+                        <div class="news-item ">
+                            <a href="#" class="border-0 box">
+                                <div class="image1">
+                                    <img src="/images/offer1.webp" class="card-img-top myimg rounded-top" alt="News about Durrah Rewards">
+                                
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <div class="text-decoration-none  fw-bold text-dark">Book Direct</div>
+                                        </h4>
+                                        <p class="card-text mytext fs-6">Book your stay directly through safirhotels.com and get the VIP
+                                            treatment..</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item n">
-                            <div class="border-0 myp-class13">
-                                <a href="" class="image1"><img src="/images/offer2.webp" class="myimg12 w-100" width="390"
-                                        height="330" class="card-img-top rounded-top" alt="Durrah Rewards launch"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title ">
-                                        <a href="#" class="text-decoration-none fw-bold text-dark">Family Stay</a>
-                                    </h4>
-                                    <p class="card-text fs-6">Share the world with your young ones. We'll make it easier.</p>
+                            <a href="#" class="border-0 box">
+                                <div class="image1"><img src="/images/offer2.webp"  class="card-img-top rounded-top" alt="Durrah Rewards launch">
+                                    <div class="card-body">
+                                        <h4 class="card-title ">
+                                            <div class="text-decoration-none fw-bold text-dark">Family Stay</div>
+                                        </h4>
+                                        <p class="card-text mytext fs-6">Share the world with your young ones. We'll make it easier.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <div class="border-0 myp-class13">
-                                <a href="" class="image1"><img src="/images/offer3.webp" class="myimg12 w-100" width="390"
-                                        height="330" class="card-img-top rounded-top" alt="Safir Hotels in Iraq"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="#" class="text-decoration-none fw-bold text-dark">Business
-                                            Traveler</a>
-                                    </h4>
-                                    <p class="card-text fs-6">You're here on a mission, and we're here to help you accomplish it
-                                        successfully.</p>
+                            <div href="#" class="border-0 box">
+                                <div class="image1">
+                                    
+                                    <img src="/images/offer3.webp"  class="card-img-top rounded-top" alt="Safir Hotels in Iraq">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <div class="text-decoration-none fw-bold text-dark">Business
+                                                Traveler</div>
+                                        </h4>
+                                        <p class="card-text mytext fs-6">You're here on a mission, and we're here to help you accomplish it
+                                            successfully.</p>
+                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 </div>
             </div>
-            <style>
-                .myp-class13 {
-                    position: relative;
-                    overflow: hidden;
-                    transition: all 0.4s ease-in-out;
-                    /* text-overflow:inherit; */
-                }
-
-                .myp-class13::before {
-                    content: '';
-                    height: 3%;
-
-                    width: 0%;
-                    background-color: #aed4e9;
-
-                    position: absolute;
-                    left: 0;
-                    top: 365px;
-                    z-index: -1;
-                    transition: width 0.4s ease-in-out;
-                }
-
-                .myp-class13:hover {
-                    transition: width 0.4s ease-in-out;
-                    z-index: 10;
-                }
-
-                .myp-class13 img {
-                    position: relative;
-                    z-index: 1;
-                    /* Ensures image stays above the overlay */
-                    transition: transform 0.4s ease-in-out;
-
-                }
-
-                .myp-class13:hover img {
-                    transform: scale(1.05);
-                    /* Slight zoom effect on hover */
-                }
-
-                .myp-class {
-                    position: relative;
-                    overflow: hidden;
-                    /* Allow text to expand */
-                    transition: all 0.4s ease-in-out;
-                }
-                .myp-class13:hover::before {
-                    width: 50%;
-
-                }
-            </style>
+           
             <div class="d-flex justify-content-center mt-4">
                 <button class="fs-4 btn-mybtn border-0 px-4 py-2">
                     READ MORE <i class="fa-solid fa-arrow-right ms-2"></i>
@@ -1185,11 +743,13 @@
         <div class="container-fluid m-lg-5">
             <div class="row g-0">
                 <!-- Image Section -->
-                <div class="col-md-4 col-lg-6">
-                    <div class="image offerclass  h-100">
+                <div class="col-md-4  col-lg-6">
+                    <div class="image1">
+                    <a href="" class="h-100">
                         <img src="/images/offer4.jpeg" class="img-fluid w-100 h-100 object-fit-cover rounded shadow"
                             alt="Durrah Rewards">
-                    </div>
+                    </a>
+                </div>
                 </div>
                 <!-- Text Section -->
                 <div class="col-md-8 col-lg-5 p-5" style="background: #f0f3f9;">
@@ -1229,44 +789,137 @@
         </div>
     </div>
     <section class="container-fluid  py-5">
-        <div class="container-fluid m-lg-5" style="background-color:#f0f3f9;">
-            <div class="row g-0">
-                <!-- Image Section -->
-                <div class="col-md-6 col-lg-6">
-                    <div class="image h-100">
-                        <img src="/images/career1.webp" class=" myimg12 w-100 h-100" alt="Durrah Rewards">
-                    </div>
+        <div class="container-fluid m-lg-5">
+            <div class="row g-0 position-relative" >
+                <div class="col-md-12 image1 col-lg-6 position-absolute start-0 top-0 w-md-50">
+                    <a class="d-block">
+                        <img src="/images/career1.webp" class="object-fit-cover imgcover"  alt="Durrah Rewards">
+                    </a>
                 </div>
-                <style>
-                    @media(max-width:540px) {
-                        .myptag {
-                            font-size: 13px;
-                            text-align: start;
-
-                        }
-
-                        .myexp {
-                            font-size: 16px;
-                        }
-                    }
-                </style>
-                <!-- Text Section -->
-                <div class="col-md-6 col-lg-5 flex-column  p-5">
-                    <h1 class="fw-bold">Careers</h1>
-                    <p class="text-dark myptag col-12 ">
-                        An Employer of Choice for more than 1,100 Colleagues from over 45 different nationalities, we
-                        are an equal opportunity employer committed to fostering a diverse, inclusive and empowered
-                        workforce. We value Passion, Pride, Integrity, and Curiosity, and
-                        invite those who live these same values to join the Safir Family. We are growing, grow with us.
+            
+                <div class=" col-12  col-lg-6 offset-md-5 text-section">
+                    <h1 class="fw-bold myptag1">Careers</h1>
+                    <p class="text-dark myptag">
+                        An Employer of Choice for more than 1,100 Colleagues from over 45 different nationalities, we are an equal opportunity employer committed to fostering a diverse, inclusive and empowered workforce. We value Passion, Pride, Integrity, and Curiosity, and invite those who live these same values to join the Safir Family. We are growing, grow with us.
                     </p>
-                    <div class="d-flex">
-                        <a class=" text-decoration-none text-dark myexp btn-mybtn2" type="button">
+                    <div class="btn-mybtn1">
+                        <a href="#" class="text-decoration-none  text-dark btn-mybtn2" type="button">
                             Explore Possibilities
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
+                    
                 </div>
             </div>
+            
+            <style>
+                .text-section {
+                    position: relative; /* Changed to relative for responsiveness */
+                    padding: 6rem 6rem 1rem 15rem;
+                    background-color: #f0f3f9;
+                    height: 520px;
+                    
+                    z-index: -1;
+                }
+            
+                .myptag {
+                    color: #303030;
+                    line-height: 2rem;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    
+                    
+                }
+               .btn-mybtn1{
+               
+                z-index: 1;
+               }
+            
+                /* Media Queries for Responsiveness */
+                @media(min-width:993px)and (max-width: 1200px) {
+                    .text-section {
+                        
+                           
+                            margin-top: 80px;
+                            height: 600px;
+                            width: 95%;
+                            text-align: left;
+                            margin-left: 10px;
+                        }
+                        .myptag {
+                            font-size: 1rem;
+                            line-height: 1.6rem;
+                            margin-left: 300px;
+
+                        }
+                        .myptag1{
+                           margin-top: 50px;
+                           text-align: left;
+                            margin-left: 300px;
+
+                        }
+                        .imgcover{
+                            width: 650px;
+                            height: 580px;
+                        }
+                        .btn-mybtn2{
+                            margin-left: 300px;
+                        }
+                }
+         
+            
+                @media (min-width: 768px) and (max-width:992px){
+                    .text-section {
+                        padding: 1.5rem;
+                        margin-top: 80px;
+                        height: 800px;
+                        width: 95%;
+                        text-align: left;
+                         margin-left: 35px;
+                    }
+                    .myptag {
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+                        margin-left: 200px;
+
+                    }
+                    .myptag1{
+                        margin-top: 500px;
+                        text-align: left;
+                        margin-left: 200px;
+                    }
+                    .imgcover{
+                        width: 780px;
+                       
+                        height: 570px;
+                    }
+                    .btn-mybtn2{
+                        margin-left:170px;
+                    }
+                }
+            
+                @media (max-width: 576px) {
+                    .text-section {
+                        padding: 1.5rem;
+                        margin-top: 50px;
+                        height: 900px;
+                      text-align: left;
+                       margin-left: 15px;
+                        
+                    }
+                   
+                    .myptag1{
+                        margin-top: 500px;
+                       text-align: left;
+                    }
+                    a .imgcover{
+                        width: 700px;
+                        height: 500px;
+                    }
+
+                }
+            </style>
+            
         </div>
     </section>
     <footer>

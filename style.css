@@ -1396,6 +1396,285 @@ footer a:hover {
             z-index:100;
         
         }
+        .image {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+
+        .image img {
+            transition: transform 0.4s ease-in-out;
+            /* Smooth zoom effect */
+        }
+
+       
+        .image:hover img {
+            transform: scale(1.1);
+            /* Slight zoom-in effect */
+        }
+
+        .image::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: hsla(0, 0%, 100%, 0.3);
+            /* White overlay with 30% opacity */
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease-in-out;
+            /* Smooth transition */
+            z-index: 1;
+        }
+
+        
+        .image:hover::before {
+            opacity: 1;
+        }
+        .image:after {
+             left: 50%;
+         top: 0; 
+         -webkit-transform: translateX(-50%); 
+            transform: translateX(-50%);
+        }
+
+        .myclassimg1 {
+            transition: transform 0.4s ease-in-out;
+          
+        }
+
+        
+        .myclassimg1 {
+            transform: scale(1.1);
+           
+        }
+
+        .myclassimg1::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: hsla(0, 0%, 100%, 0.3);
+           
+            opacity: 0;
+            
+            transition: opacity 0.3s ease-in-out;
+            
+            z-index: 1;
+        }
+
+      
+        .myclassimg:hover::before {
+            opacity: 1;
+        }
+
+
+        .slick-dots {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+           
+            display: flex;
+            
+        }
+
+        .slick-dots li {
+            margin: 0 5px;
+
+        }
+
+        .slick-dots button {
+            font-size: 0;
+           
+            width: 12px;
+            /* Set dot size */
+            height: 12px;
+            /* Set dot size */
+            border: 1px solid #ccc;
+            /* Add border */
+            border-radius: 50%;
+            /* Make it a circle */
+            background-color: #fff;
+            /* Set background color */
+            padding: 0;
+            /* Remove padding */
+            cursor: pointer;
+            /* Add pointer cursor */
+        }
+
+        .slick-dots .slick-active button {
+            background-color: #007bff;
+            /* Highlight active dot */
+            border-color: #007bff;
+        }
+
+        .property {
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            margin: 0;
+            padding: 0 2rem;
+            text-align: right;
+            background-color: #aed4e9;
+
+            width: fit-content;
+            float: right;
+
+
+        }
+
+        .property1 {
+            text-transform: none;
+            color: #fff;
+            font-size: 0.8rem;
+            background-color: #6d6e70;
+            border: none;
+            left: 0%;
+            float: left;
+        }
+        .myp-class12 {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+            /* text-overflow:inherit; */
+        }
+
+        .myp-class12::before {
+            content: '';
+            height: 3%;
+
+            width: 0%;
+            background-color: #aed4e9;
+
+            position: absolute;
+            left: 0;
+            top: 380px;
+            z-index: -1;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .myp-class12:hover {
+            transition: width 0.4s ease-in-out;
+            z-index: 10;
+        }
+
+        .myp-class12 img {
+            position: relative;
+            z-index: 1;
+            /* Ensures image stays above the overlay */
+            transition: transform 0.4s ease-in-out;
+
+        }
+
+        .myp-class12:hover img {
+            transform: scale(1.05);
+            /* Slight zoom effect on hover */
+        }
+
+        .myp-class {
+            position: relative;
+            overflow: hidden;
+            /* Allow text to expand */
+            transition: all 0.4s ease-in-out;
+        }
+        .myp-class12:hover::before {
+            width: 100%;
+
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            /* Responsive grid */
+            gap: 20px;
+            /* Adjust gap as needed */
+            margin: 0 auto;
+            /* Center the grid */
+        }
+        .hotel-img {
+            height: 250px;
+            /* Adjust this value as needed */
+            object-fit: cover;
+            /* Ensures images are cropped properly without stretching */
+            width: 100%;
+            /* Maintain responsiveness */
+        }
+
+        /* Positioning for buttons */
+        .hotel-img {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+
+        .hotel-img::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: hsla(0, 0%, 100%, 0.3);
+            /* White overlay with 30% opacity */
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease-in-out;
+            /* Smooth transition */
+            z-index: 1;
+        }
+
+        /* Add hover effect */
+        .hotel-img:hover::before {
+            opacity: 1;
+            /* Overlay appears on hover */
+        }
+        .myp-class13 {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+            /* text-overflow:inherit; */
+        }
+
+        .myp-class13::before {
+            content: '';
+            height: 3%;
+
+            width: 0%;
+            background-color: #aed4e9;
+
+            position: absolute;
+            left: 0;
+            top: 365px;
+            z-index: -1;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .myp-class13:hover {
+            transition: width 0.4s ease-in-out;
+            z-index: 10;
+        }
+
+        .myp-class13 img {
+            position: relative;
+            z-index: 1;
+            /* Ensures image stays above the overlay */
+            transition: transform 0.4s ease-in-out;
+
+        }
+
+        .myp-class13:hover img {
+            transform: scale(1.05);
+            /* Slight zoom effect on hover */
+        }
+
+        .myp-class {
+            position: relative;
+            overflow: hidden;
+            /* Allow text to expand */
+            transition: all 0.4s ease-in-out;
+        }
+        .myp-class13:hover::before {
+            width: 50%;
+
+        }
+
         @media (max-width: 768px) {
             .btn-mybtn1 {
                 font-size: 1rem; 
@@ -1459,8 +1738,7 @@ footer a:hover {
         }
         
         .btn-mybtn2:hover {
-            /* color: #aed4e9; */
-            /* width: 10%; */
+           
             transition: width 0.4s ease-in-out;
            
            
@@ -1661,3 +1939,346 @@ footer a:hover {
                 height: 20vh;
             }
         }
+
+        @media(max-width:1024px){
+            .btn-container{
+                position: relative;
+                top: -80px;
+                margin-left: 220px;
+               
+            }
+            .navbar-toggler{
+                margin-left: 400px;
+                position: relative;
+                top: 10px;
+                color: #1f85ca;
+            }
+            .mycon{
+                height: 100px;
+            }
+            .logo-container {
+                width: 140px;
+               background-color: #aed4e9;
+               position: relative;
+               top: 10;
+                z-index: 1;
+                height: 140px;
+                
+                }
+                
+                .imgicon{
+                    width: 100px;
+                    height: 80px;
+                }
+                .navbar-collapse{
+                    height: 300%;
+                    width: 100% ;
+                    background-color: white;
+                    position: relative;
+                    top: -23px;
+                   
+                }
+        }
+     
+        
+        @media(max-width:770px){
+            .btn-container{
+              position: relative;
+              top: -80px;
+             margin-left: 220px;
+            }
+            .navbar-toggler{
+                margin-left: 400px;
+                position: relative;
+                top: 10px;
+                color: #1f85ca;
+            }
+            .mycon{
+                height: 100px;
+            }
+            .logo-container {
+                width: 140px;
+               background-color: #aed4e9;
+               position: relative;
+               top: 10;
+                z-index: 1;
+                height: 140px;
+        
+                
+                /* Smaller logo on smaller screens */
+                }
+                .imgicon{
+                    width: 100px;
+                    height: 80px;
+                }
+                .navbar-collapse{
+                    height: 300%;
+                    width: 100% ;
+                    background-color: white;
+                    position: relative;
+                    top: -23px;
+                   
+                }
+
+        }
+
+       
+        @media (max-width: 576px) {
+            .btn-container {
+                height: 120px;
+                
+                position: relative;
+                top: -120px;
+               
+                 margin-left: 140px;
+                
+            }
+
+          
+            .logo-container {
+                width: 120px;
+                 height:130px;
+           
+                position: relative; /* Reset position to prevent overlap */
+                left: -25px; /* Reset left to prevent overlap */
+                transform: none; 
+                background-color: #aed4e9;
+    
+         
+            }
+            .navbar-collapse{
+                height: 300%;
+                width: 100% ;
+                background-color: white;
+               
+            }
+            
+        }
+      
+       
+        @media (max-width: 480px) {
+            
+            .btn-container {
+                height: 120px;
+              
+               
+                position: relative;
+                top: -110px;
+                /* Stack buttons vertically */
+                 margin-left:144px;
+                /* Center buttons */
+            }
+            .carousel-img img{
+                height: 40vh;
+            }
+           
+            .navbar-toggler{
+                margin-left: 120px;
+                color: #1f85ca;
+            }
+      
+            .imgicon{
+                width: 100px;
+                height: 80px;
+                margin-top: 10px;
+            }
+            .navbar-collapse{
+                height: 300%;
+                width: 100% ;
+                background-color: white;
+               
+            }
+            .btn-container a button{
+                width: 100%;
+                height: 35px;
+                font-size: 12px;
+                top: 0px;
+            }
+            body{
+                 width: 120%;
+            }
+        }
+        @media(max-width:767px){
+            .mycon{
+                height: 100px;
+            }
+           
+        }
+
+       
+      
+       .image1{
+       position: relative;
+       overflow: hidden;
+       background: #f0f3f9;
+        padding: 0;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+       
+       }
+      .image1::before{
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: hsla(0, 0%, 100%, .3);
+        opacity: 0;
+        z-index: 1;
+      }
+
+      .image1 a img{
+        max-width: 100%;
+        display: block;
+        -webkit-transition: .8s;
+        transition: .8s ease-in-out;
+      }
+      .image1::after{
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: hsla(0, 0%, 100%, .3);
+        opacity: 0;
+        z-index: 1;
+      }
+      
+      .image1:hover::before{
+        -webkit-animation: .7s ease-in forwards effect-height;
+         animation: .7s ease-in forwards effect-height;
+
+
+      }
+      .image1:hover::after{
+        -webkit-animation: .7s ease-in forwards effect-width;
+        animation: .7s ease-in forwards effect-width;
+      
+      }
+      .image1:hover img{
+        -webkit-transform: scale(1.05);
+         transform: scale(1.05);
+         transition: 0.8s ease-in-out;
+      }
+
+      @keyframes effect-height {
+        0% {
+            height: 0;
+            opacity: 1;
+            visibility: visible
+        }
+    
+        to {
+            height: 100%;
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+    @keyframes effect-width {
+        0% {
+            width: 0;
+            opacity: 1;
+            visibility: visible
+        }
+    
+        to {
+            width: 100%;
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+    
+
+
+
+
+
+ 
+       @keyframes effect-height {
+         0% {
+             height: 0;
+             opacity: 1;
+             visibility: visible
+         }
+     
+         to {
+             height: 100%;
+             opacity: 0;
+             visibility: hidden
+         }
+     }
+     @keyframes effect-width {
+         0% {
+             width: 0;
+             opacity: 1;
+             visibility: visible
+         }
+     
+         to {
+             width: 100%;
+             opacity: 0;
+             visibility: hidden
+         }
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .box {
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+        overflow: hidden;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .box h4{
+      z-index: 2;
+      position: relative;
+        font-size: 1.5rem;
+        color: #000103;
+        text-transform: none;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        z-index: 20;
+    }
+    .box h4::before {
+        display: inline-block;
+        content: '';
+        height: 1.25rem;
+        width: 0%;
+        background-color: #aed4e9;
+        position: absolute;
+        left: 0;
+        top: 60%;
+        z-index: -1;
+        -webkit-transition: width .4s ease-out;
+        transition: width .4s ease-out;
+    }
+    
+    .box[href]:hover h4::before {
+        width: calc(100% + 5px);
+    }
+    .mytext{
+        text-decoration: none;
+        color: #000;
+    }
