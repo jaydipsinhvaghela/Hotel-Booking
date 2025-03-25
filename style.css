@@ -20,6 +20,7 @@
         background-color: white;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         transition: top 0.3s ease-in-out;
+        height: 110px;
     }
 
     /* ✅ Shows navbar when scrolling down */
@@ -54,8 +55,8 @@
        justify-content: center;
        align-items: center;
       
-       top: -23px;
-       margin-right:200px;
+      
+       margin-left:-60px;
         height: 180px;
         width: 220px;/* Adjust logo container width as needed */
     }
@@ -126,7 +127,9 @@
 
     .mycolor{
         color: #6d6e70;
-        margin-top: 10px;
+        margin-top: 30px;
+        font-size: 14px;
+        
     }  
   /* ✅ Logo Container */
 
@@ -189,7 +192,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 150px;
+       
         color: white;
         text-align: center;
         background-attachment: fixed;
@@ -500,9 +503,11 @@
 /* ✅ Buttons */
 .btn-custom {
     background-color: #b6d8f2; /* Light blue */
-    border: none;
+ 
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 10px;
+    margin-top: 30px;
+    border-radius:0;   
 }
 
 /* ✅ Navbar Logo */
@@ -1034,7 +1039,9 @@ footer a:hover {
 .myclass1{
     text-align: start;
     background: none;
-    margin-left: 10px;
+    margin-left: 220px;
+    font-size: 18px;
+    line-height: 1.7rem;
 }
 
 /* navbar */
@@ -1335,20 +1342,17 @@ footer a:hover {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
-       
+      
         justify-content: center; 
     }
 
    
     .btn-custom {
         padding: 10px 20px;
-       
-        font-size: 1.3rem;
-        
-      
-       
+        font-size: 1.1rem;
         border: none;
         transition: background 0.3s ease;
+       
       
     }
   
@@ -1816,7 +1820,7 @@ footer a:hover {
                top: 0;
                 z-index: 1;
                 height: 130px;
-               left: -48px;
+               left: 48px;
         
                 
                 /* Smaller logo on smaller screens */
@@ -1828,12 +1832,63 @@ footer a:hover {
                 .navbar-nav{
                     margin-left: 100px;
                 }
-                
             
         }
 
+        @media(max-width:480px){
+            .navbar-nav{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            .social{
+                right: unset;
+                left: 2rem;
+                padding-right: 0;
+                border: none;
+                position: fixed;
+                top: unset;
+                bottom: 2rem;
+                display: block;
+               
+                z-index: 1000;
+
+            }
+          
+            .social1{
+                position: fixed;
+                top: unset;
+                bottom: 2rem;
+                display: block;
+                z-index: 1000;
+               
+            }
+            .navbar .mycon .navbar-collapse .fullscreen-menu{
+                position: fixed;
+                background-color: #6d6e70;
+                opacity: .97;
+                height: 100vh; 
+                width: 100%; 
+                left: 0;
+                right: 0;
+               
+            }
+            .social a{
+                color:white
+            }
+            .social1 a{
+                color:white
+            }
         
-        @media (max-width: 820px) {
+            .navbar-visible{
+                top:0;
+            }
+            body{
+                width: 110%;
+            }
+
+
+        }
+        @media (max-width: 822px) {
             .carousel-img {
                 height: 450px;
             }
@@ -1849,7 +1904,7 @@ footer a:hover {
                 margin-left: 20px;
                 top: -10px;
                 z-index: 1;
-                height: 120px;
+                height: 10px;
         
                 
                 /* Smaller logo on smaller screens */
@@ -1859,13 +1914,65 @@ footer a:hover {
                     height: 80px;
                 }
                 .navbar-collapse{
-                    height: 300%;
+                    height: 100%;
                     width: 100% ;
-                    background-color: white;
+                    
                     position: relative;
-                    top: -23px;
+                   
                    
                 }
+                .navbar-nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+                .social{
+                    right: unset;
+                    left: 2rem;
+                    padding-right: 0;
+                    border: none;
+                    position: fixed;
+                    top: unset;
+                    bottom: 2rem;
+                    display: block;
+                   
+                    z-index: 1000;
+    
+                }
+              
+                .social1{
+                    position: fixed;
+                    top: unset;
+                    bottom: 2rem;
+                    display: block;
+                    z-index: 1000;
+                   
+                }
+                .navbar .mycon .navbar-collapse .fullscreen-menu{
+                    position: fixed;
+                    background-color: #6d6e70;
+                    opacity: .97;
+                    height: 100vh; 
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    
+                   
+                   
+                }
+                .social a{
+                    color:white
+                }
+                .social1 a{
+                    color:white
+                }
+            
+                .navbar-visible{
+                    top:0;
+                }
+                .test .navbar {
+                    top: 0 !important;
+                }
+                
               
         }
 
@@ -1940,28 +2047,30 @@ footer a:hover {
             }
         }
 
-        @media(max-width:1024px){
+        @media(min-width:771px) and (max-width:1024px){
             .btn-container{
-                position: relative;
-                top: -80px;
-                margin-left: 220px;
+                position: absolute;
+                top: 20px;
+                margin-left: 550px;
                
             }
+            
             .navbar-toggler{
-                margin-left: 400px;
-                position: relative;
-                top: 10px;
+                right: 40px;
+                position: absolute;
+                top: 60px;
                 color: #1f85ca;
+
             }
             .mycon{
-                height: 100px;
+               width: 100%;
             }
             .logo-container {
                 width: 140px;
                background-color: #aed4e9;
                position: relative;
-               top: 10;
-                z-index: 1;
+               top: 35px;
+                z-index: 1000;
                 height: 140px;
                 
                 }
@@ -1969,23 +2078,22 @@ footer a:hover {
                 .imgicon{
                     width: 100px;
                     height: 80px;
+                    
                 }
-                .navbar-collapse{
-                    height: 300%;
-                    width: 100% ;
-                    background-color: white;
-                    position: relative;
-                    top: -23px;
-                   
-                }
+              .navbar-nav .nav-link{
+                position: relative;
+                top: 250px;
+              }
+            
+              
         }
      
         
         @media(max-width:770px){
             .btn-container{
-              position: relative;
-              top: -80px;
-             margin-left: 220px;
+                position: absolute;
+              top: 20px;
+             margin-left: 330px;
             }
             .navbar-toggler{
                 margin-left: 400px;
@@ -2011,28 +2119,90 @@ footer a:hover {
                     width: 100px;
                     height: 80px;
                 }
-                .navbar-collapse{
-                    height: 300%;
-                    width: 100% ;
-                    background-color: white;
-                    position: relative;
-                    top: -23px;
-                   
+            
+                .mycolor{
+                    color: #fff;
+                    font-size: 1.5rem;
                 }
+               
+              
 
         }
+        @media(max-width:1025px){
+                .navbar-nav{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                
+                }
+                .social{
+                    right: unset;
+                    left: 2rem;
+                    padding-right: 0;
+                    border: none;
+                    position: fixed;
+                    top: unset;
+                    bottom: 2rem;
+                    display: block;
+                
+                    z-index: 1000;
 
+                }
+            
+                .social1{
+                    position: fixed;
+                    top: unset;
+                    bottom: 2rem;
+                    display: block;
+                    
+                
+                }
+                .navbar .mycon .navbar-collapse .fullscreen-menu{
+                    position: fixed;
+                    background-color: #6d6e70;
+                    opacity: .97;
+                    height: 100vh; 
+                    width: 100%; 
+                        
+                    left: 0;
+                    right: 0;
+                
+                }
+              
+                .mycolor{
+                    color: white;
+                   position: relative;
+                   top: 150px;
+                    font-size: 14px;
+                }
+                
+                .social a{
+                    color:white
+                }
+                .social1 a{
+                    color:white
+                }
+            
+                .navbar-visible{
+                    top:0;
+                }
+                .test .navbar {
+                    top: 0 !important;
+                }
+            
+        }
        
         @media (max-width: 576px) {
             .btn-container {
                 height: 120px;
                 
-                position: relative;
-                top: -120px;
+                position: absolute;
+                top: 0;
+              
                
                  margin-left: 140px;
                 
             }
+          
 
           
             .logo-container {
@@ -2046,24 +2216,19 @@ footer a:hover {
     
          
             }
-            .navbar-collapse{
-                height: 300%;
-                width: 100% ;
-                background-color: white;
-               
-            }
+        
             
         }
       
        
-        @media (max-width: 480px) {
+        @media   (max-width: 480px) {
             
             .btn-container {
                 height: 120px;
               
-               
-                position: relative;
-                top: -110px;
+               top: 0;
+                position: absolute;
+                
                 /* Stack buttons vertically */
                  margin-left:144px;
                 /* Center buttons */
@@ -2075,6 +2240,7 @@ footer a:hover {
             .navbar-toggler{
                 margin-left: 120px;
                 color: #1f85ca;
+                margin-top: 10px;
             }
       
             .imgicon{
@@ -2082,22 +2248,62 @@ footer a:hover {
                 height: 80px;
                 margin-top: 10px;
             }
-            .navbar-collapse{
-                height: 300%;
-                width: 100% ;
+       
+            .btn-container a button{
+                width: 100%;
+                height: 35px;
+                font-size: 11px;
+                top: 0px;
+            }
+            .mycon .navbar-collapse .fullscreen-menu {
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            .navbar{
+                position: fixed;
+                width: 100%;       
+                
+                left: 0;
+                z-index: 1000;
                 background-color: white;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                -webkit-transition: .4s;
+                transition: .4s;
+                
+            }
+            .navbar-visible{
+                top: 0;
+            }
+            .test .navbar {
+                top: 0 !important;
+            }
+        }
+        
+        @media(min-width:0px) and (max-width:378px){
+            .btn-custom{
+                padding:    8px 8px;
+                margin-left: 5px;
+            }
+            .carousel-item img {
+                height: 22vh;
                
             }
             .btn-container a button{
                 width: 100%;
-                height: 35px;
-                font-size: 12px;
-                top: 0px;
+                height: 30px;
+                font-size: 10px;
+                top: -10px;
             }
-            body{
-                 width: 120%;
+            .logo-container {
+                width: 120px;
+                height: 130px;
+                position: relative;
+                left: -45px;
+                transform: none;
+                background-color: #aed4e9;
             }
         }
+        
         @media(max-width:767px){
             .mycon{
                 height: 100px;
@@ -2105,7 +2311,13 @@ footer a:hover {
            
         }
 
-       
+       @media(min-width:817px) and (max-width:1024px){
+        .btn-container{
+            padding:    6px 6px;
+            margin-left: 320px;
+           
+        }
+       }
       
        .image1{
        position: relative;
