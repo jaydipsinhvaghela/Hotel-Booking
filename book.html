@@ -103,260 +103,71 @@
  
 </style>
   
-<nav class="navbar navbar-expand-xl  bg-white shadow">
+  <nav class="navbar navbar-expand-xl   bg-white shadow">
 
-    <div class="container mycon">
+        <div class="container mycon">
 
-        <a class="navbar-brand position-relative" href="index.html">
-            <div class="logo-container position-absolute justify-content-center align-items-center text-center">
-                <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
-            </div>
-        </a>
-        <br><br><br><br><br>
-        <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fs-3"></i>
-        </button>
-      
-    <style>
-        .imgicon{
-            margin-top: 20px;
-        }
-        .navbar-collapse{
-            flex-grow: 0;
-        }
-    </style>
-
-        <div class="collapse navbar-collapse m-2 p-3  g-4 justify-content-center p-4" id="navbarNav">
-            <ul class="navbar-nav fullscreen-menu text-center text-lg-start"id="fullscreenMenu">
-                <li class="nav-item">
-                    <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mycolor " href="offer.html">OFFERS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mycolor" href="press.html">PRESS</a>
-                </li>
-            </ul>
-        </div>
-        <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
-            <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
-            <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
-        </div>
-
-        <style>
-            /* Button container styling */
-            .btn-container {
-                display: flex;
-                gap: 10px;
-                /* Adjust gap for smaller screens */
-                flex-wrap: wrap;
-                /* Allow buttons to wrap on smaller screens */
-                justify-content: center;
-                /* Center buttons horizontally */
-            }
-
-            /* Button styling */
-            .btn-custom {
-                padding: 10px 20px;
-                /* Standard padding */
-                font-size: 1.3rem;
-                /* Default font size */
-              
-                /* Optional: Adds rounded corners */
-
-                border: none;
-                transition: background 0.3s ease;
-                /* Smooth hover effect */
-            }
+            <a class="navbar-brand position-relative" href="index.html">
+                <div class="logo-container position-absolute justify-content-center align-items-center text-center">
+                    <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
+                </div>
+            </a>
+            <br><br><br><br>
+            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-3"></i>
+            </button>
           
-
-            .btn-custom:hover {
-                background-color: #6d6e70;
-                /* Darker shade on hover */
-            }
-            @media(max-width:1024px){
-                .btn-container{
-                    position: relative;
-                    top: -80px;
-                    margin-left: 220px;
-                   
-                }
-                .navbar-toggler{
-                    margin-left: 400px;
-                    position: relative;
-                    top: 10px;
-                    color: #1f85ca;
-                }
-                .mycon{
-                    height: 100px;
-                }
-                .logo-container {
-                    width: 140px;
-                   background-color: #aed4e9;
-                   position: relative;
-                   top: 10;
-                    z-index: 1;
-                    height: 140px;
-                    
-                    }
-                    
-                    .imgicon{
-                        width: 100px;
-                        height: 80px;
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                        position: relative;
-                        top: -23px;
-                       
-                    }
-            }
-         
-            
-            @media(max-width:770px){
-                .btn-container{
-                  position: relative;
-                  top: -80px;
-                 margin-left: 220px;
-                }
-                .navbar-toggler{
-                    margin-left: 400px;
-                    position: relative;
-                    top: 10px;
-                    color: #1f85ca;
-                }
-                .mycon{
-                    height: 100px;
-                }
-                .logo-container {
-                    width: 140px;
-                   background-color: #aed4e9;
-                   position: relative;
-                   top: 10;
-                    z-index: 1;
-                    height: 140px;
-            
-                    
-                    /* Smaller logo on smaller screens */
-                    }
-                    .imgicon{
-                        width: 100px;
-                        height: 80px;
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                        position: relative;
-                        top: -23px;
-                       
-                    }
-
-            }
-
-            /* Responsive styling for smaller screens */
-            @media (max-width: 576px) {
-                .btn-container {
-                    height: 120px;
-                    
-                    position: relative;
-                    top: -120px;
-                    /* Stack buttons vertically */
-                     margin-left: 140px;
-                    /* Center buttons */
-                }
-
-              
-                .logo-container {
-                    width: 100px;
-                     height:130px;
-               
-                    position: relative; /* Reset position to prevent overlap */
-                    left: -25px; /* Reset left to prevent overlap */
-                    transform: none; 
-                    background-color: #aed4e9;
-        
-             
-                }
-                .navbar-collapse{
-                    height: 300%;
-                    width: 100% ;
-                    background-color: white;
-                   
-                }
-                
-            }
-          
-            /* Even smaller screens (e.g., mobile phones) */
-            @media (max-width: 480px) {
-                
-                .btn-container {
-                    height: 120px;
-                  
-                   
-                    position: relative;
-                    top: -110px;
-                    /* Stack buttons vertically */
-                     margin-left:120px;
-                    /* Center buttons */
-                }
-                .carousel-img img{
-                    height: 40vh;
-                }
-               
-                .navbar-toggler{
-                    margin-left: 120px;
-                    color: #1f85ca;
-                }
-          
+            <style>
                 .imgicon{
-                    width: 100px;
-                    height: 80px;
-                    margin-top: 10px;
+                    margin-top: 20px;
                 }
                 .navbar-collapse{
-                    height: 300%;
-                    width: 100% ;
-                    background-color: white;
-                   
+                    flex-grow: 0;
                 }
-                .btn-container a button{
-                    width: 100%;
-                    height: 35px;
-                    font-size: 12px;
-                    top: 0px;
-                }
-                body{
-                     width: 120%;
-                }
-            }
-        
-        </style>
+            </style>
 
-
-
-    </div>
-    <div class="social"><a href="https://www.instagram.com/safirhotels/"
-            class="fa-brands fa-instagram text-decoration-none"></a> <a
-            href="https://www.facebook.com/safirhotelsresorts"
-            class="fa-brands fa-facebook-f text-decoration-none"></a> <a
-            href="https://www.linkedin.com/company/safir-hotels-resorts/"
-            class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
-            class="fa-brands fa-tiktok text-decoration-none"></a> <a
-            href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
-            class="fa-brands fa-youtube text-decoration-none"></a></div>
-            <div class="social1">
-                ARA ENG
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav fullscreen-menu text-center"id="fullscreenMenu">
+                    <li class="nav-item">
+                        <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor " href="offer.html">OFFERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolor" href="press.html">PRESS</a>
+                    </li>
+                </ul>
+                <div class="social"><a href="https://www.instagram.com/safirhotels/"
+                    class="fa-brands fa-instagram text-decoration-none"></a> <a
+                    href="https://www.facebook.com/safirhotelsresorts"
+                    class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+                    href="https://www.linkedin.com/company/safir-hotels-resorts/"
+                    class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
+                    class="fa-brands fa-tiktok text-decoration-none"></a> <a
+                    href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+                    class="fa-brands fa-youtube text-decoration-none"></a>
+                </div>
+                <div class="social1">
+                    ARA ENG
+             </div>
             </div>
-            
-</nav>
+            <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
+                <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
+                <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
+            </div>
+
+          
+              
+
+        </div>
+      
+                
+    </nav>
 <div class="container-fuild">
     
     <div class="row">
@@ -580,4 +391,37 @@
     });
     
 
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('carouselExampleControls');
+        const dots = document.querySelectorAll('.slick-dots button');
+
+        carousel.addEventListener('slide.bs.carousel', function (event) {
+            const activeSlideIndex = event.to;
+
+            dots.forEach(dot => dot.parentElement.classList.remove('slick-active'));
+            dots[activeSlideIndex].parentElement.classList.add('slick-active');
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function () {
+                const slideIndex = parseInt(dot.getAttribute('data-slide-to'));
+                const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+                carouselInstance.to(slideIndex);
+            });
+        });
+    });
+</script>
+
+
+<script>
+    $( document ).ready(function() {
+        $(".navbar-toggler").click(function(){
+            $('body').toggleClass('test')
+        });
+            
+        
+    });
 </script>

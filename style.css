@@ -7,8 +7,11 @@
         background-color: white;
         width: 100%;
         height: 100%;
+     
+        
     }
 
+    body { font-family:'Poppins', sans-serif; }
     /* ✅ Default Navbar Styling */
     .navbar {
         position: fixed;
@@ -22,10 +25,17 @@
         transition: top 0.3s ease-in-out;
         height: 110px;
     }
+    .navbar-toggler{
+        padding: 0;
+    }
 
     /* ✅ Shows navbar when scrolling down */
     .navbar-visible {
         top: 0;
+    }
+    .navbar-nav{
+        position: relative;
+    left: 65px;
     }
     
     
@@ -55,9 +65,9 @@
        justify-content: center;
        align-items: center;
       
-      
+      top: -10px;
        margin-left:-60px;
-        height: 180px;
+        height: 174px;
         width: 220px;/* Adjust logo container width as needed */
     }
     @media (max-width: 768px) { 
@@ -127,7 +137,8 @@
 
     .mycolor{
         color: #6d6e70;
-        margin-top: 30px;
+        position: relative;
+        top: 20px;
         font-size: 14px;
         
     }  
@@ -220,7 +231,7 @@
         color: red;
     }
 
-    /* sign_up CSS */
+   
 
     .carousel-img {
         height: 800px;
@@ -334,6 +345,10 @@
         height: 100px;
     }
 }
+
+
+
+
 
 
     .login-box {
@@ -504,12 +519,19 @@
 .btn-custom {
     background-color: #b6d8f2; /* Light blue */
  
-    padding: 8px 12px;
+    padding: 10px 30px;
     font-size: 10px;
     margin-top: 30px;
     border-radius:0;   
 }
-
+.btn-custom1 {
+    background-color: #b6d8f2; /* Light blue */
+ 
+    padding: 10px 30px;
+    font-size: 10px;
+    margin-top: 30px;
+    border-radius:0;   
+}
 /* ✅ Navbar Logo */
 .navbar-brand {
     top: -40px; 
@@ -1080,7 +1102,7 @@ footer a:hover {
 
 .social1 {
     position: absolute;
-    right: 80px;
+    right: 6%;
     top: 5px;
     padding: .2rem 0 .2rem 2.8rem;
     background-position: left center;
@@ -1147,8 +1169,8 @@ footer a:hover {
     top: 250px;
     z-index: 90;
     margin: -18.5rem auto 15rem;
-    width: min(1200px, 100%);
-    height: 60px;
+    width: min(1300px, 100%);
+    height: 65px;
     box-shadow: 0 2px 20px 0 rgba(0, 2, 5, .15);
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -1176,7 +1198,8 @@ footer a:hover {
     margin-top: 10px;
     font-family: Poppins, sans-serif;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
     /* Adjusted font size */
     padding: 0.5rem;
     box-sizing: border-box;
@@ -1266,12 +1289,13 @@ footer a:hover {
     font-weight: 500;
     width: 100%;
     align-items: center;
-    height: 60px;
+    height: 65px;
+    
 
 }
 
 #book-bar .search:hover {
-    background-color: #0056b3;
+    background-color: #6d6e70;
 }
 
 #book-bar .book-with-us {
@@ -1348,16 +1372,33 @@ footer a:hover {
 
    
     .btn-custom {
-        padding: 10px 20px;
+        padding: 10px 30px;
         font-size: 1.1rem;
         border: none;
         transition: background 0.3s ease;
+        position: relative;
+        left: 50px;
        
       
     }
   
 
     .btn-custom:hover {
+        background-color: #6d6e70;
+      
+    }
+    .btn-custom1 {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+        border: none;
+        transition: background 0.3s ease;
+        position: relative;
+       left: 50px;
+      
+    }
+  
+
+    .btn-custom1:hover {
         background-color: #6d6e70;
       
     }
@@ -1369,7 +1410,7 @@ footer a:hover {
             background-color: transparent;
             color: #000;
             position: relative;
-           
+           z-index:20;
             overflow: hidden;
             transition: color 0.3s ease-in-out;
         }
@@ -1377,19 +1418,18 @@ footer a:hover {
         .btn-mybtn1::before {
             content: '';
             height:     30%;
-            margin-top: 20px;
-         
+            margin-top: 15px;
             width: 0%;
             background-color: #aed4e9;
             position: absolute;
             left: 0;
-            top: -50;
-            z-index: -1;
+           
+            z-index: -15;
             transition: width 0.4s ease-in-out;
         }
         
         .btn-mybtn1:hover::before {
-            width: 40%;
+            width: 100%;
         }
         
         .btn-mybtn1:hover {
@@ -1682,7 +1722,7 @@ footer a:hover {
         @media (max-width: 768px) {
             .btn-mybtn1 {
                 font-size: 1rem; 
-                padding: 8px 16px; 
+                padding: 0px 194px; 
             }
         
             .btn-mybtn1::before {
@@ -1713,7 +1753,7 @@ footer a:hover {
         .btn-mybtn2 {
             font-size: 1.2rem;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 10px 00px;
             background-color: transparent;
             color: #000;
             position: relative;
@@ -1724,8 +1764,8 @@ footer a:hover {
         
         .btn-mybtn2::before {
             content: '';
-            height:     20%;
-            margin-top: 20px;
+            height:     28%;
+            margin-top: 14px;
            
             /* border-radius: 10px; */
             width: 0%;
@@ -1752,7 +1792,7 @@ footer a:hover {
         @media (max-width: 768px) {
             .btn-mybtn2 {
                 font-size: 1rem; /* Reduce font size for smaller screens */
-                padding: 8px 16px; /* Adjust padding */
+                padding: 0px 0px; /* Adjust padding */
             }
         
             .btn-mybtn2::before {
@@ -1768,7 +1808,7 @@ footer a:hover {
         @media (max-width: 480px) {
             .btn-mybtn2 {
                 font-size: 0.9rem; /* Further reduce font size for very small screens */
-                padding: 6px 12px; /* Smaller padding */
+                padding: 6px 0px; /* Smaller padding */
             }
         
             .btn-mybtn2::before {
@@ -1882,10 +1922,7 @@ footer a:hover {
             .navbar-visible{
                 top:0;
             }
-            body{
-                width: 110%;
-            }
-
+           
 
         }
         @media (max-width: 822px) {
@@ -2035,7 +2072,7 @@ footer a:hover {
 
         @media (max-width: 480px) {
             .carousel-item img {
-                height: 25vh;
+                height: 18vh;
 
             }
         }
@@ -2069,7 +2106,7 @@ footer a:hover {
                 width: 140px;
                background-color: #aed4e9;
                position: relative;
-               top: 35px;
+               top: 0px;
                 z-index: 1000;
                 height: 140px;
                 
@@ -2096,7 +2133,7 @@ footer a:hover {
              margin-left: 330px;
             }
             .navbar-toggler{
-                margin-left: 400px;
+               
                 position: relative;
                 top: 10px;
                 color: #1f85ca;
@@ -2108,7 +2145,7 @@ footer a:hover {
                 width: 140px;
                background-color: #aed4e9;
                position: relative;
-               top: 10;
+               top: 0px;
                 z-index: 1;
                 height: 140px;
         
@@ -2122,7 +2159,7 @@ footer a:hover {
             
                 .mycolor{
                     color: #fff;
-                    font-size: 1.5rem;
+                    font-size: 2.5rem;
                 }
                
               
@@ -2132,7 +2169,7 @@ footer a:hover {
                 .navbar-nav{
                     margin-left: 0px;
                     margin-top: 0px;
-                
+                    
                 }
                 .social{
                     right: unset;
@@ -2146,6 +2183,17 @@ footer a:hover {
                 
                     z-index: 1000;
 
+                }
+                .btn-custom{
+                    padding:    10px 20px;
+                    position: relative;
+                    left: 40px;
+                   
+                }
+                .btn-custom1{
+                    padding:    10px 20px;
+                    position: relative;
+                   left: 40px;
                 }
             
                 .social1{
@@ -2170,9 +2218,10 @@ footer a:hover {
               
                 .mycolor{
                     color: white;
-                   position: relative;
-                   top: 150px;
-                    font-size: 14px;
+                     position: relative;
+                     top: 70px;
+                    font-size: 1.4rem;
+                    /* font-weight: bold; */
                 }
                 
                 .social a{
@@ -2208,7 +2257,7 @@ footer a:hover {
             .logo-container {
                 width: 120px;
                  height:130px;
-           
+                 top:-2px;
                 position: relative; /* Reset position to prevent overlap */
                 left: -25px; /* Reset left to prevent overlap */
                 transform: none; 
@@ -2221,12 +2270,12 @@ footer a:hover {
         }
       
        
-        @media   (max-width: 480px) {
+        @media(min-width:365px)and (max-width: 480px) {
             
             .btn-container {
                 height: 120px;
               
-               top: 0;
+                 top: 0;
                 position: absolute;
                 
                 /* Stack buttons vertically */
@@ -2238,7 +2287,8 @@ footer a:hover {
             }
            
             .navbar-toggler{
-                margin-left: 120px;
+               position: relative;
+               right: 0;
                 color: #1f85ca;
                 margin-top: 10px;
             }
@@ -2248,12 +2298,25 @@ footer a:hover {
                 height: 80px;
                 margin-top: 10px;
             }
+            .btn-custom{
+                padding:    10px 20px;
+                position: relative;
+                right: 40px;
+               
+            }
+            .btn-custom1{
+                padding:    10px 20px;
+                position: relative;
+               right: 40px;
+            }
        
             .btn-container a button{
                 width: 100%;
                 height: 35px;
-                font-size: 11px;
+                font-size: 8px;
                 top: 0px;
+                position: relative;
+                left: 0px;
             }
             .mycon .navbar-collapse .fullscreen-menu {
                 -webkit-transition: .4s;
@@ -2279,20 +2342,29 @@ footer a:hover {
             }
         }
         
-        @media(min-width:0px) and (max-width:378px){
+        @media(min-width:0px) and (max-width:320px){
             .btn-custom{
-                padding:    8px 8px;
-                margin-left: 5px;
+                padding:  10px 20px;
+                position: relative;
+                right: 40px;
+               
+            }
+            .btn-custom1{
+                padding:    10px 20px;
+                position: relative;
+                right: 40px;
             }
             .carousel-item img {
-                height: 22vh;
+                height: 20vh;
                
             }
             .btn-container a button{
                 width: 100%;
                 height: 30px;
-                font-size: 10px;
-                top: -10px;
+                font-size: 4px;
+                top: 0px;
+                position: relative;
+                left: -15px;
             }
             .logo-container {
                 width: 120px;
@@ -2322,11 +2394,12 @@ footer a:hover {
        .image1{
        position: relative;
        overflow: hidden;
-       background: #f0f3f9;
+       /* background: #f0f3f9; */
         padding: 0;
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
+        z-index: 35;
        
        }
       .image1::before{
@@ -2340,7 +2413,7 @@ footer a:hover {
         width: 100%;
         background: hsla(0, 0%, 100%, .3);
         opacity: 0;
-        z-index: 1;
+        z-index: 2;
       }
 
       .image1 a img{

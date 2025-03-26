@@ -37,7 +37,7 @@
             <br><br><br><br>
             <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fs-3"></i>
+                <i class="fa-solid fa-bars fs-3 my"></i>
             </button>
           
             <style>
@@ -47,10 +47,15 @@
                 .navbar-collapse{
                     flex-grow: 0;
                 }
+                .navbar-toggler:focus {
+                    text-decoration: none;
+                    outline: 0;
+                    box-shadow: 0 0 0.1rem;
+                }
             </style>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fullscreen-menu text-center"id="fullscreenMenu">
+                <ul class="navbar-nav fullscreen-menu gap-3 text-center"id="fullscreenMenu">
                     <li class="nav-item">
                         <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
                     </li>
@@ -79,8 +84,8 @@
              </div>
             </div>
             <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
-                <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
-                <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
+                <a href="book.html" ><button class="btn btn-custom1 text-white ">Book</button></a>
+                <a href="login.html " target="_blank"><button class="btn btn-custom text-white">SIGN IN / SIGN UP</button></a>
             </div>
 
           
@@ -191,7 +196,7 @@
                 <div class="promo">
                     <input type="text" name="promo" id="promo" placeholder="Promo Code" class="promo-code">
                 </div>
-                <button type="button" id="btnSearch2" class="search text-center">Search</button>
+                <button type="button" id="btnSearch2" class="search text-center g">Search</button>
             </div>
             <br><br>
             <p class="book-with-us text-center">Book directly with us to receive the best available rate</p>
@@ -394,7 +399,7 @@
                 <p class="fs-4 text-muted">Keep up-to-date on the latest news from Safir Hotels & Resorts.</p>
             </div>
 
-            <div class="m-lg-5">
+            <div class="">
                 <div class="row">
                     <!-- News Item 1 -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
@@ -679,11 +684,11 @@
                 <p class="fs-4 text-muted">Keep up-to-date on the latest news from Safir Hotels & Resorts.</p>
             </div>
             <div class="container-">
-                <div class="row g-4 m-lg-5">
+                <div class="row g-4">
                     <!-- News Item 1 -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item ">
-                            <a href="#" class="border-0 box">
+                            <a href="book-direct.html" class="border-0 box">
                                 <div class="image1">
                                     <img src="/images/offer1.webp" class="card-img-top myimg rounded-top" alt="News about Durrah Rewards">
                                 
@@ -742,7 +747,7 @@
         </div>
     </section>
    <section class="container-fluid  py-5">
-        <div class="container-fluid m-lg-5 p-4">
+        <div class="container-fluid">
             <div class="row g-0 position-relative" >
                 <div class="col-md-12 image1 col-lg-6 position-absolute start-0 top-0 w-md-50">
                     <a class="d-block">
@@ -754,8 +759,8 @@
                     <h1 class="fw-bold myptag3">Durrah Rewards</h1>
                     <p class="text-dark myptag4  col-lg-10 col-md-6">
                         Get instant benefits with the Durrah Rewards loyalty program at Safir Hotels & Resorts.                    </p>
-                    <div class="btn-mybtn3">
-                        <a href="#" class="text-decoration-none text-dark btn-mybtn3" type="button">
+                    <div class="">
+                        <a href="#" class="text-decoration-none text-dark m-4 mt-0 btn-mybtn3" type="button">
                            Learn More
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -771,10 +776,10 @@
                     margin-top: 20px;
                     background-color: #f0f3f9;
                     height: 500px;
-                    
-                    z-index: -1;
+                   
+                    z-index: 20;
                 }
-            
+               
                 .myptag3 {
                     color: #303030;
                     line-height: 2rem;
@@ -789,13 +794,44 @@
                     margin-left: 50px;
 
                 }
-               .btn-mybtn3{
-                margin-left: 30px;
-                font-size: 25px;
-                font-weight: bold;
-                z-index: 1;
-               }
-            
+                .btn-mybtn3 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    color: #000;
+                    position: relative;
+                    z-index:20;
+                    overflow: hidden;
+                    transition: color 0.3s ease-in-out;
+                }
+                
+                .btn-mybtn3::before {
+                    content: '';
+                    height:     30%;
+                    margin-top: 15px;
+                    width: 0%;
+                    background-color: #aed4e9;
+                    position: absolute;
+                    left: 0;
+                   
+                    z-index: -15;
+                    transition: width 0.4s ease-in-out;
+                }
+                
+                .btn-mybtn3:hover::before {
+                    width: 100%;
+                }
+                
+                .btn-mybtn3:hover {
+                
+                    transition: width 0.4s ease-in-out;
+                   
+                   
+                    z-index:100;
+                
+                }
+                
                 /* Media Queries for Responsiveness */
                 @media(min-width:993px)and (max-width: 1200px) {
                     .text-section1   {
@@ -810,13 +846,13 @@
                         .myptag4 {
                             font-size: 1rem;
                             line-height: 1.6rem;
-                            margin-left: 350px;
+                            
 
                         }
                         .myptag3{
                            margin-top: 0px;
                            text-align: left;
-                            margin-left: 350px;
+                            
 
                         }
                         .imgcover1{
@@ -886,9 +922,12 @@
                         height: 500px;
                     }
                     .btn-mybtn2{
-                        margin-left: -50px;
+                       
 
                         margin-top: 0px;
+                    }
+                    .myptag{
+                        font-size:0.8rem;
                     }
 
                 }
@@ -933,7 +972,7 @@
         </style>
     </div>
     <section class="container-fluid  py-5">
-        <div class="container-fluid m-lg-5">
+        <div class="container-fluid">
             <div class="row g-0 position-relative" >
                 <div class="col-md-12 image1 col-lg-6 position-absolute start-0 top-0 w-md-50">
                     <a class="d-block">
@@ -946,8 +985,8 @@
                     <p class="text-dark myptag">
                         An Employer of Choice for more than 1,100 Colleagues from over 45 different nationalities, we are an equal opportunity employer committed to fostering a diverse, inclusive and empowered workforce. We value Passion, Pride, Integrity, and Curiosity, and invite those who live these same values to join the Safir Family. We are growing, grow with us.
                     </p>
-                    <div class="btn-mybtn1">
-                        <a href="#" class="text-decoration-none text-dark btn-mybtn2" type="button">
+                    <div class="">
+                        <a href="#" class="text-decoration-none text-dark btn-mybtn1" type="button">
                             Explore Possibilities
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -963,7 +1002,7 @@
                     background-color: #f0f3f9;
                     height: 520px;
                     
-                    z-index: -1;
+                    z-index: 20;
                 }
             
                 .myptag {
@@ -974,10 +1013,7 @@
                     
                     
                 }
-               .btn-mybtn1{
-               
-                z-index: 1;
-               }
+            
                .imgcover{
                 height: 500px;
                
@@ -1039,16 +1075,14 @@
                        
                         height: 570px;
                     }
-                    .btn-mybtn2{
-                        margin-left:170px;
-                    }
+                  
                 }
             
                 @media (max-width: 576px) {
                     .text-section {
                         padding: 1.5rem;
                         margin-top: 50px;
-                        height: 970px;
+                        height: 788px;
                       text-align: left;
                        margin-left: 15px;
                         
@@ -1063,7 +1097,14 @@
                         height: 500px;
                     }
                     .btn-mybtn1{
-                        margin-top: -20px;
+                        margin-top: 0px;
+                        font-size: 20px;
+                    }
+                    .myptag{
+                        color: #303030;
+                        line-height: 1.2rem;
+                        font-weight: 300;
+                        font-size: 0.8rem;
                     }
                 }
             </style>

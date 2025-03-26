@@ -4,166 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safir Camp</title>
+    <title>Hotel Direct</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
-        body {
-            background-color: #fff
-        }
-
         .mycontainer {
 
             max-width: 800px;
         }
 
-        .myimg2 {
-
-            width: 700px;
-
-            margin: 15px 0;
-        }
-        .myimg3{
-            width: 740px;
-            margin: 15px 0;
-        }
-
-        @media(max-width:768px) {
-            .myimg2 {
-                width: 100%;
-                height: auto;
-            }
-
-            .myimg1 {
-                width: 100%;
-                margin: auto;
-            }
-            .myimg3{
-                width: 100%;
-
-                height: auto;
-            }
-
-        }
-
-        @media(max-width:554px) {
-            .myimg2 {
-                width: 100%;
-                height: auto;
-            }
-
-            .myimg1 {
-                width: 100%;
-                margin: auto;
-            }
-            .myimg3{
-                width: 100%;
-                height: auto;
-            }
-
-        }
-
-
-
         .myp1 {
             margin-top: 15px;
             font-size: 1.1rem;
             width: 720px;
+            max-width: 94%;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
         }
 
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            .myp1 {
+        .mycontainer h1 {
+            font-size: 3.5rem;
+        }
+
+        @media(max-width:554px) {
+
+            .myimg1 {
                 width: 100%;
-                /* Adjust width for tablets */
-                font-size: 1rem;
-                /* Slightly smaller font for better readability */
+                margin: auto;
             }
+
+
         }
 
-        @media (max-width: 576px) {
-            .myp1 {
+        @media(max-width:768px) {
+
+            .myimg1 {
                 width: 100%;
-                /* Full width for smaller devices */
-                font-size: 0.95rem;
-                /* Further reduce font size for small screens */
-                padding: 10px;
-                /* Add some padding for better spacing */
-            }
-        }
-
-         .btn-prime{
-            display: block;
-            text-align: center;
-            background: #aad3ed;
-            color: #fff;
-            padding: 1rem;
-            margin: 2.5rem 0;
-            font-weight: 500;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 2px;
-            
-            transition: background-color .4s ease-in-out;
-        }
-
-        .btn-prime:hover {
-            background-color: #6d6e70;
-            color: #fff;
-        }
-        .mycontainer2 {
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-           
-        }
-
-        
-
-        p {
-            font-size: 1.1rem;
-            text-align: left;
-        }
-
-     
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .mycontainer2 {
-                padding: 20px;
-                max-width: 95%;
+                margin: auto;
             }
 
-            p {
-                font-size: 1rem;
-            }
-        }
 
-        @media (max-width: 576px) {
-            .mycontainer2 {
-                padding: 15px;
-                max-width: 100%;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            p {
-                font-size: 0.95rem;
-            }
         }
     </style>
-
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-xl   bg-white shadow">
 
         <div class="container mycon">
@@ -174,27 +63,45 @@
                 </div>
             </a>
             <br><br><br><br>
-            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars fs-3 my"></i>
             </button>
-          
+
             <style>
-                .imgicon{
+                .imgicon {
                     margin-top: 20px;
                 }
-                .navbar-collapse{
+
+                .navbar-collapse {
                     flex-grow: 0;
                 }
+
                 .navbar-toggler:focus {
                     text-decoration: none;
                     outline: 0;
                     box-shadow: 0 0 0.1rem;
                 }
+
+                .pclass {
+                    font-size: 21px;
+                    margin-bottom: 4rem;
+                }
+                .mycontainer ol li{
+                    font-size: 1.3rem;
+                    position: relative;
+                   
+                    font-weight:500;
+                    
+                }
+                .mycontainer .star{
+                    font-size: 1.4  rem !important;
+                }
             </style>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fullscreen-menu gap-3 text-center"id="fullscreenMenu">
+                <ul class="navbar-nav fullscreen-menu gap-3 text-center" id="fullscreenMenu">
                     <li class="nav-item">
                         <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
                     </li>
@@ -209,126 +116,97 @@
                     </li>
                 </ul>
                 <div class="social"><a href="https://www.instagram.com/safirhotels/"
-                    class="fa-brands fa-instagram text-decoration-none"></a> <a
-                    href="https://www.facebook.com/safirhotelsresorts"
-                    class="fa-brands fa-facebook-f text-decoration-none"></a> <a
-                    href="https://www.linkedin.com/company/safir-hotels-resorts/"
-                    class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
-                    class="fa-brands fa-tiktok text-decoration-none"></a> <a
-                    href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
-                    class="fa-brands fa-youtube text-decoration-none"></a>
+                        class="fa-brands fa-instagram text-decoration-none"></a> <a
+                        href="https://www.facebook.com/safirhotelsresorts"
+                        class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+                        href="https://www.linkedin.com/company/safir-hotels-resorts/"
+                        class="fa-brands fa-linkedin-in text-decoration-none"></a> <a
+                        href="https://www.tiktok.com/@safirhotels" class="fa-brands fa-tiktok text-decoration-none"></a>
+                    <a href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+                        class="fa-brands fa-youtube text-decoration-none"></a>
                 </div>
                 <div class="social1">
                     ARA ENG
-             </div>
+                </div>
             </div>
             <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
-                <a href="book.html" ><button class="btn btn-custom1 text-white ">Book</button></a>
-                <a href="login.html " target="_blank"><button class="btn btn-custom text-white">SIGN IN / SIGN UP</button></a>
+                <a href="book.html"><button class="btn btn-custom1 text-white ">Book</button></a>
+                <a href="login.html " target="_blank"><button class="btn btn-custom text-white">SIGN IN / SIGN
+                        UP</button></a>
             </div>
 
-          
-              
+
+
 
         </div>
-      
-                
+
+
     </nav>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br>    <br><br><br><br>
     <div class="container mycontainer p-lg-5 d-flex ">
-        <h1 class="align-items-center">Safir Camp, Dubaiyah</h1>
-        <p>Home is where you pitch your tent!</p>
-        <img class="myimg1  align-items-center " src="/images/safir1.jpeg" alt="Safir Camp Image">
+        <h1 class="align-items-center">Book Direct</h1>
+        <p class="pclass">Book your stay directly through safirhotels.com and get the VIP treatment.</p>
+        <img class="myimg1  align-items-center " src="/images/im1.webp" alt="Safir Camp Image">
         <div class="myp1 px-3">
-            <p>Safir Camp, beyond a mere camping ground, it's a space for community bonding and family enjoyment. Our
-                thoughtfully designed desert retreat offers a harmonious blend of comfort, grace, and the enduring
-                beauty of
-                the Dubaiyah desert.</p>
-        </div>
-        <a href="" class="btn btn-prime w-100">Limited Availability: Book Today.</a>
-        <img class="myimg2" src="/images/safir2.jpeg" alt="Safir Camp Image">
+            <p>When you book directly through safirhotels.com, you get to enjoy the following:</p>
+            <ol>
+                <li class="">Best Price Guarantee – with no hidden costs</li>
+                <li class="">Credit to use at the hotel's restaurant outlets</li>
+                <li class="">Complimentary late check-out till 3 pm*</li>
+                <li class="">Priority early check-in*</li>
+                <li class="">Discounts on spa treatments**</li>
+                <li class="">Flexible Cancelation Terms</li>
+                <li class="">Complimentary airport pick-up and drop-off**</li>
+            </ol>
+           <div class="mp">
+            <p>* Subject to room availability</p>
 
+            <p>* Terms & Conditions apply</p>
 
-    </div>
-
-    <div class="container mycontainer2 my-5 mx-auto">
-        <h3 class="fw-bold">PYRAMID TENTS</h3>
-        <p>Experience the coziness of our Pyramid tents (4x4 sqm, Regular, and Semi-Private Tents accommodating up to 6 guests)</span> with modern design and comfortable interiors. Sit back on plush cushions and reconnect with nature and each other in a casual-chic setting lit by lanterns within the privacy of your tent.</p>
-    
-        <p class="myh4">Our complimentary services include:</p>
-        <p>> Valet Parking</p>
-        <p>> Welcome Drink</p>
-        <p>> Express check-in at the hospitality desk</p>
-        <p>> Drop-off to the tents</p>
-        <p>> Personalized assistance is available upon request for a comfortable experience.</p>
-        <p>> Onsite medical assistance is available in emergencies and is provided by male and female nurses.</p>
-    
-        <p  class="myh4">Explore our range of Exclusive Add-Ons:</p>
-        <p>> BBQ Meat for Grilling Box</p>
-        <p>> Games Box</p>
-        <p>> Hot Beverages (Tea & Arabic Coffee Package)</p>
-        <p>> Special Occasion (Birthdays, Girls Night Out, Anniversaries, etc.)</p>
-    
-        <p  class="myh4">Time & Pricing:</p>
-        <p>> Sunday to Wednesday: Afternoon 02:00 PM to 02:00 AM (Price KWD 60)
-
-        </p>
-        <p>> Thursday to Saturday: Morning 10:00 AM to 02:00 AM (Price KWD 85)</p><hr>
-        <style>
-            hr{
-                width: 95%;
-            }
-        </style>
-        <img class="myimg2" src="images/safir3.jpeg" alt="">
-    </div>
-    <div class="container mycontainer2 my-5 mx-auto">
-        <h3 class="fw-bold">PYRAMID TENTS</h3>
-        <p>Experience the coziness of our Pyramid tents (4x4 sqm, Regular, and Semi-Private Tents accommodating up to 6 guests)</span> with modern design and comfortable interiors. Sit back on plush cushions and reconnect with nature and each other in a casual-chic setting lit by lanterns within the privacy of your tent.</p>
-    
-        <p class="myh4">Our complimentary services include:</p>
-        <p>> Valet Parking</p>
-        <p>> Welcome Drink</p>
-        <p>> Express check-in at the hospitality desk</p>
-        <p>> Drop-off to the tents</p>
-        <p>> Personalized assistance is available upon request for a comfortable experience.</p>
-        <p>> Onsite medical assistance is available in emergencies and is provided by male and female nurses.</p>
-    
-        <p  class="myh4">Explore our range of Exclusive Add-Ons:</p>
-        <p>> BBQ Meat for Grilling Box</p>
-        <p>> Games Box</p>
-        <p>> Hot Beverages (Tea & Arabic Coffee Package)</p>
-        <p>> Special Occasion (Birthdays, Girls Night Out, Anniversaries, etc.)</p>
-    
-        <p  class="myh4">Time & Pricing:</p>
-        <p>> Sunday to Wednesday: Afternoon 02:00 PM to 02:00 AM (Price KWD 60)
-
-        </p>
-        <p>> Thursday to Saturday: Morning 10:00 AM to 02:00 AM (Price KWD 85)</p><hr>
-        <style>
-            hr{
-                width: 92%;
-            }
-        </style>
-        <div>
-            <p class=" fw-bold">Secure Your Spot!</p>
-            <p class="fs-5"> Contact us on WhatsApp at 69934306 for booking inquiries.</p>
-        
-            
-        
-            <p class="fw-bold">Refund & Cancellation Policy:</p>
-             <p>Due to limited availability, advanced reservations are advised.
-             </p>
-             <p>All bookings are ,final and non-refundable, except in cases of weather-related disruptions
-             Date changes are permitted, subject to availability.
-             Any cancellations require a minimum of 24-hour notice.</p>
-             <a href="" class="btn btn-prime w-100">Limited Availability: Book Today.</a>
-             <img src="/images/safir4.jpeg" class="myimg3" alt="">
+            <p>** Applicable in hotels that offer services specified only</p>
+           </div>
+        <a href="" class="btn btn-prime w-100">Book Now</a>
 
         </div>
-        
-        
+
+
+       
     </div>
-    
+<style>
+   .mycontainer .btn.btn-prime {
+        display: block;
+        text-align: center;
+        background: #aad3ed;
+        color: #fff;
+        padding: 1rem;
+        margin: 2rem 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+       
+       
+    }
+    .mycontainer .btn.btn-prime:hover{
+        background-color: #b1b4b6;
+    }
+    @media(max-width:540px){
+        .mycontainer h1{
+            font-size: 2rem;
+        }
+        .pclass{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .myp1 ol li{
+            font-size: 12px;
+        }
+        .myp1 .mp{
+            font-size: 12px;
+            margin: 1px 20px;
+        }
+    }
+</style>
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -376,8 +254,10 @@
                     .kuwait {
                         font-size: 13px;
                         color: #b1b4b6;
-                    }@media(max-width:576px){
-                        .mtmt{
+                    }
+
+                    @media(max-width:576px) {
+                        .mtmt {
                             position: relative;
                             top: 0px;
 
@@ -428,12 +308,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>
@@ -446,10 +320,10 @@
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
-            // > Scrolling Down → Show Navbar
+            // ✅ Scrolling Down → Show Navbar
             navbar.classList.remove("navbar-visible");
         } else {
-            // > Scrolling Up → Hide Navbar
+            // ✅ Scrolling Up → Hide Navbar
             navbar.classList.add("navbar-visible");
         }
 
@@ -479,14 +353,12 @@
         });
     });
 </script>
-
-
 <script>
-    $( document ).ready(function() {
-        $(".navbar-toggler").click(function(){
+    $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
             $('body').toggleClass('test')
         });
-            
-        
+
+
     });
 </script>

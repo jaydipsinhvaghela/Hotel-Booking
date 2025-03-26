@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -19,16 +20,17 @@
         .myoffer::before {
             content: '';
             position: absolute;
-           margin-top: 10px;
+            margin-top: 10px;
             top: 0px;
             left: 0;
             width: 0%;
             height: 100%;
-            background-color: #aed4e9;  
+            background-color: #aed4e9;
             z-index: -1;
             transition: width 0.4s ease-in-out;
         }
-        .myoffer:hover{
+
+        .myoffer:hover {
             z-index: 10;
             transition: width 0.4s ease-in-out;
         }
@@ -40,12 +42,15 @@
         /* Responsive Adjustments */
         @media (max-width: 992px) {
             .myoffer::before {
-                margin-top:10px; /* Adjust as needed for this screen size */
+                margin-top: 10px;
+                /* Adjust as needed for this screen size */
             }
-            .myoffer:hover{
+
+            .myoffer:hover {
                 z-index: 10;
                 transition: width 0.4s ease-in-out;
             }
+
             .myoffer:hover::before {
                 width: 100%;
             }
@@ -56,16 +61,18 @@
                 background-color: #aed4e9;
                 margin-top: 10px;
                 /* Lighter color for smaller screens */
-                
+
             }
-            .myoffer:hover{
+
+            .myoffer:hover {
                 z-index: 10;
                 transition: width 0.4s ease-in-out;
             }
+
             .myoffer:hover::before {
                 width: 100%;
             }
-           
+
         }
 
         @media (max-width: 576px) {
@@ -74,49 +81,52 @@
                 background-color: #aed4e9;
                 /* Lighter color for smaller screens */
             }
-            .myoffer:hover{
+
+            .myoffer:hover {
                 z-index: 10;
                 transition: width 0.8s ease-in-out;
             }
-            .myoffer:hover::before{
+
+            .myoffer:hover::before {
                 width: 100%;
             }
         }
     </style>
     <style>
-                    
-                
-        .date-container{
+        .date-container {
             margin-left: 280px;
         }
-    
+
         /* Media query for screens smaller than 768px (typical tablet size) */
         @media (max-width: 768px) {
-            .date-container{
-                margin-left: 0px; /* Reduced margin for smaller screens */
+            .date-container {
+                margin-left: 0px;
+                /* Reduced margin for smaller screens */
             }
         }
-    
+
         /* Media query for even smaller screens (typical mobile size) */
         @media (max-width: 576px) {
-            .date-container{
-                margin-left:    0px; /* Further reduced margin for mobile */
+            .date-container {
+                margin-left: 0px;
+                /* Further reduced margin for mobile */
             }
         }
+
         /*media query for very large screens*/
-         @media (min-width: 1200px) {
-            .date-container{
-                margin-left: 300px; /* increased margin for large screens */
+        @media (min-width: 1200px) {
+            .date-container {
+                margin-left: 300px;
+                /* increased margin for large screens */
             }
         }
-    
     </style>
 </head>
 
 <body style="background-color: white;">
 
-  
-    <nav class="navbar navbar-expand-xl  bg-white shadow">
+
+    <nav class="navbar navbar-expand-xl   bg-white shadow">
 
         <div class="container mycon">
 
@@ -125,23 +135,25 @@
                     <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
                 </div>
             </a>
-            <br><br><br><br><br>
-            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <br><br><br><br>
+            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars fs-3"></i>
             </button>
-          
-        <style>
-            .imgicon{
-                margin-top: 20px;
-            }
-            .navbar-collapse{
-                flex-grow: 0;
-            }
-        </style>
 
-            <div class="collapse navbar-collapse m-2 p-3  g-4 justify-content-center p-4" id="navbarNav">
-                <ul class="navbar-nav fullscreen-menu text-center text-lg-start"id="fullscreenMenu">
+            <style>
+                .imgicon {
+                    margin-top: 20px;
+                }
+
+                .navbar-collapse {
+                    flex-grow: 0;
+                }
+            </style>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav fullscreen-menu text-center" id="fullscreenMenu">
                     <li class="nav-item">
                         <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
                     </li>
@@ -155,311 +167,215 @@
                         <a class="nav-link mycolor" href="press.html">PRESS</a>
                     </li>
                 </ul>
+                <div class="social"><a href="https://www.instagram.com/safirhotels/"
+                        class="fa-brands fa-instagram text-decoration-none"></a> <a
+                        href="https://www.facebook.com/safirhotelsresorts"
+                        class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+                        href="https://www.linkedin.com/company/safir-hotels-resorts/"
+                        class="fa-brands fa-linkedin-in text-decoration-none"></a> <a
+                        href="https://www.tiktok.com/@safirhotels" class="fa-brands fa-tiktok text-decoration-none"></a>
+                    <a href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+                        class="fa-brands fa-youtube text-decoration-none"></a>
+                </div>
+                <div class="social1">
+                    ARA ENG
+                </div>
             </div>
             <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
                 <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
                 <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
             </div>
 
-            <style>
-                /* Button container styling */
-                .btn-container {
-                    display: flex;
-                    gap: 10px;
-                    /* Adjust gap for smaller screens */
-                    flex-wrap: wrap;
-                    /* Allow buttons to wrap on smaller screens */
-                    justify-content: center;
-                    /* Center buttons horizontally */
-                }
-
-                /* Button styling */
-                .btn-custom {
-                    padding: 10px 20px;
-                    /* Standard padding */
-                    font-size: 1.3rem;
-                    /* Default font size */
-                  
-                    /* Optional: Adds rounded corners */
-
-                    border: none;
-                    transition: background 0.3s ease;
-                    /* Smooth hover effect */
-                }
-              
-
-                .btn-custom:hover {
-                    background-color: #6d6e70;
-                    /* Darker shade on hover */
-                }
-                @media(max-width:1024px){
-                    .btn-container{
-                        position: relative;
-                        top: -80px;
-                        margin-left: 220px;
-                       
-                    }
-                    .navbar-toggler{
-                        margin-left: 400px;
-                        position: relative;
-                        top: 10px;
-                        color: #1f85ca;
-                    }
-                    .mycon{
-                        height: 100px;
-                    }
-                    .logo-container {
-                        width: 140px;
-                       background-color: #aed4e9;
-                       position: relative;
-                       top: 10;
-                        z-index: 1;
-                        height: 140px;
-                        
-                        }
-                        
-                        .imgicon{
-                            width: 100px;
-                            height: 80px;
-                        }
-                        .navbar-collapse{
-                            height: 300%;
-                            width: 100% ;
-                            background-color: white;
-                            position: relative;
-                            top: -23px;
-                           
-                        }
-                }
-             
-                
-                @media(max-width:770px){
-                    .btn-container{
-                      position: relative;
-                      top: -80px;
-                     margin-left: 220px;
-                    }
-                    .navbar-toggler{
-                        margin-left: 400px;
-                        position: relative;
-                        top: 10px;
-                        color: #1f85ca;
-                    }
-                    .mycon{
-                        height: 100px;
-                    }
-                    .logo-container {
-                        width: 140px;
-                       background-color: #aed4e9;
-                       position: relative;
-                       top: 10;
-                        z-index: 1;
-                        height: 140px;
-                
-                        
-                        /* Smaller logo on smaller screens */
-                        }
-                        .imgicon{
-                            width: 100px;
-                            height: 80px;
-                        }
-                        .navbar-collapse{
-                            height: 300%;
-                            width: 100% ;
-                            background-color: white;
-                            position: relative;
-                            top: -23px;
-                           
-                        }
-
-                }
-
-                /* Responsive styling for smaller screens */
-                @media (max-width: 576px) {
-                    .btn-container {
-                        height: 120px;
-                        
-                        position: relative;
-                        top: -120px;
-                        /* Stack buttons vertically */
-                         margin-left: 140px;
-                        /* Center buttons */
-                    }
-
-                  
-                    .logo-container {
-                        width: 80px;
-                         height:130px;
-                   
-                        position: relative; /* Reset position to prevent overlap */
-                        left: -25px; /* Reset left to prevent overlap */
-                        transform: none; 
-                        background-color: #aed4e9;
-            
-                 
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                       
-                    }
-                    
-                }
-              
-                /* Even smaller screens (e.g., mobile phones) */
-                @media (max-width: 480px) {
-                    
-                    .btn-container {
-                        height: 120px;
-                      
-                       
-                        position: relative;
-                        top: -110px;
-                        /* Stack buttons vertically */
-                         margin-left:120px;
-                        /* Center buttons */
-                    }
-                    .carousel-img img{
-                        height: 40vh;
-                    }
-                   
-                    .navbar-toggler{
-                        margin-left: 120px;
-                        color: #1f85ca;
-                    }
-              
-                    .imgicon{
-                        width: 100px;
-                        height: 80px;
-                        margin-top: 10px;
-                    }
-                    .navbar-collapse{
-                        height: 300%;
-                        width: 100% ;
-                        background-color: white;
-                       
-                    }
-                    .btn-container a button{
-                        width: 100%;
-                        height: 35px;
-                        font-size: 12px;
-                        top: 0px;
-                    }
-                    body{
-                         width: 120%;
-                    }
-                }
-            
-            </style>
 
 
 
         </div>
-        <div class="social"><a href="https://www.instagram.com/safirhotels/"
-                class="fa-brands fa-instagram text-decoration-none"></a> <a
-                href="https://www.facebook.com/safirhotelsresorts"
-                class="fa-brands fa-facebook-f text-decoration-none"></a> <a
-                href="https://www.linkedin.com/company/safir-hotels-resorts/"
-                class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
-                class="fa-brands fa-tiktok text-decoration-none"></a> <a
-                href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
-                class="fa-brands fa-youtube text-decoration-none"></a></div>
-                <div class="social1">
-                    ARA ENG
-                </div>
-                
+
+
     </nav>
 
-    
-    <div class="container my-5 mt-5">
-        <div class="row mybook">
-            <div class="row">
-                <div class="col">
-                    <h1 class="h2 fw-bold text-center text-capitalize">PRESS RELEASES</h1>
-                    <p class="p1 fs-5 text-center">Keep up-to-date on the latest news from Safir Hotels & Resorts.
-                       
-                    </p>
-                </div>
+
+    <div class="mybook">
+
+
+        <h1 class="fw-bold text-center text-capitalize">PRESS RELEASES</h1>
+        <p class="p1 fs-5 text-center">Keep up-to-date on the latest news from Safir Hotels & Resorts.
+
+        </p>
+
+    </div>
+
+    <style>
+        .myoffer {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .myoffer::before {
+            content: '';
+            position: absolute;
+            margin-top: 15px;
+            top: 0px;
+            left: 0;
+            width: 0%;
+            height: 35%;
+            background-color: #aed4e9;
+            z-index: -1;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .myoffer:hover {
+            z-index: 10;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .myoffer:hover::before {
+            width: 19%;
+        }
+
+        .my-main {
+            margin: 10rem 0;
+        }
+
+        .parent .mybox2 {
+            width: 1300px;
+            max-width: 96%;
+            margin: auto auto 4rem;
+            text-align: center;
+        }
+
+        .main-class {
+            width: 720px;
+            max-width: 90%;
+            margin: auto auto 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 3rem;
+        }
+
+        .main-class h2 {
+            text-transform: none;
+            font-size: 2.4rem;
+        }
+
+        .main-class .date {
+            font-size: 1 rem;
+            padding: .1rem 0 .1rem 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-class .date,
+        article .article-teaser .date {
+            color: #bbbcbe;
+            background-image: url(/images/date.svg);
+            background-position: center left;
+            background-size: contain;
+            font-weight: 300;
+            background-repeat: no-repeat;
+        }
+
+        .main-class img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .see-more .see-more-btn {
+            position: relative;
+            color: #000103;
+            font-size: 1.3rem;
+            padding-right: 2rem;
+            background-image: url(/images/icon3.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            z-index: 20;
+            text-decoration: none;
+        }
+
+        .p3 {
+            font-size: 20px;
+        }
+
+        .main-class .h2 a {
+            color: #000103;
+            text-decoration: none;
+        }
+
+        .main-class .h2 a:hover {
+            color: #aad3ed;
+        }
+    </style>
+    <div class=" my-main parent">
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                        Hotels & Resorts to Expand in Syria</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about1.webp" alt="">
+                <p class="p3">Safir Hotels & Resorts Signs Exclusive Memorandum of Understanding with The Syrian
+                    Hospitality Company to Expand Operations in the Syrian Arab Republic</p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
             </div>
-        </div><br><br><br><br><br><br>
-        <div class="my-5">
-            <div class="card-body text-decoration-none">
-                <a href="#" class="text-decoration-none text-dark">
-                    <h5 class="card-title fs-1 text-center">Safir Hotels & Resorts to Expand in Syria</h5>
-                </a>
-                <p class=" "> <i class="fa-solid fa-calendar-days text-primary fs-5 date-container"></i><span class="fs-6"> Feb 24.
-                        2025</span></p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <img src="/images/about1.webp" class="img-fluid w-100 rounded hotel-img" alt="..." style="max-width: 700px;">
-            </div>
-            <p class="card-text text-center fs-5 m-3" style="font-size: 1.1rem;">Safir Hotels & Resorts Signs Exclusive Memorandum of Understanding with The <br class="d-none d-sm-block">
-                Syrian Hospitality Company to Expand Operations in the Syrian Arab Republic</p>
-            <div class="text-center text-decoration-none">
-                <a href="book.html" class="text-decoration-none ">
-                    <h5 class="card-text text-decoration-none fs-5 m-3">
-                        <span class="text-decoration-none text-dark myoffer">Read More <i class="fa-solid fa-right-long ms-2"></i></span>
-                    </h5>
-                </a>
-            </div>
-         <div class="my-5">
-            <div class="card-body text-decoration-none">
-                <a href="#" class="text-decoration-none text-dark text-center">
-                    <h5 class="card-title text-center display-6 display-md-3 display-lg-2">Durrah Rewards – A New Era in Guest</h5>
-                    <h5 class="card-title text-center display-6 display-md-3 display-lg-2">Loyalty and Hospitality Excellence</h5>
-                </a>
-                
-                <style>
-    
-                </style>
-                <p class="card-text"> <i class="fa-solid fa-calendar-days text-primary fs-5 date-container" ></i><span class="fs-6"> Feb 24.
-                
-                        2025</span></p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <img src="/images/about2.jpeg" class="img-fluid w-100 rounded hotel-img" alt="..." style="max-width: 700px;">
-            </div>
-            <p class="card-text fs-5 m-3 text-center" style="font-size: 1.1rem;">Safir Hotels & Resorts Unveils "Durrah Rewards" – A New Era in Guest Loyalty
-                <br class="d-none d-sm-block"> and Hospitality Excellence.</br>
-                <div class="text-center">
-                    <a href="book.html" class="text-decoration-none">
-                        <h5 class="card-text fs-5 m-3 text-dark">
-                            <span class="myoffer">Read More <i class="fa-solid fa-right-long ms-2"></i></span>
-                        </h5>
-                    </a>
-                </div>
         </div>
-        <div class="my-5">
-            <div class="card-body text-decoration-none">
-                <a href="#" class="text-decoration-none text-dark text-center">
-                    <h5 class="card-title text-center display-6 display-md-3 display-lg-2">Safir Hotels & Resorts Makes Its </h5>
-                    <h5 class="card-title text-center display-6 display-md-3 display-lg-2">in Iraq with a New 5-Star Hotel in Erbil</h5>
-                </a>
-                <p class="card-text ">
-                    <i class="fa-solid fa-calendar-days date-container text-primary fs-5"></i>
-                    <span class="fs-6"> Feb 24, 2025</span>
-                </p>
-                
-              
+
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                    Durrah Rewards – A New Era in Guest Loyalty and Hospitality Excellence</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about2.jpeg" alt="">
+                <p class="p3">Safir Hotels & Resorts Unveils "Durrah Rewards" – A New Era in Guest Loyalty and Hospitality Excellence</p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
             </div>
-            <div class="d-flex justify-content-center">
-                <img src="/images/about3.jpeg" class="img-fluid w-100 rounded hotel-img" alt="..." style="max-width: 700px;">
+        </div>
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                        Safir Hotels & Resorts Makes Its Debut in Iraq with a New 5-Star Hotel in Erbil</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about3.jpeg" alt="">
+                <p class="p3">Safir Hotels & Resorts expands into Iraq with a 5-star hotel in Erbil, showcasing the
+                    brand’s commitment to growth and True Arabic Hospitality</p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
             </div>
-            <p class="card-text text-center fs-5 m-3">Safir Hotels & Resorts expands into Iraq with a 5-star hotel in Erbil, showcasing the <br>
-                brand’s commitment to growth and True Arabic Hospitality.</p>
-                <div class="text-center">
-                    <a href="book.html" class="text-decoration-none">
-                        <h5 class="card-text fs-5 m-3 text-dark">
-                            <span class="myoffer">Read More <i class="fa-solid fa-right-long ms-2"></i></span>
-                        </h5>
-                    </a>
-                </div>
+        </div>
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                    Safir Hotels & Resorts' Expands Portfolio - Sohag, Egypt</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about4.webp" alt="">
+                <p class="p3">Safir Hotels & Resorts signed a memorandum agreement with Blom Real Estate Development Company to manage and operate a new hotel in Sohag Governorate in Egypt.</p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
+            </div>
+        </div>
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                    Adventure Awaits at our Safir Marsa Matrouh Resort!</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about5.webp" alt="">
+                <p class="p3">We are thrilled to announce the soft opening of Safir Marsa Matrouh Resort, where adventure and relaxation meet in perfect harmony.   </p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
+            </div>
+        </div>
+        <div class="mybox2">
+            <div class="main-class">
+                <h2 class="h2"><a href="#">Safir
+                    Safir Hotels & Resorts Celebrates Saudi Arabia National Day with Exclusive Offers</a></h2>
+                <p class="date">Feb 24. 2025</p> <img src="/images/about6.webp" alt="">
+                <p class="p3">Guests can experience the blend of luxury and tradition at Safir Hotels and Resorts while taking advantage of the exclusive offers available.</p>
+                <div class="see-more myoffer"><a
+                        href="#"
+                        class="see-more-btn">Read more</a></div>
+            </div>
         </div>
     </div>
-</div>
-
-
     <br>
     <footer>
         <div class="container-fluid">
@@ -554,7 +470,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
+        crossorigin="anonymous "></script>
 
 </body>
 
@@ -573,5 +491,38 @@
         }
 
         lastScrollTop = currentScroll;
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('carouselExampleControls');
+        const dots = document.querySelectorAll('.slick-dots button');
+
+        carousel.addEventListener('slide.bs.carousel', function (event) {
+            const activeSlideIndex = event.to;
+
+            dots.forEach(dot => dot.parentElement.classList.remove('slick-active'));
+            dots[activeSlideIndex].parentElement.classList.add('slick-active');
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function () {
+                const slideIndex = parseInt(dot.getAttribute('data-slide-to'));
+                const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+                carouselInstance.to(slideIndex);
+            });
+        });
+    });
+</script>
+
+
+<script>
+    $( document ).ready(function() {
+        $(".navbar-toggler").click(function(){
+            $('body').toggleClass('test')
+        });
+            
+        
     });
 </script>
