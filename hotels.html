@@ -47,12 +47,50 @@
             position: absolute;
             top: 60px;
         }
-     
+    </style>
+    <style>
+        .btn-mybtn3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #000;
+            position: relative;
+            z-index:20;
+            overflow: hidden;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .btn-mybtn3::before {
+            content: '';
+            height:     30%;
+            margin-top: 15px;
+            width: 0%;
+            background-color: #aed4e9;
+            position: absolute;
+            left: 0;
+           
+            z-index: -15;
+            transition: width 0.4s ease-in-out;
+        }
+        
+        .btn-mybtn3:hover::before {
+            width:50%;
+        }
+        
+        .btn-mybtn3:hover {
+        
+            transition: width 0.4s ease-in-out;
+           
+           
+            z-index:100;
+        
+        }
+       
     </style>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-xl   bg-white shadow">
 
         <div class="container mycon">
@@ -69,9 +107,7 @@
             </button>
           
             <style>
-                .imgicon{
-                    margin-top: 20px;
-                }
+               
                 .navbar-collapse{
                     flex-grow: 0;
                 }
@@ -124,7 +160,6 @@
                 
     </nav>
 
-
     <style>
         .sub-main {
             width: 1400px;
@@ -138,7 +173,7 @@
             transition: .2s linear;
             display: -ms-grid;
             display: grid;
-           margin-bottom:7rem;
+            margin-bottom: 7rem;
             position: relative;
         }
 
@@ -148,12 +183,12 @@
         }
 
         .main-class .sub-main .box .image2 {
-           
+
             grid-column: 1 / 8;
             display: inline-block;
-           
+
             padding: 0;
-           
+
             height: fit-content;
             width: 100%;
             z-index: 1;
@@ -196,7 +231,7 @@
         .main-class .sub-main .box .text h4 {
             color: #6d6e70;
             font-size: 17px;
-            
+
             text-transform: uppercase;
             line-height: 1.15;
         }
@@ -264,11 +299,13 @@
             font-size: 2.6rem;
             line-height: 1.15;
         }
+
         @media (max-width: 550px) {
             .main-class .sub-main .box .text {
                 padding: 5rem 3.5rem 0 5rem;
             }
         }
+
         @media (max-width: 900px) {
             .main-class .sub-main .box .image {
                 -ms-grid-column: 1;
@@ -276,12 +313,16 @@
                 grid-column: 1 / 12;
             }
         }
+
         @media (max-width: 550px) {
-            .image-left-tilt .text p, .main-class .sub-main .box .text p {
+
+            .image-left-tilt .text p,
+            .main-class .sub-main .box .text p {
                 font-size: 1rem;
                 line-height: 1.5rem;
             }
         }
+
         @media (max-width: 900px) {
             .main-class .sub-main .box .text {
                 -ms-grid-column: 2;
@@ -293,7 +334,7 @@
                 padding: 1rem 1rem 0 3rem;
             }
         }
-       
+
         @media (max-width: 900px) {
 
             .image-left-tilt:after,
@@ -304,11 +345,13 @@
         }
     </style>
     <style>
-        .segment{
+        .segment {
             text-align: center;
             margin-top: 190px;
         }
-        .title-desc h1, .title-desc h1{
+
+        .title-desc h1,
+        .title-desc h1 {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -318,15 +361,17 @@
             font-size: 3.5rem;
             line-height: 1.15;
         }
-         .segment .title-desc .p1 {
+
+        .segment .title-desc .p1 {
             display: block;
-           font-weight: 2rem;
-           margin-left: auto;
+            font-weight: 2rem;
+            margin-left: auto;
             margin-right: auto;
             width: 800px;
             max-width: 90%;
             line-height: 1.15;
-        }    
+        }
+
         .main-class .sub-main .box .image2 img {
             max-width: 100%;
             display: block;
@@ -335,6 +380,7 @@
             height: 100%;
             width: 100%;
         }
+
         .main-class .sub-main .box .image img {
             max-width: 100%;
             display: block;
@@ -342,44 +388,60 @@
             transition: .8s;
             height: 100%;
             width: 100%;
-        }      
-       @media (max-width: 768px) {
-        .segment h1 {
-            text-align: center;
-            font-size: 35px;
         }
-        .segment .p1{
-            text-align: center;
-            font-size: 15px;
+
+        @media (max-width: 768px) {
+            .segment h1 {
+                text-align: center;
+                font-size: 35px;
+            }
+
+            .segment .p1 {
+                text-align: center;
+                font-size: 15px;
+            }
         }
-    } 
+
         @media(min-width:991px) and (max-width: 1200px) {
-            .image-left-tilt .text, .main-class .sub-main .box .text {
-               
+
+            .image-left-tilt .text,
+            .main-class .sub-main .box .text {
+
                 grid-column: 8 / 13;
             }
-            .image-left-tilt .text, .main-class .sub-main .box .text {
+
+            .image-left-tilt .text,
+            .main-class .sub-main .box .text {
                 padding: 4rem 0rem 2rem 2rem;
             }
         }
+
         @media(min-width:540px) and (max-width: 900px) {
-            .image-left-tilt .image2, .main-class .sub-main .box .image2 {
+
+            .image-left-tilt .image2,
+            .main-class .sub-main .box .image2 {
                 -ms-grid-column: 1;
                 -ms-grid-column-span: 11;
                 grid-column: 1 / 12;
             }
-            .image-left-tilt .text, .main-class .sub-main .box .text {
+
+            .image-left-tilt .text,
+            .main-class .sub-main .box .text {
                 padding: 2rem 3rem 2rem 12rem;
             }
         }
+
         @media (min-width:0px) and (max-width: 540px) {
-            .image-left-tilt .image2, .main-class .sub-main .box .image2 {
+
+            .image-left-tilt .image2,
+            .main-class .sub-main .box .image2 {
                 -ms-grid-column: 1;
                 -ms-grid-column-span: 11;
                 grid-column: 1 / 12;
             }
         }
-        .book-now-btn:hover{
+
+        .book-now-btn:hover {
             background-color: #6d6e70;
             color: white;
         }
@@ -387,54 +449,51 @@
     <section class="segment">
         <div class="title-desc">
             <h1>Explore Luxury Hotels in Kuwait and Beyond: Safir Hotels</h1>
-            <p class="p1">Discover our exquisite luxury hotels in Kuwait and beyond. Select your next destination with us.</p>
+            <p class="p1">Discover our exquisite luxury hotels in Kuwait and beyond. Select your next destination with
+                us.</p>
         </div>
     </section>
-    
+
     <section class="main-class">
         <div class="sub-main">
             <div data-country="Kuwait" class="group-subtitle first-of-country">
                 <h3>Kuwait</h3>
             </div>
             <div id="item-2" class="box">
-                <div class="image2"><img
-                        src="/images/hotel1.webp"
-                        alt="Hotels"  width="758.33" height="493.25"></div>
+                <div class="image2"><img src="/images/hotel1.webp" alt="Hotels" width="758.33" height="493.25"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="main-class">
         <div class="sub-main">
-            
+
             <div id="item-2" class="box">
-                <div class="image2"><img
-                        src="/images/hotel2.webp"
-                        alt="Hotels"></div>
+                <div class="image2"><img src="/images/hotel2.webp" alt="Hotels"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
@@ -442,23 +501,21 @@
 
     <section class="main-class">
         <div class="sub-main">
-            
-            <div id="item-2"class="box">
-                <div class="image2"><img
-                        src="/images/hotel3.webp"
-                        alt="Hotels"></div>
+
+            <div id="item-2" class="box">
+                <div class="image2"><img src="/images/hotel3.webp" alt="Hotels"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
@@ -469,72 +526,66 @@
             <div data-country="Kuwait" class="group-subtitle first-of-country">
                 <h3>EGYPT</h3>
             </div>
-            <div id="item-2"class="box">
-                <div class="image2"><img
-                        src="/images/hotel4.webp"
-                        alt="Hotels"></div>
+            <div id="item-2" class="box">
+                <div class="image2"><img src="/images/hotel4.webp" alt="Hotels"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    
+
     <section class="main-class">
         <div class="sub-main">
-            
+
             <div id="item-2" class="box">
-                <div class="image2"><img
-                        src="/images/hotel5.webp"
-                        alt="Hotels" width="758.33" height="493.25"></div>
+                <div class="image2"><img src="/images/hotel5.webp" alt="Hotels" width="758.33" height="493.25"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    
+
     <section class="main-class">
         <div class="sub-main">
-            
+
             <div id="item-2" class="box">
-                <div class="image2"><img
-                        src="/images/hotel6.webp"
-                        alt="Hotels"></div>
+                <div class="image2"><img src="/images/hotel6.webp" alt="Hotels"></div>
                 <div class="text">
                     <h4>Salmiya, Kuwait</h4>
                     <h2 style="font-weight: bold;">Marina Hotel Kuwait</h2>
-                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina Waves &amp;
+                    <p class="p2">Located in the heart of Salmiya and within walking distance of Marina Mall, Marina
+                        Waves &amp;
                         Marina
                         Crescent, Marina Hotel Kuwait is a boutique, five-star, Upper-Upscale beachside property
                         offering
                         lush, jewel-toned interiors and panoramic sea views.</p>
-                    <div class="book-now"><a href="#"
-                            class="book-now-btn">Book Now</a></div>
-                    <div class="see-more"><a href="#" target="blank"
-                            data-description="marina" class="see-more-btn">Find out more</a></div>
+                    <div class="book-now"><a href="#" class="book-now-btn">Book Now</a></div>
+                    <div class="see-more btn-mybtn3"><a href="#" target="blank" data-description="marina" class="see-more-btn">Find
+                            out more</a></div>
                 </div>
             </div>
         </div>
@@ -588,8 +639,10 @@
                     .kuwait {
                         font-size: 13px;
                         color: #b1b4b6;
-                    }@media(max-width:576px){
-                        .mtmt{
+                    }
+
+                    @media(max-width:576px) {
+                        .mtmt {
                             position: relative;
                             top: 0px;
 
@@ -647,23 +700,29 @@
 
 </html>
 <script>
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
-
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            // ✅ Scrolling Down → Show Navbar
-            navbar.classList.remove("navbar-visible");
-        } else {
-            // ✅ Scrolling Up → Hide Navbar
-            navbar.classList.add("navbar-visible");
-        }
-
-        lastScrollTop = currentScroll; // Update last scroll position
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navbar");
+    
+        // ✅ Ensure Navbar is visible on page load
+        navbar.classList.add("navbar-visible");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (currentScroll > lastScrollTop) {
+                // ✅ Scrolling Down → Hide Navbar
+                navbar.classList.remove("navbar-visible");
+            } else {
+                // ✅ Scrolling Up → Show Navbar
+                navbar.classList.add("navbar-visible");
+            }
+    
+            lastScrollTop = currentScroll; // Update last scroll position
+        });
     });
-
+    
+    
 </script>
 
 <script>
@@ -690,11 +749,11 @@
 
 
 <script>
-    $( document ).ready(function() {
-        $(".navbar-toggler").click(function(){
+    $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
             $('body').toggleClass('test')
         });
-            
-        
+
+
     });
 </script>

@@ -103,20 +103,23 @@
             <br><br><br><br>
             <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fs-3"></i>
+                <i class="fa-solid fa-bars fs-3 my"></i>
             </button>
           
             <style>
-                .imgicon{
-                    margin-top: 20px;
-                }
+               
                 .navbar-collapse{
                     flex-grow: 0;
+                }
+                .navbar-toggler:focus {
+                    text-decoration: none;
+                    outline: 0;
+                    box-shadow: 0 0 0.1rem;
                 }
             </style>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fullscreen-menu text-center"id="fullscreenMenu">
+                <ul class="navbar-nav fullscreen-menu gap-3 text-center"id="fullscreenMenu">
                     <li class="nav-item">
                         <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
                     </li>
@@ -145,8 +148,8 @@
              </div>
             </div>
             <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
-                <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
-                <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
+                <a href="book.html" ><button class="btn btn-custom1 text-white ">Book</button></a>
+                <a href="login.html " target="_blank"><button class="btn btn-custom text-white">SIGN IN / SIGN UP</button></a>
             </div>
 
           
@@ -342,22 +345,30 @@
 </html>
 
 <script>
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
-
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            navbar.classList.remove("navbar-visible");
-        } else {
-            navbar.classList.add("navbar-visible");
-        }
-
-        lastScrollTop = currentScroll;
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navbar");
+    
+        // ✅ Ensure Navbar is visible on page load
+        navbar.classList.add("navbar-visible");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (currentScroll > lastScrollTop) {
+               
+                navbar.classList.remove("navbar-visible");
+            } else {
+                
+                navbar.classList.add("navbar-visible");
+            }
+    
+            lastScrollTop = currentScroll; // Update last scroll position
+        });
     });
+    
+    
 </script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const carousel = document.getElementById('carouselExampleControls');

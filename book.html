@@ -102,72 +102,74 @@
 
  
 </style>
-  
-  <nav class="navbar navbar-expand-xl   bg-white shadow">
+<nav class="navbar navbar-expand-xl   bg-white shadow">
 
-        <div class="container mycon">
+    <div class="container mycon">
 
-            <a class="navbar-brand position-relative" href="index.html">
-                <div class="logo-container position-absolute justify-content-center align-items-center text-center">
-                    <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
-                </div>
-            </a>
-            <br><br><br><br>
-            <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fs-3"></i>
-            </button>
-          
-            <style>
-                .imgicon{
-                    margin-top: 20px;
-                }
-                .navbar-collapse{
-                    flex-grow: 0;
-                }
-            </style>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav fullscreen-menu text-center"id="fullscreenMenu">
-                    <li class="nav-item">
-                        <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mycolor " href="offer.html">OFFERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mycolor" href="press.html">PRESS</a>
-                    </li>
-                </ul>
-                <div class="social"><a href="https://www.instagram.com/safirhotels/"
-                    class="fa-brands fa-instagram text-decoration-none"></a> <a
-                    href="https://www.facebook.com/safirhotelsresorts"
-                    class="fa-brands fa-facebook-f text-decoration-none"></a> <a
-                    href="https://www.linkedin.com/company/safir-hotels-resorts/"
-                    class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
-                    class="fa-brands fa-tiktok text-decoration-none"></a> <a
-                    href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
-                    class="fa-brands fa-youtube text-decoration-none"></a>
-                </div>
-                <div class="social1">
-                    ARA ENG
-             </div>
+        <a class="navbar-brand position-relative" href="index.html">
+            <div class="logo-container position-absolute justify-content-center align-items-center text-center">
+                <img src="/images/icon1.svg" class="imgicon" alt="SAFIR Logo">
             </div>
-            <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
-                <a href="book.html"><button class="btn btn-custom text-white fw-bold">Book</button></a>
-                <a href="login.html"><button class="btn btn-custom text-white fw-bold">SIGN IN / SIGN UP</button></a>
-            </div>
-
-          
-              
-
-        </div>
+        </a>
+        <br><br><br><br>
+        <button class="navbar-toggler border-0" id="menuToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3 my"></i>
+        </button>
       
-                
-    </nav>
+        <style>
+           
+            .navbar-collapse{
+                flex-grow: 0;
+            }
+            .navbar-toggler:focus {
+                text-decoration: none;
+                outline: 0;
+                box-shadow: 0 0 0.1rem;
+            }
+        </style>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav fullscreen-menu gap-3 text-center"id="fullscreenMenu">
+                <li class="nav-item">
+                    <a class="nav-link mycolor" href="hotels.html">HOTELS & RESIDENCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor " href="offer.html">OFFERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor " href="safir.html">SAFIR CAMP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mycolor" href="press.html">PRESS</a>
+                </li>
+            </ul>
+            <div class="social"><a href="https://www.instagram.com/safirhotels/"
+                class="fa-brands fa-instagram text-decoration-none"></a> <a
+                href="https://www.facebook.com/safirhotelsresorts"
+                class="fa-brands fa-facebook-f text-decoration-none"></a> <a
+                href="https://www.linkedin.com/company/safir-hotels-resorts/"
+                class="fa-brands fa-linkedin-in text-decoration-none"></a> <a href="https://www.tiktok.com/@safirhotels"
+                class="fa-brands fa-tiktok text-decoration-none"></a> <a
+                href="https://www.youtube.com/channel/UCaR-Zv2IIXECohNellXi9Fw"
+                class="fa-brands fa-youtube text-decoration-none"></a>
+            </div>
+            <div class="social1">
+                ARA ENG
+         </div>
+        </div>
+        <div class="gap-3 flex-wrap mt-lg-0 btn-container align-items-center">
+            <a href="book.html" ><button class="btn btn-custom1 text-white ">Book</button></a>
+            <a href="login.html " target="_blank"><button class="btn btn-custom text-white">SIGN IN / SIGN UP</button></a>
+        </div>
+
+      
+          
+
+    </div>
+  
+            
+</nav>
 <div class="container-fuild">
     
     <div class="row">
@@ -364,22 +366,27 @@
 
 </html>
 <script>
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navbar");
     
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        navbar.classList.add("navbar-visible");
     
-        if (currentScroll > lastScrollTop) {
-            // ✅ Scrolling Down → Show Navbar
-            navbar.classList.remove("navbar-visible");
-        } else {
-            // ✅ Scrolling Up → Hide Navbar
-            navbar.classList.add("navbar-visible");
-        }
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
-        lastScrollTop = currentScroll; // Update last scroll position
+            if (currentScroll > lastScrollTop) {
+               
+                navbar.classList.remove("navbar-visible");
+            } else {
+               
+                navbar.classList.add("navbar-visible");
+            }
+    
+            lastScrollTop = currentScroll; 
+        });
     });
+    
     
 </script>
 

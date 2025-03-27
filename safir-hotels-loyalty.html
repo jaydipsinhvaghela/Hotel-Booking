@@ -4,163 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safir Camp</title>
+    <title>Hotel Direct</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
-        body {
-            background-color: #fff
-        }
-
         .mycontainer {
 
             max-width: 800px;
         }
 
-        .myimg2 {
-
-            width: 700px;
-
-            margin: 15px 0;
-        }
-        .myimg3{
-            width: 740px;
-            margin: 15px 0;
-        }
-
-        @media(max-width:768px) {
-            .myimg2 {
-                width: 100%;
-                height: auto;
-            }
-
-            .myimg1 {
-                width: 100%;
-                margin: auto;
-            }
-            .myimg3{
-                width: 100%;
-
-                height: auto;
-            }
-
-        }
-
-        @media(max-width:554px) {
-            .myimg2 {
-                width: 100%;
-                height: auto;
-            }
-
-            .myimg1 {
-                width: 100%;
-                margin: auto;
-            }
-            .myimg3{
-                width: 100%;
-                height: auto;
-            }
-
-        }
-
-
-
-        .myp1 {
+        .main-p-class {
             margin-top: 15px;
             font-size: 1.1rem;
             width: 720px;
+            max-width: 100%;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
         }
 
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            .myp1 {
+        .main-p-class ul li {
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+
+        .mp {
+            font-size: 1.3rem;
+        }
+
+        .mycontainer h1 {
+            font-size: 3.5rem;
+        }
+
+        @media(max-width:554px) {
+
+            .myimg1 {
                 width: 100%;
-                /* Adjust width for tablets */
-                font-size: 1rem;
-                /* Slightly smaller font for better readability */
+                margin: auto;
             }
+
+
         }
 
-        @media (max-width: 576px) {
-            .myp1 {
+        @media(max-width:768px) {
+
+            .myimg1 {
                 width: 100%;
-                /* Full width for smaller devices */
-                font-size: 0.95rem;
-                /* Further reduce font size for small screens */
-                padding: 10px;
-                /* Add some padding for better spacing */
-            }
-        }
-
-         .btn-prime{
-            display: block;
-            text-align: center;
-            background: #aad3ed;
-            color: #fff;
-            padding: 1rem;
-            margin: 2.5rem 0;
-            font-weight: 500;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 2px;
-            
-            transition: background-color .4s ease-in-out;
-        }
-
-        .btn-prime:hover {
-            background-color: #6d6e70;
-            color: #fff;
-        }
-        .mycontainer2 {
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-           
-        }
-
-        
-
-        p {
-            font-size: 1.1rem;
-            text-align: left;
-        }
-
-     
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .mycontainer2 {
-                padding: 20px;
-                max-width: 95%;
+                margin: auto;
             }
 
-            p {
-                font-size: 1rem;
-            }
-        }
 
-        @media (max-width: 576px) {
-            .mycontainer2 {
-                padding: 15px;
-                max-width: 100%;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            p {
-                font-size: 0.95rem;
-            }
         }
     </style>
-
 </head>
 
 <body>
@@ -232,101 +129,160 @@
       
                 
     </nav>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <style>
+        .mycontainer .date {
+            font-size: 1 rem;
+            padding: .1rem 0 .1rem 2.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .mycontainer .date {
+            color: #bbbcbe;
+            background-image: url(/images/date.svg);
+            background-position: center left;
+            background-size: contain;
+            font-weight: 300;
+            background-repeat: no-repeat;
+        }
+
+        .mycontainer .date::after {
+            content: '';
+            display: inline-block;
+            background-color: #bbbcbe;
+            height: 4px;
+            width: 3.6rem;
+            position: absolute;
+            margin-top: 40px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+        }
+        .main-p-class {
+            position: relative;
+            width: 720px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .mycontainer .img1 {
+            margin: 0 auto;
+            vertical-align: bottom;
+            max-width: 100%;
+            height: auto;
+        }
+        .mycontainer .img2{
+            position: relative;
+            background-color: #6d6e70;;
+        }
+
+        .mycontainer {
+            position: relative;
+            width: 1000px;
+            max-width: 98%;
+
+            padding: 1rem 1rem 0;
+            margin: auto auto 6rem;
+        }
+         img {
+            max-width: 100%;
+            height: auto !important;
+            margin-bottom: 2rem;
+        }.loyelty{
+                    max-width: 100%;
+                height: auto !important;
+                margin-bottom: 2rem;
+            }
+        
+    </style>
     <div class="container mycontainer p-lg-5 d-flex ">
-        <h1 class="align-items-center">Safir Camp, Dubaiyah</h1>
-        <p>Home is where you pitch your tent!</p>
-        <img class="myimg1  align-items-center " src="/images/safir1.jpeg" alt="Safir Camp Image">
-        <div class="myp1 px-3">
-            <p>Safir Camp, beyond a mere camping ground, it's a space for community bonding and family enjoyment. Our
-                thoughtfully designed desert retreat offers a harmonious blend of comfort, grace, and the enduring
-                beauty of
-                the Dubaiyah desert.</p>
-        </div>
-        <a href="" class="btn btn-prime w-100">Limited Availability: Book Today.</a>
-        <img class="myimg2" src="/images/safir2.jpeg" alt="Safir Camp Image">
+        <h1 class="align-items-cente text-center ">Durrah Rewards – A New Era in Guest Loyalty and Hospitality Excellence
+        </h1>
+        <p class="pclass text-center">Safir Hotels & Resorts Unveils "Durrah Rewards" – A New Era in Guest Loyalty and Hospitality Excellence</p>
+        <p class="date">Feb 15. 2025</p>
+        <img class="img1" src="/images/loyelty1.jpeg" alt="">
 
 
-    </div>
 
-    <div class="container mycontainer2 my-5 mx-auto">
-        <h3 class="fw-bold">PYRAMID TENTS</h3>
-        <p>Experience the coziness of our Pyramid tents (4x4 sqm, Regular, and Semi-Private Tents accommodating up to 6 guests)</span> with modern design and comfortable interiors. Sit back on plush cushions and reconnect with nature and each other in a casual-chic setting lit by lanterns within the privacy of your tent.</p>
-    
-        <p class="myh4">Our complimentary services include:</p>
-        <p>> Valet Parking</p>
-        <p>> Welcome Drink</p>
-        <p>> Express check-in at the hospitality desk</p>
-        <p>> Drop-off to the tents</p>
-        <p>> Personalized assistance is available upon request for a comfortable experience.</p>
-        <p>> Onsite medical assistance is available in emergencies and is provided by male and female nurses.</p>
-    
-        <p  class="myh4">Explore our range of Exclusive Add-Ons:</p>
-        <p>> BBQ Meat for Grilling Box</p>
-        <p>> Games Box</p>
-        <p>> Hot Beverages (Tea & Arabic Coffee Package)</p>
-        <p>> Special Occasion (Birthdays, Girls Night Out, Anniversaries, etc.)</p>
-    
-        <p  class="myh4">Time & Pricing:</p>
-        <p>> Sunday to Wednesday: Afternoon 02:00 PM to 02:00 AM (Price KWD 60)
+        <div class="main-p-class">
+           
+            <p>Safir Hotels & Resorts proudly announces the launch of 'Durrah Rewards,' an innovative loyalty program crafted to elevate guest experiences across the company's distinguished portfolio of properties. This program underscores Safir's commitment to providing unparalleled value, flexibility, and personalized service to its esteemed guests.</p>
+            <p>The launch of <strong>Durrah Rewards</strong> marks a significant milestone in <strong>Safir Hotels &amp; Resorts</strong>' ongoing pursuit of excellence and dedication to enhancing guest satisfaction. The program offers an array of exclusive benefits, recognizing and rewarding loyal guests at every interaction. With a comprehensive range of perks and privileges, members can expect to enjoy a more enriched and seamless stay at any <strong>Safir Hotels &amp; Resorts</strong> location.</p>
+            <p>In a statement reflecting on this exciting development, <strong>Abdulaziz Al Failakawi, Vice Chairman and CEO of Safir Hotels &amp; Resorts, remarked, </strong><em>"Durrah Rewards represents our unwavering commitment to redefining hospitality standards and fostering deeper connections with our guests. This strategic initiative not only enhances guest satisfaction but also reaffirms our position as a leader in the region's hospitality sector. Our guests are at the heart of everything we do, and Durrah Rewards is our way of expressing gratitude and appreciation for their continued loyalty."</em></p>
 
-        </p>
-        <p>> Thursday to Saturday: Morning 10:00 AM to 02:00 AM (Price KWD 85)</p><hr>
-        <style>
-            hr{
-                width: 95%;
-            }
-        </style>
-        <img class="myimg2" src="images/safir3.jpeg" alt="">
-    </div>
-    <div class="container mycontainer2 my-5 mx-auto">
-        <h3 class="fw-bold">PYRAMID TENTS</h3>
-        <p>Experience the coziness of our Pyramid tents (4x4 sqm, Regular, and Semi-Private Tents accommodating up to 6 guests)</span> with modern design and comfortable interiors. Sit back on plush cushions and reconnect with nature and each other in a casual-chic setting lit by lanterns within the privacy of your tent.</p>
-    
-        <p class="myh4">Our complimentary services include:</p>
-        <p>> Valet Parking</p>
-        <p>> Welcome Drink</p>
-        <p>> Express check-in at the hospitality desk</p>
-        <p>> Drop-off to the tents</p>
-        <p>> Personalized assistance is available upon request for a comfortable experience.</p>
-        <p>> Onsite medical assistance is available in emergencies and is provided by male and female nurses.</p>
-    
-        <p  class="myh4">Explore our range of Exclusive Add-Ons:</p>
-        <p>> BBQ Meat for Grilling Box</p>
-        <p>> Games Box</p>
-        <p>> Hot Beverages (Tea & Arabic Coffee Package)</p>
-        <p>> Special Occasion (Birthdays, Girls Night Out, Anniversaries, etc.)</p>
-    
-        <p  class="myh4">Time & Pricing:</p>
-        <p>> Sunday to Wednesday: Afternoon 02:00 PM to 02:00 AM (Price KWD 60)
+            <p><strong>Durrah Rewards</strong> introduces a host of exclusive discounts and services tailored to provide exceptional value to its members. From Member-only Rates that offer special discounts when booking directly through the <strong>Safir Hotels &amp; Resorts</strong> website or direct reservation channels to reduced rates on in-room dining, the program ensures unparalleled savings and convenience. Members can also enjoy discounts on food and beverages across all outlets within the participating Safir properties, from fine dining restaurants to casual cafes, as well as discounted airport transfers for seamless and stress-free transportation. With a focus on flexibility and personalization, <strong>Durrah Rewards</strong> offers four tiered membership levels—Base, Silver, Gold, and Diamond—each unlocking greater privileges and rewarding guests for their loyalty and engagement with <strong>Safir Hotels &amp; Resorts</strong>.</p>
+            <p><img class="loyelty" src="/images/loyelty2.jpeg" alt="Durrah Rewards"></p>
 
-        </p>
-        <p>> Thursday to Saturday: Morning 10:00 AM to 02:00 AM (Price KWD 85)</p><hr>
-        <style>
-            hr{
-                width: 92%;
-            }
-        </style>
-        <div>
-            <p class=" fw-bold">Secure Your Spot!</p>
-            <p class="fs-5"> Contact us on WhatsApp at 69934306 for booking inquiries.</p>
-        
-            
-        
-            <p class="fw-bold">Refund & Cancellation Policy:</p>
-             <p>Due to limited availability, advanced reservations are advised.
-             </p>
-             <p>All bookings are ,final and non-refundable, except in cases of weather-related disruptions
-             Date changes are permitted, subject to availability.
-             Any cancellations require a minimum of 24-hour notice.</p>
-             <a href="" class="btn btn-prime w-100">Limited Availability: Book Today.</a>
-             <img src="/images/safir4.jpeg" class="myimg3" alt="">
+
+            <h4><strong>A Unique Point Sharing Experience:</strong></h4>
+
+            <p>A standout feature of <strong>Durrah Rewards</strong> is the ability for members to share their points with friends and family. This unique aspect of the program allows guests to gift points, enabling their loved ones to enjoy the benefits of the program as well. By creating this sense of community and shared experiences, <strong>Safir Hotels &amp; Resorts</strong> further strengthens the bonds between the brand and its loyal clientele.</p>
+
+            <h4><strong>Driving Innovation and Guest-Centric Initiatives:</strong></h4>
+
+            <p>As part of its forward-thinking approach, <strong>Safir Hotels &amp; Resorts</strong> has consistently invested in creating personalized and meaningful experiences for guests. Durrah Rewards is a testament to this spirit, reflecting the company's broader strategy to enhance operational efficiency, performance management, and quality assurance. By placing guests at the center of its operations, Safir Hotels &amp; Resorts continues to set new benchmarks in the industry.</p>
+
+            <h4><strong>Join Durrah Rewards Today:</strong></h4>
+
+            <p>Enrollment in <strong>Durrah Rewards</strong> is now open to all guests, providing immediate access to exclusive benefits and privileges. Those interested in becoming members can easily sign up through the <strong>Safir Hotels &amp; Resorts</strong> website or by visiting any Safir property.</p>
+
+            <p>For further details about Durrah Rewards and to explore the full list of benefits, please visit <a href="/durrah-rewards" target="_blank" rel="noopener">safirhotels.com/durrah-rewards</a></p>
+           
+
+            <a href="" class="btn btn-prime w-100">Apply today</a>
 
         </div>
-        
-        
+
+
+
     </div>
-    
+    <style>
+        .mycontainer .btn.btn-prime {
+            display: block;
+            text-align: center;
+            background: #aad3ed;
+            color: #fff;
+            padding: 0.5rem;
+            margin: 2rem 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+
+
+        }
+
+        .mycontainer .btn.btn-prime:hover {
+            background-color: #b1b4b6;
+        }
+
+        @media(max-width:540px) {
+            .mycontainer h1 {
+                font-size: 2rem;
+            }
+
+            .pclass {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .main-p-class ol li {
+                font-size: 12px;
+            }
+
+            .main-p-class .sub-class {
+                font-size: 12px;
+                margin: 1px 20px;
+            }
+
+            .main-p-class {
+                max-width: 100%;
+
+            }
+        }
+    </style>
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -374,8 +330,10 @@
                     .kuwait {
                         font-size: 13px;
                         color: #b1b4b6;
-                    }@media(max-width:576px){
-                        .mtmt{
+                    }
+
+                    @media(max-width:576px) {
+                        .mtmt {
                             position: relative;
                             top: 0px;
 
@@ -426,12 +384,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>
@@ -483,14 +435,12 @@
         });
     });
 </script>
-
-
 <script>
-    $( document ).ready(function() {
-        $(".navbar-toggler").click(function(){
+    $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
             $('body').toggleClass('test')
         });
-            
-        
+
+
     });
 </script>

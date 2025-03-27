@@ -41,9 +41,7 @@
             </button>
           
             <style>
-                .imgicon{
-                    margin-top: 20px;
-                }
+               
                 .navbar-collapse{
                     flex-grow: 0;
                 }
@@ -404,7 +402,7 @@
                     <!-- News Item 1 -->
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <a href="#" class=" border-0 box">
+                            <a href="press.html" class=" border-0 box">
                                 <div class="image1">
                                         <div><img src="/images/about1.webp" class="card-img-top rounded-top"
                                                 width="390" height="330" alt="News about Durrah Rewards"></div>
@@ -425,7 +423,7 @@
                     
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <a href="#" class=" border-0 box">
+                            <a href="safir-hotels-loyalty.html" class=" border-0 box">
                                 <div class="image1">
                                     <div href=""><img src="/images/about2.jpeg" class="card-img-top rounded-top"
                                             width="390" height="330" alt="Durrah Rewards launch"></div>
@@ -466,9 +464,9 @@
 
                
                 <div class="d-flex justify-content-center mt-4">
-                    <button class="fs-4 btn-mybtn border-0 px-4 py-2">
+                    <a href="press.html" class="fs-4 btn-mybtn text-decoration-none text-dark border-0 px-4 py-2">
                         READ MORE <i class="fa-solid fa-arrow-right ms-2"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -705,7 +703,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item n">
-                            <a href="#" class="border-0 box">
+                            <a href="family-stay.html" class="border-0 box">
                                 <div class="image1"><img src="/images/offer2.webp"  class="card-img-top rounded-top" alt="Durrah Rewards launch">
                                     <div class="card-body">
                                         <h4 class="card-title ">
@@ -719,7 +717,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="news-item">
-                            <div href="#" class="border-0 box">
+                            <a href="business-travel.html" class="border-0 box">
                                 <div class="image1">
                                     
                                     <img src="/images/offer3.webp"  class="card-img-top rounded-top" alt="Safir Hotels in Iraq">
@@ -949,7 +947,7 @@
                     purpose of "Sharing True Arabian Hospitality with the World."
                 </p>
                 <div class="justify-content-center">
-                    <a href="#" class="text-decoration-none text-light btn-mybtn2 border-0 fs-4">
+                    <a href="hotels.html" class="text-decoration-none text-light btn-mybtn2 border-0 fs-4">
                         More About Us
                         <i class="fa-solid fa-arrow-right ms-2"></i>
                     </a>
@@ -975,7 +973,7 @@
         <div class="container-fluid">
             <div class="row g-0 position-relative" >
                 <div class="col-md-12 image1 col-lg-6 position-absolute start-0 top-0 w-md-50">
-                    <a class="d-block">
+                    <a href="careers.html" class="d-block">
                         <img src="/images/career1.webp" class="object-fit-cover imgcover"  alt="Durrah Rewards">
                     </a>
                 </div>
@@ -986,7 +984,7 @@
                         An Employer of Choice for more than 1,100 Colleagues from over 45 different nationalities, we are an equal opportunity employer committed to fostering a diverse, inclusive and empowered workforce. We value Passion, Pride, Integrity, and Curiosity, and invite those who live these same values to join the Safir Family. We are growing, grow with us.
                     </p>
                     <div class="">
-                        <a href="#" class="text-decoration-none text-dark btn-mybtn1" type="button">
+                        <a href="careers.html" class="text-decoration-none text-dark btn-mybtn1" type="button">
                             Explore Possibilities
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -1221,26 +1219,33 @@
 </body>
 
 </html>
+
 <script>
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
-
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            // ✅ Scrolling Down → Show Navbar
-            navbar.classList.remove("navbar-visible");
-        } else {
-            // ✅ Scrolling Up → Hide Navbar
-            navbar.classList.add("navbar-visible");
-        }
-
-        lastScrollTop = currentScroll; // Update last scroll position
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navbar");
+    
+        
+        navbar.classList.add("navbar-visible");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (currentScroll > lastScrollTop) {
+               
+                navbar.classList.remove("navbar-visible");
+            } else {
+               
+                navbar.classList.add("navbar-visible");
+            }
+    
+            lastScrollTop = currentScroll; 
+            });
     });
-
+    
+    
 </script>
-<script>
+    <script>
     document.addEventListener('DOMContentLoaded', function () {
         const carousel = document.getElementById('carouselExampleControls');
         const dots = document.querySelectorAll('.slick-dots button');

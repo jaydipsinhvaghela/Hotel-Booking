@@ -313,23 +313,29 @@
 </html>
 
 <script>
-    let lastScrollTop = 0;
-    const navbar = document.querySelector(".navbar");
-
-    window.addEventListener("scroll", function () {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            // ✅ Scrolling Down → Show Navbar
-            navbar.classList.remove("navbar-visible");
-        } else {
-            // ✅ Scrolling Up → Hide Navbar
-            navbar.classList.add("navbar-visible");
-        }
-
-        lastScrollTop = currentScroll; // Update last scroll position
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navbar");
+    
+        // ✅ Ensure Navbar is visible on page load
+        navbar.classList.add("navbar-visible");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (currentScroll > lastScrollTop) {
+                // ✅ Scrolling Down → Hide Navbar
+                navbar.classList.remove("navbar-visible");
+            } else {
+                // ✅ Scrolling Up → Show Navbar
+                navbar.classList.add("navbar-visible");
+            }
+    
+            lastScrollTop = currentScroll; // Update last scroll position
+        });
     });
-
+    
+    
 </script>
 
 <script>
